@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "river-daylight-312221",
+  "private_key_id": "c500e00644ca39ee0cac1cd48e1c3fd3f5305d81",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDeHkSBGPclUmlJ\nabzuQyLJuXmeCTv3JBKvYVNUbckufR+1OwIcJ4N0xcHDEARgU+oxVXLp0mAhYVh9\nP9d7bN29aJXkULwPL3HpjfYiVeXvTzw+7TjTkdBU35y65l20nBpUzbBw99lBdajJ\nXDRI6OkrVGR0rNludWyL1xEysxLxPF/W2Rhmt0HE3xw758vfdJBkLCEUCQ3pOU9D\nrfPQ264/z00FbYUMTRntt0i3505j3S9fZWymcEOUnlwz9H45AykGeClTMNOjG066\ni8zrMCzp2OH4vLa67gToJjmvgEmp8THg4VftGTJFcV0xjsi098zmwGjmG7LDjR/H\nLs6+0lozAgMBAAECggEALk7yKlYppMLXR6J/bM9bb+I2/F9hfKetK5pndKlE8efN\nVgv85yDH0+8s8/2hY/Hq2ClAAYbGWv9AIzDNvKJYYpZs9cJtSt8x6ScbQ1JUU33a\nCiaMG/QBEsjiFMdVjwOiq76MhCjwRykALScHkZHZlxqLrRWiaVia7lbC86aJEvkH\nXnABS7/tf9TiYykwst2gm3J50dKZ31z+etM6R7jNjuWP1UNKZZ2daumtBz8Tzhyb\nH+2QtzTN4Fv4iHmkfZq8UagnuF86+x9JMLdg2AwqwFKhp7lnG5UNMRywpr37ki9f\ndwd+HN35uacVJxHmjDMuJzoDtQZ78ORwbOOxM8pocQKBgQD44Wo6zogBnhboiStd\ncTK6cAymy2tGppkhSfj8ryu2A9kko+yCHXq5nxGJf0HjmbEgFXAure5CUsEEcuOj\nB0KzL/H7C8aR7Rq9Nx8lcNfIaryz0mQwSGALlPIDXoz8cBBS6sIaNSK3L8Xwb6l3\nVo6D/H1HXKRwJbjYo3Zx0bxnkQKBgQDkeN5qaOsv7jq9nQdlnUTospeSHD3RanYG\nw6ZGOg1TfmgdjgJVg4eSaCoIr9CX6XaFjz/r2HWea+uoveME5Wq5v7HbV+Tz0/TH\nD5sz6lSXyWHI/Lj7RFudm+bryRVboYb7YF/9fnqddBpYjDdLk9U1DBitJdyHeUvR\nOjhPS8QrgwKBgQDRT1q0/G9b1OX1SS9kVchRDd1GBbxB3ejZG0pA0N2VJWVgsFA/\nGaXWKJZqKdFzJhXWItGHIJZJxyk3oZwaxwdshb0f4kZtAZjEW3BhX6bKkiIDpcTG\n6oeEFg73kHRH9cN0yKTXv6pjn9T7oh1HFU+kZxvBgYN2IfN0lv0NOlQWUQKBgQC1\npzBX9KGCE2za055M+ZUPWufOQOwZtAaxbB+o2IE98FRBo2ZRrWk+S9mX3IoCLpqQ\nqIvPLeSel/nfyVJV0z5e/34fAqxD/TMyjkL9LQQjRvebgOxmwzwAfTNGJzP3Dd+v\nwDmx6Dz/MY+89YcFbT3olnyMNn03rYZNjXe1/Gy1lwKBgQC8Cjt5J7SKKC4yymJh\nN4Msd4Vysokyfnv8y8OP2Z7yO5J/wWljjnC9RcnFO3rvAfvs502xIvfk+IUvK+F6\nK2ftqTHbZjTFd5YyNX2tr4JEpVJuA/murE3MpCCmTJKNMISq8kT4f+m1ZBmtrYeH\nusnCAE2tfAOOcEiUScnxj+qdaQ==\n-----END PRIVATE KEY-----\n",
+  "client_email": "sheets@river-daylight-312221.iam.gserviceaccount.com",
+  "client_id": "113704291789340368866",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/sheets%40river-daylight-312221.iam.gserviceaccount.com"
+}
