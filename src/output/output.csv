@@ -1,0 +1,568 @@
+Name,Address,Lat,Long,URL,COVID Beds,Oxygen Beds,ICU,Ventilator,Last Update,Contact
+Ariyalur,A.S Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,3,0,3,2,2021-05-04 09:00:35,9842368480.0
+Ariyalur,Golden Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,19,13,3,5,2021-05-04 00:03:21,0.0
+Ariyalur,"KVS Hospital Pvt Ltd,Valaja Nagaram",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,30,26,4,1,2021-05-03 17:27:38,9585288077.0
+Ariyalur,"SR Hospital,Ariyalur",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,9,0,4,1,2021-05-03 10:18:38,9361362038.0
+Chengalpattu,"Parvathy Hospital Chrompet,",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,2,0,0,0,2021-05-04 08:49:03,7825830723.0
+Chengalpattu,"DAISY HOSPITAL,CHROMPET",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 06:58:48,9940632392.0
+Chengalpattu,AAYUSHMAAN HOLISTIC HEALTH CENTRE,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-04-23 11:59:39,9962331777.0
+Chengalpattu,"Kasthuri Hospital , Thambaram",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,2,2021-05-03 14:13:51,7299009287.0
+Chengalpattu,"Das Nursing Home,Chengalpattu",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,4,0,4,2,2021-05-03 10:16:50,7200084041.0
+Chengalpattu,"Kathir Memorial Hospital,Chengalpattu",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,1,2021-05-03 13:06:32,9566572277.0
+Chengalpattu,"Lakshmi Nursing Home, Pallavaram",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,1,2021-04-28 13:17:04,8939633433.0
+Chengalpattu,"RKP Hospital,Nanmangalam",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 14:12:02,9842966662.0
+Chengalpattu,"Christudas Orthopaedic Speciality Hospital,East Tambaram",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,2,2021-05-03 11:00:13,9840799398.0
+Chengalpattu,Shri Isari Velan Mission Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-04-27 16:28:35,
+Chengalpattu,"Sai Fertility Centre & Hospital, Vedhachalam Nagar",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,1,2021-05-04 05:58:50,9100096000.0
+Chengalpattu,"Sudar Hospitals, Hasthinapuram",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 16:45:47,9790883397.0
+Chengalpattu,Annai Arul Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 09:51:52,4471700700.0
+Chengalpattu,Dr. Rela Institute,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,5,5,0,0,2021-05-03 07:28:16,4466667777.0
+Chengalpattu,Chennai Emergency care Centre Pammal,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 08:28:31,7358244662.0
+Chengalpattu,"Sugam Hospital, Chromepet",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 19:17:38,8585858550.0
+Chengalpattu,"Deepam Hospitals, West Tambaram",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 16:46:54,8300017171.0
+Chengalpet,KMS Health Centre,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-02 22:08:32,9791197514.0
+Chennai,Sen Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,2,2021-05-03 13:43:06,9600899382.0
+Chennai,"st. Isabels hospital, Maylapore",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,3,0,1,0,2021-05-03 18:01:00,9585965330.0
+Chennai,"Sri Balaji Hospital, guindy",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,1,1,0,0,2021-04-29 11:45:47,8838811601.0
+Chennai,"Radha Rajendran Hospital, Alandur",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-04-24 11:09:50,9952920853.0
+Chennai,"One health hospital, Vandalur",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 12:57:40,9445025558.0
+Chennai,"Srinivasa Hospital, Kodampakkam",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,1,0,0,1,2021-05-03 13:25:18,9840102493.0
+Chennai,Be well hospital T.Nagar,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,1,1,0,0,2021-04-27 15:20:34,7550203865.0
+Chennai,Prime Indian Hospitals,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-04-28 09:55:58,9941011680.0
+Chennai,"Amrit Medical Centre,Purasawakkam",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,4,0,0,0,2021-05-03 16:02:13,8122119835.0
+Chennai,Fortis healthcare – Vadapalani,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 18:30:15,9940141573.0
+Chennai,"City Tower Hospital,Anna Nagar",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,13,0,0,0,2021-04-30 16:47:34,9790985752.0
+Chennai,"Esha Hospital,Old Washermenpet",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,3,0,0,0,2021-05-04 08:35:27,9962562594.0
+Chennai,Faith Multispecialty Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-04-28 12:15:43,9500170383.0
+Chennai,"G.R Hospital,Adambakkam",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,2,1,0,0,2021-05-04 05:43:25,9384658090.0
+Chennai,"GeriCare, T Nagar",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 09:57:41,4440614061.0
+Chennai,"Hindu Mission Health Services,Nanganallur",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-04-30 16:13:23,8939673657.0
+Chennai,"Iyyappa Hospitals and Diabetes Research Centre Pvt Ltd,Perambur",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-04-22 13:02:48,
+Chennai,"Jyoti Hospital,Old Washermenpet",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 14:30:52,8778393657.0
+Chennai,Vijai's Nursing home,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-04-27 13:20:45,8822882285.0
+Chennai,Jolen Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,2,0,0,0,2021-05-03 10:22:09,7305855991.0
+Chennai,"SenthilPriya Hospital,Teynampet",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-01 20:33:56,
+Chennai,"Sri Singhvi Health Centre, Purasaivakkam",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 07:37:07,7871081082.0
+Chennai,Iswarya Fertility Centre Kilpauk,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,2,2,2,1,2021-04-23 11:42:47,0.0
+Chennai,Iswarya Fertility Centre Adyar,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,10,3,2,1,2021-05-03 08:58:46,9842115123.0
+Chennai,Iswarya Fertility Centre Ambattur,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,5,2,1,2,2021-05-03 08:59:41,8883381666.0
+Chennai,"Shaarave Multi Speciality Hospital, Sowcorpet",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 09:51:40,4443229641.0
+Chennai,Shanmugam Multi Speciality Hospital Royapuram,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-02 08:17:11,7010229157.0
+Chennai,"Medway Women Centre, Kodambakkam",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 11:35:45,7299057877.0
+Chennai,"Apollo Hospital, OMR, Perungudi",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-04-30 11:01:52,7299021425.0
+Chennai,"K.G.J Hospitals, Korattur",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,5,2,2021-04-23 09:31:03,0.0
+Chennai,"Padmapriya Hospital, Adyar",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,1,0,0,0,2021-05-04 08:29:51,9444200270.0
+Chennai,"Sudha Hospital, Royapuram",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 17:08:00,9444031230.0
+Chennai,"Priya Nursing Home, Old Washermenpet",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 10:29:52,9094888340.0
+Chennai,"Suman Hospital, Thiruvotriyur",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,2,2021-05-03 13:11:31,6369794092.0
+Chennai,"The Madras Medical Mission, Mogappair",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,2,2021-05-04 07:51:43,9940593999.0
+Chennai,"M/s Apollo Hospitals, Tondiarpet",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 14:05:27,
+Chennai,Dr. Mehtas Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 08:55:16,9840080449.0
+Chennai,Annai Multispeciality Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,4,2,0,0,2021-05-04 08:14:36,7092820884.0
+Chennai,"Vivekananda Hospital,mylapore",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 09:42:31,7200648296.0
+Chennai,"K.M Speciality Hospital, K.K Nagar",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 17:28:14,9944903256.0
+Chennai,"MOHAN NURSING HOME, VILLIVAKKAM",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,8,4,0,0,2021-04-29 07:50:09,9976819987.0
+Chennai,"Best Hospitals,Kodambakkam",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,5,3,0,2,2021-05-03 12:52:17,9677050567.0
+Chennai,"Saraswathy Multi Speciality Hospitals, Madipakkam",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,6,2,0,0,2021-05-04 07:22:17,9790905916.0
+Chennai,"Sri Pooja Maternity Clinic, Kodungaiyur",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-02 21:42:49,8778979336.0
+Chennai,"Kavitha Ortho and Multi Speciality Hospital,Chrompet",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-04-22 13:11:06,
+Chennai,"Leela Specialty Hospital,Tiruvottiyur",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-04-22 13:13:20,
+Chennai,"Be Well Hospitals, Ambattur",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,20,16,3,2,2021-04-30 17:15:21,8643093401.0
+Chennai,"New Life Hospital,Rajakilpakkam",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-04-30 16:02:54,
+Chennai,"Kasthuri Hospital,West Tambaram",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-04-30 16:21:06,
+Chennai,"Anand Hospital,Manali",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-01 19:45:29,
+Chennai,"Anbu Hospital, Velachery",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-01 19:48:05,
+Chennai,"ARK Hospital, Velachery",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-01 19:50:24,
+Chennai,"Arokya Hospital, West K.K Nagar",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-02 19:18:55,9791198781.0
+Chennai,"AVS Cardiac Centre,Triplicane",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,2,1,1,0,2021-05-03 16:20:06,9965530302.0
+Chennai,"B.M Hospital,Nanganallur",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-01 19:53:14,
+Chennai,"Care and Cure Speciality Hospital,Ayanavaram",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-01 19:55:52,
+Chennai,"Srushti Hospital, Ramapuram",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-01 20:37:43,
+Chennai,"Chennai National Hospital,Ernavoor",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,4,4,0,0,2021-05-04 07:51:35,9840874528.0
+Chennai,"DRJ Hospitals(P) Ltd,Kolathur",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-01 20:07:27,
+Chennai,"Eswar Medical Foundation, Kolathur",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,2,2021-05-03 19:19:05,9843182112.0
+Chennai,"K.C.Hospital, Avadi",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-01 20:11:15,
+Chennai,"Khm Hospial, Anna Nagar",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-01 20:15:47,
+Chennai,KVT Health Centre,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-01 20:17:29,
+Chennai,M/s Dr.V.BalajiDr.V.Seshiah Diabetes care and R Institute,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-01 20:18:57,
+Chennai,"M/s K.M. Hospital, Vyarsarpadi",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-01 20:20:01,
+Chennai,"MMRV Hospital, Mogappair West",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-01 20:23:00,
+Chennai,"NRG Speciality Hospitals, Ramapuram",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-01 20:29:55,
+Chennai,"Pradeep Nursing Home, Puzuthivakkam",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-01 20:32:14,
+Chennai,"Dr.Shahs Clinic,T.Nagar",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-01 20:05:47,
+Chennai,"Singhvi Health Center, Mint Street",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 08:41:59,9962618755.0
+Chennai,"Sugan Hospital, Neelangarai",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-01 20:40:26,
+Chennai,"Mount Specialty Hospital Pvt Ltd,Adambakkam",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-04-27 16:20:33,
+Chennai,"Nagamani Hospital,Old Washermenpet",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-02 20:15:28,9884661464.0
+Chennai,Nalam Hospital Pvt Ltd,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-04-22 13:15:34,
+Chennai,"Oxymed Hospital,Nandanam",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 14:25:50,9840834352.0
+Chennai,"Pavithra Hospital Pvt Ltd,Teynampet",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-04-22 13:17:03,
+Chennai,"Prasanth Fertility Research Centre,Chetpet",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-04-22 13:18:22,
+Chennai,Pon Malligai Hospital Adambakkam,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 08:18:46,9884850982.0
+Chennai,Right Hospitals Pvt Ltd,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,2,0,0,0,2021-05-03 14:05:29,9500037647.0
+Chennai,"Vasantha Hospital, Thiruvottiyur",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-01 20:45:13,
+Chennai,"Senthil Priya Hospital, Kodungaiyur",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,4,4,0,0,2021-05-03 14:24:15,8681027220.0
+Chennai,"Shens Hospital, Ashok Nagar",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-04-22 13:29:00,
+Chennai,"New Ruthran Hospital,Aynavaram",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-04-27 16:23:57,
+Chennai,"Sri Chakra Multispecialty Hospital,Nanganallur",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-04-22 13:32:44,
+Chennai,Sri Ranga Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-04-22 13:34:36,
+Chennai,"Susi Hospital, Thiruvottiyur",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-04-22 13:35:17,
+Chennai,"Westminster HealthCare,Nungambakkam",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 18:45:35,7550045100.0
+Chennai,"Ashwin Fed Specialty Hospital, Anna Nagar",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-04-22 16:02:59,
+Chennai,"Hindu Mission Hospital,Tambaram",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-02 07:41:30,9500065664.0
+Chennai,"Aditya Kamaraja Hospital Pvt Ltd,Virugambakkam",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,5,4,0,0,2021-05-04 08:40:30,8015101809.0
+Chennai,"Trustlife Medical Centre, Panaiyur",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-01 20:42:49,
+Chennai,"Ezhil Hospital, Tondiarpet",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,2,0,0,0,2021-05-03 19:19:41,9444116336.0
+Chennai,"Swaram Medicare &Research Centre Pvt Ltd, Sholinganallur",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-01 20:41:51,
+Chennai,"Metro Male Clinic a unit of Gunasekaran Hospitals Pvt Ltd,Porur",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,2,2021-05-03 10:15:32,8056912666.0
+Chennai,"Sri Hospital, Tondiarpet",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-04-22 13:33:20,
+Chennai,"Ramani Hospital,Ashok Nagar",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-04-22 13:21:55,
+Chennai,"Anjakha Hospital, Madipakkam",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 14:08:45,
+Chennai,M G M Health Care Pvt Ltd,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 11:52:07,9384002406.0
+Chennai,Chennai Orthopedic Centre -ER,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 07:59:52,9790082003.0
+Chennai,C.s.i Rainy Multi Speciality Hospital Tondaiarpet,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 08:58:38,9941415544.0
+Chennai,"Bloom Fertility and Healthcare, Velachery",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 09:18:48,9551841153.0
+Chennai,Muthu hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,2,2021-05-04 08:55:51,9445330478.0
+Chennai,National Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 07:40:15,9381166707.0
+Chennai,"Billroth Hospitals Shenoy Nagar, Chennai TN.",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,5,2021-05-03 11:08:05,4442921777.0
+Chennai,"New Hope Multi Speciality Hospital, Kilpauk",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 06:59:49,9092967547.0
+Chennai,"Medway Hospital,Mugappair",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 11:36:13,9888888888.0
+Chennai,Bharathiraja Hospital & Research Centre Pvt Ltd,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 08:14:03,9444170203.0
+Chennai,New Lifemed Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,1,2021-05-03 09:02:16,9840021112.0
+Chennai,Bhaarath medical college and hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 10:39:18,446111222.0
+Chennai,Noble Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 16:07:13,9445330478.0
+Chennai,Be Well Hospital Anna nagar,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 07:59:53,9500032230.0
+Chennai,Aysha Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 10:03:25,9381060941.0
+Chennai,Orthomed Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 15:12:34,9940099992.0
+Chennai,Astra Ortho N Spine Care Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,-2,0,0,0,2021-04-23 11:03:05,0.0
+Chennai,Padmini Nursing Home Chetpet,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-01 09:05:07,9791023518.0
+Chennai,"ArunVijaya Hospitals, KK Nagar",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 08:08:57,9444128250.0
+Chennai,Appasamy Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 12:06:49,6379350953.0
+Chennai,Laksha Hospital Royapettah,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-01 09:12:08,9500054797.0
+Chennai,"Apollo Hospitals, Vanagaram",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 14:56:24,7824821042.0
+Chennai,MMRV Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 07:44:20,9884926283.0
+Chennai,Chettinad Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,9,0,0,0,2021-05-03 16:28:53,9094713000.0
+Chennai,Miot Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,84,0,0,0,2021-05-04 08:22:08,7824060120.0
+Chennai,CSI Kalyani General Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 12:52:38,8667243945.0
+Chennai,"KVT Speciality Hospital, Erukanchery",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 09:55:19,7358330026.0
+Chennai,Life Care Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 09:21:44,9003260244.0
+Chennai,Lifeline Hospitals,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 13:42:36,9500073959.0
+Chennai,M.R Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 10:33:59,7305650107.0
+Chennai,Kumaran Hospital Pvt ltd,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 08:51:34,9791144090.0
+Chennai,Kauvery Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 08:41:41,7825809004.0
+Chennai,Karpaga Vinayaga Medical Science & Ri,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,193,17,3,2,2021-04-27 11:43:52,9840797106.0
+Chennai,Kanchi Kamakoti Child Trust Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 10:01:08,9677003334.0
+Chennai,"K.P Hospital, Adambakkam",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 17:32:41,9789987577.0
+Chennai,Hycare Super Speciality Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 15:34:02,7358485718.0
+Chennai,Prashanth Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 13:38:28,9840338752.0
+Chennai,Gunasekaran Hospitals Pvt Ltd,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 10:10:26,8939414061.0
+Chennai,GLB Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,4,1,1,2021-03-09 18:22:02,
+Chennai,GKM Hospital Pvt Ltd,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,2,0,0,0,2021-05-02 07:56:35,8220894051.0
+Chennai,Maya Nursing Home,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 08:32:16,9841383989.0
+Chennai,Girishwari Hospital Alwarpet,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 10:27:12,9677059215.0
+Chennai,Frontier Lifeline Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-04-28 14:33:27,9941055291.0
+Chennai,Medway Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 11:36:39,7299057877.0
+Chennai,Fortis Malar Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-04-25 17:22:41,8939831204.0
+Chennai,Dr.Kamakshi Memorial Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 10:47:10,8754594545.0
+Chennai,Melmaruvathur Aadhiparasakthi Medical College,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,123,14,0,0,2021-05-04 06:33:29,7904683997.0
+Chennai,Mint Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 07:48:29,7338777444.0
+Chennai,Gleneagles Global Health City,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 08:34:38,8056266444.0
+Chennai,"Rama Rau Polyclinc, Kilpauk",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 07:01:31,9092967547.0
+Chennai,Panimalar Medical College & Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 08:08:36,8610850481.0
+Chennai,SIMS Hospital Vadapalani,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 12:55:11,7397783719.0
+Chennai,"Sivam Hospitals, Ullagaram",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 17:44:58,9787859841.0
+Chennai,Sooriya Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 09:23:00,9500085477.0
+Chennai,"Vhs, Adayar",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,3,3,0,0,2021-05-04 06:47:36,4422542971.0
+Chennai,Vihaa Hospital Anna Nagar,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 07:37:16,9841432348.0
+Chennai,Vijaya Group Of Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 09:00:10,9500126786.0
+Chennai,Sree Balaji Medical College & Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,82,0,0,0,2021-05-03 09:59:41,4442911000.0
+Chennai,Srinivas Priya Hospital Perambur,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 14:45:28,7550057577.0
+Chennai,Sree Lakshmi Clinic and Maternity Centre,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,1,2021-05-03 22:04:12,9952900795.0
+Chennai,"Retteri Sri Kumaran Health Centre (P) Ltd, Kolathur",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 08:17:06,9003956999.0
+Chennai,Sims (Srm Institutes For Medical Science Hospital) Nungumbakkam,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 12:56:24,7339355444.0
+Chennai,"KMS Health Centre Pvt Ltd,Selaiyur",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,2,0,1,0,2021-05-04 05:51:27,7200462325.0
+Chennai,Srinivasan Rajalakshmi Memorial Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 07:06:27,9444896010.0
+Chennai,Dr.Metha hospital Chetpet,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,1,2021-05-03 15:45:09,7550000219.0
+Chennai,Sri Sathya Sai Medical College & Research Institue,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,290,16,20,0,2021-05-04 08:42:29,9841714877.0
+Chennai,"Sri Ramachandra Medical College Hospital, Porur",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 08:51:15,8939433555.0
+Chennai,Saveetha Medical College,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,9,1,0,0,2021-05-03 08:42:23,4466726672.0
+Chennai,Nichani Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 08:24:55,9840566854.0
+Chennai,Venkateswara Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 22:01:16,9841275552.0
+Chennai,"The Guest Hospital, Kilpauk",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 09:29:58,8056333495.0
+Chennai,Tosh Hospitals Pvt Ltd,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,5,0,0,1,2021-05-03 11:58:50,9894467903.0
+Chennai,RPS hospital pvt ltd,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-02 09:48:23,7358764200.0
+Chennai,Trinity Acute care Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 11:46:23,8056621324.0
+Chennai,"Sai Speed Hospital, Arumbakkam",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 08:30:31,8610850006.0
+Chennai,Sakthi Hospital Research Centre Triplicane,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 10:53:35,9840264444.0
+Chennai,Sundaram Medical Foundation,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,1,0,1,0,2021-05-04 08:55:42,9884245646.0
+Chennai,Tagore Medical College & Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,185,64,0,0,2021-05-03 10:04:21,4430101111.0
+Chennai,St. Thomas Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 10:41:45,8126948524.0
+Chennai,"Apollo Hospital, Greams Road",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 07:43:37,7397242423.0
+Chennai,Srm Medical College & Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 08:48:13,8056072277.0
+Chennai,"Vasantha Subramanian Hospitals Pvt Ltd, Chetpet",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 11:44:09,9884875111.0
+Coimbatore,Sri Ramakrishna Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,55,0,0,1,2021-05-04 08:49:52,9384086458.0
+Coimbatore,Gem Hospital and Research centre,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,10,0,0,0,2021-05-03 09:26:36,9003932323.0
+Coimbatore,"KMCH Kovilampalayam Hospital, Sathy Road",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 10:41:54,8754187551.0
+Coimbatore,Abinand Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,2,0,1,1,2021-05-04 08:37:46,8838689898.0
+Coimbatore,"Sree Abirami Hospital, Coimbatore TN.",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 08:41:54,9952200057.0
+Coimbatore,"PSG Institute Of Medical Sciences and Research, Coimbatore",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,30,10,0,1,2021-05-04 08:24:15,9894798896.0
+Coimbatore,Manu Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,7,3,4,0,2021-05-04 08:50:39,9789324445.0
+Coimbatore,"Coimbatore Child Trust Hospital,Singanallur",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,14,9,2,1,2021-05-03 10:45:52,7708682666.0
+Coimbatore,Royal Care Super Speciality Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 02:55:54,7397769343.0
+Coimbatore,Royal Care Super Speciality Hospital Gandhipuram,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 02:56:32,7397769343.0
+Coimbatore,"Coimbatore Diabetic Foundation,maruthamalai road",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,16,16,0,0,2021-05-03 19:25:49,9539004198.0
+Coimbatore,"Chennai Hospitals Pvt Ltd, Gandhipuram",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,37,37,7,0,2020-12-10 09:08:46,
+Coimbatore,"CSR Nursing Home, Gandhipuram",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,3,2,1,1,2021-05-04 07:32:46,8300128777.0
+Coimbatore,"Dr.Muthus Hospital, Saravanampatti",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 08:09:23,8012312000.0
+Coimbatore,"FIMS Hospital, Sundarapuram",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,1,1,0,0,2021-05-03 10:40:49,9600240521.0
+Coimbatore,"K.Govindhasamy Memorial Annex Hospital, Saravanampatti",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 10:17:47,9842221801.0
+Coimbatore,"Kalpana Medical Centre Pvt Ltd, Kavundampalayam",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,2,2021-05-03 10:35:35,8508655534.0
+Coimbatore,"Kumaran Medical Centre, Kurumbapalayam",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 06:38:49,9344022222.0
+Coimbatore,"NG Hospital Pvt Ltd & Research Centre, Singanallur",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 09:42:27,9843455564.0
+Coimbatore,"Sathya Medical Centre and Hospital, Sivanandha Colony",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 08:14:21,9994499585.0
+Coimbatore,One Care Medical Centre,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 09:52:52,9894955990.0
+Coimbatore,Kovai Medical College Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 09:38:16,9600400451.0
+Coimbatore,Kongunad Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 16:34:07,7094316000.0
+Coimbatore,KG Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 10:20:07,4222212121.0
+Coimbatore,Karpagam Faculty Medical College And Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,153,12,0,0,2021-05-03 10:20:40,9566760490.0
+Coimbatore,"Hindusthan Hospital, Udaiyampalayam",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,20,0,0,0,2021-05-03 10:18:23,9361694437.0
+Coimbatore,G. Kuppusamy Naidu Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,96,0,0,0,2021-05-03 16:15:38,8220037466.0
+Coimbatore,"Fathima Hospital,Podanur",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,8,0,0,0,2021-05-03 22:38:53,8098011072.0
+Coimbatore,Atlas Pain Care Sowripalayam,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,22,0,0,0,2021-05-04 07:49:39,9865509999.0
+Coimbatore,"N.M. Hospital, Annur",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,2,0,0,0,2021-05-03 09:25:43,9944376111.0
+Coimbatore,"V.G Hospital,Thudiyalur",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 08:15:05,9894288514.0
+Cuddalore,"Kalyaan Speciality Hospital, Alpet",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,14,3,0,0,2021-05-04 07:44:37,9025720095.0
+Cuddalore,"Cuddalore Specialty Hospital,Manjakuppam",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,2,2021-05-04 08:57:04,9543447359.0
+Cuddalore,"NLCIL Hospital,Neyveli",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,121,7,18,2,2021-05-04 08:34:40,9486456293.0
+Dindigul,St.Joseph Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,1,2021-05-04 08:27:40,9842044447.0
+Dindigul,"K T Hospitals, Palani Bye pass Junction",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,21,21,0,5,2021-05-04 08:23:24,9344222202.0
+Dindigul,Shifa Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 07:37:38,9952495710.0
+Dindigul,"Van Allen Hospital, Kodaikanal",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,7,5,1,1,2021-05-04 08:19:49,6374042759.0
+Dindigul,"Shree SathyaSubha Hospital, New Agaraharam",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,4,1,3,3,2021-05-04 07:50:42,6381781885.0
+Dindigul,"JCB Hospitals Palani Road,",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,2,2021-05-04 06:30:23,9150758413.0
+Dindigul,Vel Multispeciality Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,1,0,0,0,2021-05-04 08:04:31,9942466002.0
+Dindigul,"Raja Rajeswari Hospital, Spence Nagar",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,1,2021-05-04 06:02:19,8870504662.0
+Dindigul,City Hospital Gandhi Nagar,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,1,0,1,1,2021-05-04 07:40:16,9150127822.0
+Dindigul,Christian Fellowship Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,20,20,0,0,2021-05-04 08:30:35,8903002554.0
+Dindigul,Christian Fellow Community Centre,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,50,3,0,0,2021-05-04 07:48:32,7598001644.0
+Dindigul,"Sakthi Vinayagar Multispeciality Hospital, Guziliamparai",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,22,2,8,3,2021-05-04 08:10:09,9965534490.0
+Dindigul,Vadamalayan Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,1,2021-05-04 08:11:31,9444444534.0
+Dindigul,Leonard Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,23,5,0,0,2021-05-04 08:42:44,8754680378.0
+Erode,"Veena hospital, nasiyanur",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,18,8,4,0,2021-05-01 13:00:47,9952493428.0
+Erode,"Abirami Kidney Care Dr.Thangavelu Hospital, Brough Road",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,2,0,0,0,2021-05-04 07:23:55,9500794485.0
+Erode,"Bewell Hospitals, Gandhiji Road",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,3,0,0,1,2021-05-04 08:51:36,9445882236.0
+Erode,"Kovai Medical Centre,Erode TN.",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,50,20,0,0,2021-03-15 13:39:08,
+Erode,Erode Medical Centre,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,10,6,4,2,2021-05-04 06:52:47,7373097188.0
+Erode,"Erode Emergency Care Hospital, Veerappampalayam",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,3,0,0,0,2021-05-04 08:07:12,9842730574.0
+Erode,"CSI Hospital, Brough Road",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,15,10,5,0,2021-05-03 16:53:28,9095294663.0
+Erode,"Kalyani Kidney Care Centre, Sampath Nagar Main Road",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,31,21,8,2,2021-05-04 08:01:22,9585285053.0
+Erode,"C.K.Hospital, Balasubbrayalu Street",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,2,1,0,0,2021-05-04 07:19:18,9994500470.0
+Erode,"Erode multispeciality Hospital, Erode",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,2,2021-05-03 10:09:06,8248930767.0
+Erode,"Nandha Medical College and Hospital, Pitchandampalayam",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-01 20:26:57,
+Erode,"Senthil Multi Speciality Hospital, Perundurai Road",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 07:10:25,9043165444.0
+Erode,"Ortho Life Hospital, Anusha Hospital Complex",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,2,0,0,3,2021-05-04 08:01:52,7402614057.0
+Erode,Maaruthi Medical Centre And Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,10,4,3,1,2021-05-04 07:21:57,9965764830.0
+Erode,Sudha Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 07:42:53,9095662211.0
+Kallakurichi,Maragadam Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,15,6,2,1,2021-05-03 08:49:15,9443234056.0
+Kallakurichi,Lotus Paediatric Emergency Centre,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,7,0,7,0,2021-05-03 09:42:51,8012761551.0
+Kallakurichi,I Med Super Speciality Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,1,2021-05-04 08:54:41,9751344576.0
+Kallakurichi,Annai Medical Centre,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,4,0,4,4,2021-05-04 08:36:18,6385867899.0
+Kallakurichi,Sri Sanjeevi Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 10:49:31,9750999352.0
+Kallakurichi,S A Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,5,3,0,1,2021-05-04 08:29:20,9600523290.0
+Kallakurichi,E.S. Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,25,6,10,6,2021-05-03 09:49:34,9443147949.0
+Kancheepuram,"PCMC Hospital, Pallavaram",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-01 20:31:28,
+Kancheepuram,Mahalakshmi Multispecialty Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 08:57:40,8610485027.0
+Kancheepuram,Meenakshi Medical College,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,41,0,0,0,2021-05-03 12:59:18,6380607107.0
+Kancheepuram,"KPP Multispeciality Hospital, Sholinganallur",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-01 20:16:36,
+Kancheepuram,Bon Secuors Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,30,5,0,0,2021-05-02 09:47:57,9943271810.0
+Kancheepuram,"Jaya Hospital,Sriperumbudhur",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-04-22 13:03:34,
+Kancheepuram,Sri Muthukumaran Medical College,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,359,44,9,3,2021-05-03 09:03:32,9600002646.0
+Kancheepuram,Apollo Medical Centre Karapakkam,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 08:05:05,9962061211.0
+Kancheepuram,Chennai Urology & Robotics Institute Hospital Thoraippakkam,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,5,5,0,0,2021-05-03 12:53:43,9894791989.0
+Kancheepuram,Madha Medical College&Research Institute,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,87,13,1,0,2021-05-03 10:46:32,8870209559.0
+Kancheepuram,"TCS, Sirucherry",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,2,0,0,0,2021-05-04 08:57:40,7904569873.0
+Kanyakumari,Swamiyarmadam Rathna Memorial Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 07:03:16,9750973290.0
+Kanyakumari,"Manuel Orthopedic Hospital, therekaalputhoor",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,2,0,2,2,2021-05-04 07:06:22,9750883676.0
+Kanyakumari,"Joseph Sahayam Speciality Hospital, Nagerkoil",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,61,30,6,4,2021-05-04 07:05:54,9566301338.0
+Kanyakumari,"Thasiah Medical centre, Marthandam",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,20,10,10,2,2021-05-04 07:06:52,9952249470.0
+Kanyakumari,"Catherinebooth hospital,Nagercoil",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,40,20,6,1,2021-05-04 07:07:21,9442282220.0
+Kanyakumari,Bensam Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,29,19,1,1,2021-05-04 07:02:17,9994224606.0
+Kanyakumari,"William Hospital,Nagercoil",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,25,10,5,0,2021-05-04 07:03:45,9443331977.0
+Kanyakumari,"Vijayakumar Hospital,Swamiyarmadam",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,30,20,3,0,2021-05-04 07:04:17,9443161102.0
+Kanyakumari,Holy Cross Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,16,12,2,0,2021-05-04 07:10:20,9944844355.0
+Kanyakumari,Morris Mathiys hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 07:09:51,9843461901.0
+Kanyakumari,Dr. Jayasekaran Medical Trust Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 07:05:27,9443992484.0
+Kanyakumari,"PPK hospital, Marthandam",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,22,12,6,2,2021-05-04 07:08:23,9442521919.0
+Kanyakumari,"Dr. Kumaraswami Health Centre, Perumalpuram",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,26,7,2,1,2021-05-04 07:07:51,7397617648.0
+Kanyakumari,Sree Mookambika Institute of Medical Sciences,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,161,75,8,10,2021-05-04 08:56:13,8281182955.0
+Kanyakumari,"Bethesda Hospital, Nagercoil",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,7,0,7,2,2021-05-04 07:01:09,9566519491.0
+Kanyakumari,"Siva Hospital, Nagercoil",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,3,2021-05-04 07:00:37,9443152469.0
+Kanyakumari,C.S.I.MISSION HOSPITAL,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,76,40,2,0,2021-05-04 07:04:49,8903103400.0
+Kanyakumari,Vasantham Health Centre,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 07:02:45,9003200684.0
+Karur,"Abishek Hospital, Karur Tn.",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,1,0,0,0,2021-05-04 08:07:35,9790555151.0
+Karur,"ABS Hospital, Thanthonimalai",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,8,2,6,3,2021-05-03 15:17:53,8300393424.0
+Karur,"Sri Rathina Hospital,Muthu Nagar",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 15:19:10,9047077345.0
+Karur,Amaravathi Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,2,2021-05-04 07:13:02,9585111073.0
+Karur,"Apollo Logo Hospital,Karur",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 08:56:53,9524699211.0
+Karur,"Deepa Kannan Hospital, Muthu Nagar",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,11,5,1,1,2021-05-03 15:38:13,9047785417.0
+Karur,Nachimuthu hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,5,3,2,1,2021-05-04 06:45:16,9566854364.0
+Karur,"GC Hospital, Karur Tn.",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,9,6,1,1,2021-05-04 08:13:29,9659974311.0
+Karur,"Nathan Hospital, Anna Arch",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-01 20:28:02,
+Krishnagiri,"Gunam super speciality hospital,Hosur",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 10:11:42,9566652143.0
+Krishnagiri,St.Louis Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,37,37,0,0,2020-12-07 08:53:49,
+Krishnagiri,"Sri Chandrasekaran Hospital unit -2, Hosur",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 14:19:43,9655206592.0
+Krishnagiri,"St.Peter’s Medical College Hospital & Research Institute, Hosur",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-01 20:38:43,
+Krishnagiri,Chandrasekara Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 14:20:14,9655206585.0
+Krishnagiri,"S.B.S. Hospital, Hosur",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,10,10,0,0,2021-05-03 21:41:25,9940250125.0
+Krishnagiri,"Uma Kumar Hospital, Hosur",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 06:35:32,9443230269.0
+Krishnagiri,"Kauvery Hospital, Hosur",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 09:44:42,7402733320.0
+Krishnagiri,"Shree Arunachala Hospital,Krishnagiri",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-01 20:34:37,
+Krishnagiri,Vijay Sai Health Care Pvt Ltd,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,1,1,0,0,2021-05-04 08:10:22,9791938235.0
+Krishnagiri,Nathan’s Speciality Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,2,1,0,0,2021-05-02 10:28:52,8248586758.0
+Krishnagiri,"Lakshmi Hospital,Hosur",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-01 20:18:19,
+Krishnagiri,"Surya Multispeciality Hospital, Hosur",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-01 20:41:11,
+Madurai,"Vetri Siddha Hospital, Thaniciyam (Siddha)",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,54,3,0,0,2021-05-04 08:44:18,9500967789.0
+Madurai,Apollo Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 06:32:48,4524341187.0
+Madurai,Velammal Medical College Hospital and Research Institute,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,10,2021-05-04 08:29:49,8489900800.0
+Madurai,Vadamalayan Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 07:01:40,4522545400.0
+Madurai,"Thembavani Hospital,Gnanaolipuram",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 08:47:55,9047116145.0
+Madurai,Shenbagam Hospitals Pvt Ltd.,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,12,10,2,3,2021-05-04 08:46:01,9750951115.0
+Madurai,Bharathi Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 06:47:47,8015638874.0
+Madurai,Devadoss Multispeciality Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,3,0,0,0,2021-05-04 08:44:51,8072738401.0
+Madurai,Saravana Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,12,0,4,0,2021-05-04 07:58:35,9894196876.0
+Madurai,Rahavendhar Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,2,0,0,0,2021-05-03 08:42:13,8220044611.0
+Madurai,Meenakshi Mission Hospital and Research Centre,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,22,0,0,0,2021-05-04 07:46:55,9524128222.0
+Madurai,"Genezen Indus Hopsital,Madurai",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,12,4,8,0,2021-05-04 07:28:23,7397558274.0
+Madurai,Lakshmana Multispeciality Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,11,0,1,0,2021-05-04 01:08:53,7373072104.0
+Madurai,"Harshitha Hospital, Avaniyapuram",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,7,0,0,0,2021-05-04 06:08:34,9865015729.0
+Madurai,"Harshini Hospital,Sathamangalam",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,17,10,0,0,2021-05-04 07:35:54,9677736322.0
+Madurai,"Sumathi Hospital & Fertility Center,Anna Nagar",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,1,2021-05-04 08:54:23,7358800889.0
+Madurai,Guru Multispeciality Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,5,0,0,2,2021-05-04 07:45:50,9944485353.0
+Madurai,"Asirvatham Speciality Hospital, Gandhi Nagar",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,20,3,2,2,2021-05-04 08:10:41,9500440696.0
+Madurai,Aristo Speciality Hospital Ponmeni,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 08:45:58,8940222211.0
+Madurai,Vijaya Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,1,2021-05-04 07:19:59,9003401778.0
+Madurai,"Vikram Multispeciality hospital, Madurai",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,8,0,7,2,2021-05-03 17:18:14,9150891207.0
+Madurai,"Iswarya Fertility Services Pvt Ltd,Ellis Nagar",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,8,1,3,0,2021-05-04 08:22:32,8883306695.0
+Madurai,"Karunai Multispecialty Hospital, B.B Kulam",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,2,1,0,1,2021-05-04 08:14:29,7806883692.0
+Madurai,"Swarnakamalam (SKG) Multispeciality Hospital Pvt Ltd, Thirumanagalam",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,14,3,6,6,2021-05-04 07:38:53,9003900349.0
+Madurai,"Grace Kennett Foundation Hospital, Kennett Road",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,6,5,1,1,2021-05-04 07:36:53,9943450401.0
+Madurai,"Gowri Nursing Home, Jeeva Nagar",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,15,3,0,0,2021-05-04 06:09:11,9944458354.0
+Madurai,"Dr.Chidambaram Memorial Hospital, Jai Hind puram",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 07:22:29,8122486160.0
+Madurai,"BGM Hospital, Iyer Bungalow",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,1,2021-05-04 08:52:55,9047075271.0
+Madurai,"Thavam Hospital, K.Pudhur",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,4,1,3,0,2021-05-04 00:56:40,6381046461.0
+Madurai,"Ahana Hospital,11,Subramanian st,Annanagar,Madurai",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 08:52:10,9659462722.0
+Madurai,"Raksha Hospital, Anna Nagar",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,10,2,4,0,2021-05-04 08:52:20,8012222833.0
+Madurai,"Hannah Joseph Hospital Pvt Ltd, Chinthamani",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,10,0,0,0,2021-05-04 08:39:26,9385353352.0
+Madurai,"Santhya Speciality Hospital, Arappalaiyam Main Road",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,15,4,6,1,2021-05-04 07:02:20,6381589553.0
+Madurai,Rio Hospital Vandiyur,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,17,5,4,4,2021-05-04 08:45:38,7639845222.0
+Madurai,Raks Hospital Anna Nagar,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,6,6,0,5,2021-05-03 09:06:31,9003900364.0
+Madurai,NTC Hospitals Vaithiyanathapuram,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 07:01:14,9894208601.0
+Madurai,Nithilaa Nursing Home Palanganatham,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,2,2021-05-04 06:10:56,9443744085.0
+Madurai,"KJS Speciality Hospital,K.Pudur",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,7,0,0,1,2021-05-04 08:12:37,9629373744.0
+Madurai,Bala Hospital Usilampatti,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,2,2021-05-04 07:33:48,9443548450.0
+Madurai,Thirusenthilandavar Multispeciality Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,10,2,2,1,2021-05-04 08:39:31,7708773633.0
+Mayiladuthurai,Shanthi Nursing Home,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-04-21 08:35:16,
+Mayiladuthurai,Ram Bone And Joint Hospial,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-04-21 08:42:15,
+Mayiladuthurai,Vishnu hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,6,1,3,1,2021-05-04 08:27:16,9489858034.0
+Mayiladuthurai,Cahoj Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,10,6,0,0,2021-05-04 08:21:40,9488755241.0
+Nagapattinam,"Arun Priya Nursing Home, Nagapattinam TN.",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-04-21 07:45:49,
+Namakkal,"Varun Hospital, Rasipuram",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-01 20:43:42,
+Namakkal,Swamy Vivekanandha Medical College Hospital and Research Institute,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,100,40,10,10,2021-05-04 07:33:43,8220995440.0
+Namakkal,Aravinth Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,21,9,1,4,2021-05-04 07:05:52,9443221491.0
+Namakkal,"Sakthi Hospital,Namakkal",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,7,5,2,1,2021-05-04 06:55:45,9715180099.0
+Namakkal,M.M.Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,44,40,4,4,2021-05-04 06:45:35,9585554551.0
+Namakkal,Maharaja Speciality Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,2,2021-05-04 06:28:40,8778642130.0
+Namakkal,Thangam Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 06:36:24,9843230685.0
+Namakkal,Vivekanandha Medical Care Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,26,9,0,1,2021-05-04 07:35:50,9566908225.0
+Namakkal,"Shree Akhshaya Hospital Namakkal, TN.",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,5,0,0,0,2021-05-04 06:38:14,9629492325.0
+Namakkal,"Soorya Multispechiality Hospitals, Namakkal TN.",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,6,4,2,1,2021-05-04 06:58:26,9942251163.0
+Namakkal,Visaalam Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,27,5,1,1,2021-05-04 06:46:35,8072734246.0
+Perambalur,"Sanjjeev Hospital,Venkatesapuram",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,10,6,0,1,2021-05-03 10:22:39,9600763858.0
+Perambalur,Amma Hospital Thuraimangalam,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 10:24:50,7708504141.0
+Perambalur,Devi Hospital Elambalur,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 10:27:06,9025336754.0
+Perambalur,Dhanalakshmisrinivasan Medical College And Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,54,25,0,0,2021-05-03 09:20:04,9787439039.0
+Perambalur,Dr. Venkatesan Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 10:26:21,8903424627.0
+Perambalur,Lakshmi Nursing Home,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,7,4,3,2,2021-05-03 08:07:52,7402191296.0
+Perambalur,Madhu Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 10:27:30,9994606103.0
+Perambalur,Niranjan Nursing Home,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 10:19:33,9082485702.0
+Perambalur,Pedro Nursing Home,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 10:24:13,7339204920.0
+Perambalur,Ramasamy Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 10:21:09,9597829922.0
+Perambalur,Siva Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 06:10:21,9952689388.0
+Perambalur,SPT Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 10:22:06,9566858686.0
+Perambalur,Aruptha Multispeciality Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,7,0,0,0,2021-05-03 10:19:04,9840694249.0
+Pudukkottai,"Pudhugai Star Hospital,Pudukottai",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,3,2,1,3,2021-05-04 08:47:01,7708219190.0
+Pudukkottai,Muthu Meenakshi Hospitals,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,40,25,15,3,2021-05-04 08:34:01,7094446315.0
+Ramanathapuram,Meera Clinic,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,2,2021-05-04 08:09:06,9443190986.0
+Ramanathapuram,"Arogya Hospital, Kenikarai",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,14,6,8,1,2021-05-04 08:44:19,7810084283.0
+Ramanathapuram,Aasi Multi Speciality Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,19,15,4,1,2021-05-04 08:50:42,7708287735.0
+Ramanathapuram,Kanagamani Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-04-26 09:09:55,9965281061.0
+Ramanathapuram,Vel Hospital Ramanathapuram,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,13,0,13,2,2021-05-04 08:08:35,9487804442.0
+Salem,Thiru Neuro And MultiSpecility Salem,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,6,1,0,0,2021-05-04 08:59:39,7708959395.0
+Salem,"Kamala Hospital,Agraharam",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 16:35:44,9842719451.0
+Salem,"Universal Cancer Hospital, Kondalampatty",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,3,1,2,2,2021-05-03 10:48:36,9842048356.0
+Salem,Kurinji Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 12:07:46,9443244774.0
+Salem,Manipal Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,2,2021-05-03 09:50:06,4272346600.0
+Salem,Priyam Speciality Hospitals,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,3,2021-05-03 09:51:37,7010708284.0
+Salem,Shanmuga Hospital Cancer Institute,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,14,2,5,0,2021-05-03 17:46:10,8754033833.0
+Salem,SKS Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,20,2021-05-03 09:33:01,4274033333.0
+Salem,Sri Gokulam Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,2,0,0,0,2021-05-03 09:49:53,4272338800.0
+Salem,"Shri Hospitals, Shankar Nagar",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,2,2,0,2,2021-05-04 02:11:54,9842769906.0
+Salem,"Geeth Raghunath Hospital, Attur",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,9,5,4,2,2021-05-03 19:31:08,9842750556.0
+Salem,Aishwaryam Speciality Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,43,40,3,2,2021-05-03 08:50:57,9790441772.0
+Salem,Vinayaka Mission Super Specialty Hospitals Pvt Ltd,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,5,0,5,2,2021-05-03 11:42:02,9500182225.0
+Salem,Vinyaga Mission Kirubanandha Variyar Medical College Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 11:36:03,9751380971.0
+Salem,"Karthik Medical Centre, Idappadi",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,5,0,0,1,2021-05-03 17:15:12,9600380076.0
+Salem,"Shivasurya Polyclinic, Salem",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,3,0,0,0,2021-05-04 00:28:06,9443173270.0
+Salem,"Sree Vasantham Hospital, Gugai",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,3,2021-05-03 17:27:08,9514399992.0
+Salem,"Deepam Hospital,Salem",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,34,27,0,0,2021-05-03 19:12:54,6384003000.0
+Salem,"Appu Venkatachalam Medical Research Centre (P) Ltd, Kattur",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,14,6,2,0,2021-05-03 10:15:42,9894940904.0
+Salem,"Malar Hospital,Vazhapadi",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,6,2,2,0,2021-05-04 06:47:18,8270562733.0
+Salem,"Deepam Speciality Hospital, Vazhapady",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,66,26,0,2,2021-05-04 07:01:11,9787702400.0
+Salem,"Sundaram Multispecialty Hospital,Salem",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,3,2021-05-03 09:38:05,8807661168.0
+Salem,"GL Hospital, Swarnapuri",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,13,10,3,0,2021-05-04 08:23:11,9994050605.0
+Salem,RK hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,2,2021-05-03 12:42:32,7373004777.0
+Salem,Sree jeyam ortho & multispeciality Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 10:00:05,9597982434.0
+Salem,K.M Natraj's Nursing Home,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,20,10,5,2,2021-05-03 15:59:02,9025004345.0
+Salem,"Kauvery Hospital, Salem",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,3,2021-05-03 17:26:57,7094337172.0
+Salem,Saravana Hospital Ponnamapet,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 09:50:28,9787116116.0
+Salem,Annapoorna Medical College and Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,96,22,2,3,2021-05-03 15:31:38,9585938970.0
+Salem,AP Medical Centre,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,4,0,0,0,2021-05-03 16:34:41,9994930184.0
+Salem,Dharan Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,5,5,0,0,2021-05-03 10:54:00,9047079990.0
+Salem,"Sri Shellapha Hospital, Salem",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,22,0,0,0,2021-05-03 17:50:31,9894264333.0
+Salem,"Kavin Hospital,Omalur",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,5,3,2,1,2021-05-03 18:49:16,9944332762.0
+Salem,Mohanraj Children's Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,70,60,10,0,2021-05-04 08:46:48,9843026086.0
+Salem,"Nathan Super Speciaty Hosptial, Salem",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,23,5,1,2,2021-05-03 09:31:36,9894276633.0
+Sivagangai,Devaki Multi Speciality Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,15,9,6,1,2021-05-03 15:09:21,7824950986.0
+Sivagangai,"Madha Hospital, Manamadurai",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,38,4,10,1,2021-05-03 15:32:12,7904443644.0
+Sivagangai,Karthick Multi Speciality Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,17,10,1,1,2021-05-03 15:16:04,8883894416.0
+Sivagangai,Kauvery Hospital Karaikudi,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,4,0,4,4,2021-05-04 08:27:12,6381456995.0
+Sivagangai,Apollo,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 15:35:36,7397591935.0
+Sivagangai,"Jedaiah Steve Hospital,Karaikudi",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 08:20:04,8054484748.0
+Sivagangai,Senthil hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,8,5,3,4,2021-05-03 19:31:18,8012519266.0
+Tenkasi,"Mathura Hospital, Surandai",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,8,0,0,1,2021-05-04 08:12:00,9486285464.0
+Tenkasi,"Santhi Hospital, Vaikkalpalam, Tenkasi",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,5,0,4,1,2021-05-04 08:13:02,7305009427.0
+Tenkasi,"Meeran Hospital, Tenkasi",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,1,2021-05-04 08:12:29,9600692323.0
+Thanjavur,"Vijay Poly Clinic, Kumbakonam",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 06:16:26,8870011952.0
+Thanjavur,National pharma,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,3,2021-05-04 06:17:03,9524241241.0
+Thanjavur,"Dr.Vanchilingam Hospital Pvt Ltd,K.S Nagar",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,11,10,1,1,2021-05-04 07:21:37,9626425681.0
+Thanjavur,Meenakshi Multispeciality Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 06:13:17,7373799855.0
+Thanjavur,"Medway Hospital, Kumbakonam",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,13,2,1,0,2021-05-04 06:15:02,9790793659.0
+Thanjavur,Sri Kumaran Gastro Private Ltd,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,3,2,1,2,2021-05-04 08:50:46,9786006825.0
+Thanjavur,Dravidian Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,5,1,4,1,2021-05-04 06:50:57,7550372088.0
+Thanjavur,"Kanakesa Thevar Memorial Hospital,Thanjavur",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,11,9,2,2,2021-05-04 06:49:15,9842741902.0
+Thanjavur,Our Lady Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,12,0,9,2,2021-05-04 08:16:19,8489906295.0
+Thanjavur,"MVK Hospital, Thanjavur",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,2,2021-05-04 06:27:34,9566201833.0
+Thanjavur,Vinodhagan Memorial Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,1,0,1,2,2021-05-04 08:54:13,4362234885.0
+Thanjavur,KG Multi Speciality Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,25,18,7,12,2021-05-04 07:01:43,9842349875.0
+Thanjavur,"Sri Naadi Hospital, Pattukottai",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,13,7,3,1,2021-05-04 06:53:59,9942104455.0
+TheNilgiris,Nankam Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,5,3,0,2,2021-05-04 08:41:10,9488834087.0
+TheNilgiris,Sagayamatha Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,10,2,0,0,2021-05-04 08:40:45,9447276304.0
+TheNilgiris,"Kotagiri Medical Fellowship Hospital,Kotagiri",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,10,8,2,1,2021-05-03 16:50:15,9585259479.0
+TheNilgiris,Ashwini Gudalur Tribal Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,12,4,0,0,2021-05-03 16:39:24,9487257321.0
+TheNilgiris,"Shiva Shakthi Hospital,Udagamandalam",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,4,4,0,0,2021-05-03 16:05:50,9486253427.0
+Theni,"Ramapadyan Hospital, A.Pudur Vilakku",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,13,2,1,1,2021-05-04 08:01:36,9003398211.0
+Theni,NRT hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,24,7,3,3,2021-05-04 07:35:48,9894447717.0
+Theni,Krishnammal Memorial hospital.,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,14,4,5,0,2021-05-04 06:52:34,9786629040.0
+Theni,Arun Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,23,10,3,0,2021-05-04 07:27:17,9443328375.0
+Theni,"Nalam Hospital, Allinagaram",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,3,3,0,0,2021-05-04 07:51:57,8870007450.0
+Theni,"Theni Medical Centre, Nehruji Road",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 07:28:24,9361917118.0
+Thiruchirappalli,"SMS Hospital,Salai Road",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,16,10,3,2,2021-05-04 08:04:42,9750958305.0
+Thiruchirappalli,Royal Pearl Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,15,10,2,5,2021-05-04 07:48:09,8300244928.0
+Thiruchirappalli,Sri Kumaran Hospital Manapparai,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,16,6,4,0,2021-05-04 06:39:02,9003772250.0
+Thiruchirappalli,Sri Venkateswara Hospital T.V Koil,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,6,6,0,0,2021-05-04 08:36:42,7604919191.0
+Thiruchirappalli,"Prabhu Diabetes Specialty Centre,Trichy",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 08:43:24,9787955955.0
+Thiruchirappalli,Atlas Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,1,2021-05-04 07:48:54,7092980125.0
+Thiruchirappalli,"Akshaya Hospital,Thottiyam",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,5,0,2,0,2021-05-04 08:20:30,9566683380.0
+Thiruchirappalli,"Neuro One Hospital, Karur Bye Pass Road",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,5,2021-05-04 08:54:46,9095579303.0
+Thiruchirappalli,"Kathir Hospital, Woraiyur",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,6,0,0,0,2021-05-04 08:51:03,9865355503.0
+Thiruchirappalli,"Silverline Speciality Hospital, Thillai Nagar",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,8,5,1,1,2021-05-04 08:49:24,9384875957.0
+Thiruchirappalli,"Kavery Medical Centre And Hospital, Trichy",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,6,0,0,0,2021-05-03 16:13:33,9626767945.0
+Thiruchirappalli,Maruti Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,2,2021-05-04 08:34:46,9944920163.0
+Thiruchirappalli,Sinduja Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,7,2021-05-04 08:04:56,9442009956.0
+Thiruchirappalli,"SRM Medical College Hospital And Research Centre, Trichy",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,25,4,11,1,2021-05-03 16:36:57,8939999269.0
+Thiruchirappalli,"Aiyshwariya Hospital, Woraiyur",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,9,2,5,1,2021-05-04 08:56:18,9791498865.0
+Thiruchirappalli,Dr.G.Viswanathan Hospital Mambalasalai,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 08:18:58,9344270185.0
+Thiruchirappalli,Apollo Speciality Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 08:21:57,9842164211.0
+Thiruchirappalli,G V N Hospital Pvt Ltd,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,26,2,2,2,2021-05-04 04:27:40,9095505550.0
+Thiruchirappalli,"Sugam Hospital, Manapparai",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,16,4,2,0,2021-05-04 08:51:33,9965015543.0
+Thiruchirappalli,"Sundaram Hospital, Pudhur",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,3,0,0,2,2021-05-04 07:46:52,8903679900.0
+Thiruchirappalli,"Jagadha Hospital,Thillai Nagar",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,10,6,0,0,2021-05-04 09:00:47,9488333620.0
+Thiruchirappalli,"Kanapathy Memorial Hospital, Musiri",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,10,4,4,2,2021-05-04 08:48:06,9566813205.0
+Thiruchirappalli,Kavi Hospital & Neuro Foundation,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,3,1,2,2,2021-05-04 08:37:56,9843005288.0
+Thiruchirappalli,"Trichy Medical Centre and Hospital, Thillai Nagar",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,1,2021-05-04 08:47:09,9842011199.0
+Thiruchirappalli,"Decca Hospital, Thillai Nagar",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,5,3,1,1,2021-05-04 08:47:02,9842410780.0
+Thiruchirappalli,Mangalam Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 08:54:13,9092829992.0
+Thiruchirappalli,"Athma Hospitals, Thillai Nagar",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,2,1,0,1,2021-05-04 07:46:10,9865779707.0
+Thiruchirappalli,MMM Multi Speciality Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,20,18,0,1,2021-05-04 08:38:40,9600340430.0
+Thiruchirappalli,Assured Best Care Hospital(P) Ltd (ABC Hospital) Annamalai Nagar,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 08:53:24,9655240724.0
+Thiruchirappalli,"Max Care Hospital, Annamalai Nagar",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,5,3,1,2,2021-05-04 08:14:01,9600073580.0
+Thiruchirappalli,"Retna Global Hospital, Tennur",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,1,2021-05-04 08:40:58,9245148941.0
+Thiruchirappalli,"Star KIMS Hospital, Thillai Nagar",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,9,9,0,6,2021-05-04 08:21:16,9789488894.0
+Thiruchirappalli,"Velan Speciality Hospital, Highways Colony",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 07:47:31,7339565444.0
+Thiruchirappalli,"Sri AuroMa Hospital,Trichy",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,10,4,0,0,2021-05-04 08:44:06,9894226648.0
+Thiruchirappalli,"City Medical Center, Thennur",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,5,2,2,1,2021-05-04 08:46:25,7397271129.0
+Thiruchirappalli,Pankajam Sitaram Nursing Home (A Unit Of GVN Hospital),N/A,N/A,https://stopcorona.tn.gov.in/beds.php,6,6,0,2,2021-05-04 08:35:46,9095505550.0
+Thiruvarur,Thiruvarur Medical Centre,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,15,15,0,1,2021-05-04 07:35:55,9788188177.0
+Thiruvarur,"Raj Hospital, Mannargudi",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 06:54:49,9487701007.0
+Thiruvarur,"P.K.T Nursing Home, Thiruthuraipoondi",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,15,15,4,0,2021-04-26 18:12:05,
+Thiruvarur,Navajeevan Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,1,2021-05-04 06:54:00,7339603757.0
+Thoothukudi,Sacred Heart Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,1,2021-05-04 08:48:20,9443260714.0
+Thoothukudi,Sri Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,8,7,1,1,2021-05-04 08:14:36,9442667069.0
+Thoothukudi,Public Welfare Hospital Kovilpatti,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,4,0,0,1,2021-05-04 08:30:44,9080025238.0
+Thoothukudi,"Sree Chendur Multispeciality Hospital, Kovilpatti",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,3,0,3,0,2021-05-04 07:50:35,9442130965.0
+Thoothukudi,"K.M.T Hospital, Kayalpatnam",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,2,0,2,1,2021-05-04 08:08:17,9489659868.0
+Thoothukudi,Suganthi Nursing Home (Unit of Sundaram Arulrhaj Hospitals),N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,3,2021-05-04 08:07:19,8220705749.0
+Thoothukudi,"Sasi Hospital, Kovilpatti",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,10,10,0,1,2021-05-04 07:45:56,6382253140.0
+Thoothukudi,"Aarthi Hospital, Kovilpatti",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,1,2021-05-04 08:49:50,9443141811.0
+Thoothukudi,"Jayashri Hospital,Tuticorin",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,1,2021-05-04 08:28:23,9944393258.0
+Thoothukudi,"City Hospital, Tuticorin",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-04-21 09:02:18,
+Thoothukudi,"Kamala Speciality Hospitals Pvt Ltd, Kovilpatti",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,1,2021-05-04 08:24:16,9487576077.0
+Thoothukudi,Arputham Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,2,2021-05-04 08:32:23,7373762266.0
+Tirunelveli,Peace Health Centre,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 07:28:49,8754950234.0
+Tirunelveli,"Sudharson Platinum Hospitals, Vannarpettai",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,6,0,0,3,2021-05-04 07:48:47,8946079430.0
+Tirunelveli,Shifa Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,3,2,0,0,2021-05-04 08:45:06,9952795456.0
+Tirunelveli,VJ Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 07:07:28,9843604611.0
+Tirunelveli,"Muthu Hospital, Kulavanigarpuram",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,11,8,3,2,2021-05-04 08:43:20,9344096079.0
+Tirunelveli,"Gold Child & Chest Hospital,Vannarpettai",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,13,13,0,0,2021-05-04 08:44:28,9488071754.0
+Tirunelveli,Rosemary mission hospital and research centre,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 08:41:01,7598264064.0
+Tirunelveli,"Royal Hospital, NGO Colony",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 08:41:50,9487057857.0
+Tirunelveli,Ponra Multispeciality Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,1,1,0,2,2021-05-04 08:18:25,8300508737.0
+Tirunelveli,"Annai Velankanni Multi Speciality Hospital, Palayamkottai",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 08:19:38,7540094100.0
+Tiruppur,"Vel Hospital, Dharapuram",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,9,4,1,1,2021-05-03 15:41:34,8610931703.0
+Tiruppur,"Vel Hospital,Udumalpet",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,1,0,1,2,2021-05-03 16:00:47,9751766002.0
+Tiruppur,"Bala Ortho Hospital, Dharapuram",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,7,1,6,3,2021-05-03 08:19:41,9843859353.0
+Tiruppur,Revathi Medical Centre,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,2,0,0,3,2021-05-03 16:52:39,8072570015.0
+Tiruppur,"Sakthi Nursing Home,Tiruppur",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,2,2021-05-04 08:25:55,9597413083.0
+Tiruppur,"Kongu Heart Center, Dharapuram",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,18,9,8,0,2021-05-03 13:45:39,9629025780.0
+Tiruppur,OMS Hospital Tiruppur,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,3,0,0,2,2021-05-03 11:13:51,8586894306.0
+Tiruppur,Malarpriya Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,15,3,3,2,2021-05-03 10:51:54,9626264800.0
+Tiruppur,"CNS Hospitals, Palangarai",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 20:21:53,9994655886.0
+Tiruppur,Velan Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,3,2021-05-04 07:57:00,8248725224.0
+Tiruppur,Sri Kumaran Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,2,2021-05-03 16:29:11,9842399300.0
+Tiruvallur,"Sri Sundharsanam Hospital, Avadi",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-01 20:37:02,
+Tiruvallur,SKS HOSPITAL,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,1,2021-05-04 08:13:37,9841091403.0
+Tiruvallur,"MMRV Hospital, Azhinjivakkam",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-01 20:21:40,
+Tiruvallur,"Be well , Ponamallee",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,2,0,0,0,2021-05-03 16:38:55,7092937252.0
+Tiruvallur,ACS Medical College And Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,18,0,0,0,2021-05-04 07:27:09,9003060052.0
+Tiruvallur,Peacock Hospitals Private Limited,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,2,1,0,0,2021-05-03 08:47:20,9629196441.0
+Tiruvallur,RIMS Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,3,2021-05-03 10:06:14,6383183388.0
+Tiruvallur,Raj Nursing Home Mogappair East,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,2,2021-05-03 10:01:39,8921334594.0
+Tiruvallur,Ravina Health Care Pvt Ltd,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-02 19:49:15,9840036349.0
+Tiruvallur,Sri Ivan Stedeford Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 08:37:49,9489136071.0
+Tiruvallur,Sugam Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 17:17:48,9551979777.0
+Tiruvallur,"Chennai Health Foundation, Ambatur",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-01 20:00:46,
+Tiruvallur,Aakash Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 00:54:09,9087182644.0
+Tiruvannamalai,"Arunai Hospital,Thenmathur",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-01 19:51:58,
+Tiruvannamalai,Ramana Maharishi Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,13,0,0,2,2021-05-04 08:30:37,9486047737.0
+Vellore,Naruvi Hospitals(A Unit of m/s.Sanco ),N/A,N/A,https://stopcorona.tn.gov.in/beds.php,1,0,1,19,2021-05-03 09:13:44,8754016970.0
+Vellore,Sri Narayani Hospital and Research Centre,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,7,2021-05-03 10:31:11,7358387146.0
+Vellore,Christian Medical College Kannigipuram campus,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,51,51,0,0,2020-11-03 07:34:58,
+Vellore,Christian Medical College,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,14,14,0,0,2021-05-03 15:38:04,9385285970.0
+Vellore,Apollo KH Hospital Ranipet,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-03 16:32:00,9500458786.0
+Virudhunagar,"VVVNC, Chatrarediapatti",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,22,12,10,1,2021-05-04 07:39:53,9940757475.0
+Virudhunagar,"Chennai Hospital, Rajapalayam",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 07:59:29,9940038663.0
+Virudhunagar,"Sri Ram Hospital - Sugasthala,Aruppukottai",N/A,N/A,https://stopcorona.tn.gov.in/beds.php,3,1,2,1,2021-05-04 07:57:06,9443961888.0
+Virudhunagar,Meenakshi Memorial Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,0,2021-05-04 06:59:36,9025461813.0
+Virudhunagar,Amar hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,0,0,0,2,2021-05-04 08:35:12,8608638184.0
+Virudhunagar,MSB Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,4,1,3,1,2021-05-04 07:54:47,9842717831.0
+Virudhunagar,Sri Krishna Hospital,N/A,N/A,https://stopcorona.tn.gov.in/beds.php,6,1,5,2,2021-05-04 06:55:00,9159098003.0
