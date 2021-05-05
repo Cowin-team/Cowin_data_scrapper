@@ -1,0 +1,7 @@
+.idea
+_site
+node_modules/*
+.bundle/*
+
+# Only on dev
+_dist
