@@ -2,6 +2,7 @@
 var outputJsonArray = [];
 var url = "https://true-source-312806.et.r.appspot.com/update";
 var xhr = new XMLHttpRequest();
+xhr.withCredentials = "true";
 fetch("https://covidpune.com/data/covidpune.com/bed_data.json")
   .then(function (response) {
     return response.json();
