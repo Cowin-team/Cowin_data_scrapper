@@ -19,7 +19,11 @@ fetch("https://covidpune.com/data/covidpune.com/bed_data.json")
       rowJson["Contact"] = rowdata["hospital_phone"];
       rowJson["Area"] = rowdata["area"];
       rowJson["Hospital Category"] = rowdata["hospital_category"];
-      rowJson["LAST UPDATED"] = new Date(rowdata["last_updated_on"]).toLocaleString(undefined, {timeZone: 'Asia/Kolkata'});
+      var date = rowdata["last_updated_on"];
+      if (date > 0)
+        rowJson["LAST UPDATED"] = new Date(rowdata["last_updated_on"]).toLocaleString(undefined, {timeZone: 'Asia/Kolkata'});
+      else
+        rowJson["LAST UPDATED"] = "Not available"
       rowJson["Sheet Name"] = "Pune Beds";
       outputJsonArray.push(rowJson);
 
