@@ -1,8 +1,7 @@
 // this script parses the data from covidpune.com
 var outputJsonArray = [];
-var url = "https://true-source-312806.et.r.appspot.com/update";
+var url = "http://127.0.0.1:5000/update";
 var xhr = new XMLHttpRequest();
-xhr.withCredentials = "true";
 fetch("https://covidpune.com/data/covidpune.com/bed_data.json")
   .then(function (response) {
     return response.json();
@@ -31,7 +30,6 @@ fetch("https://covidpune.com/data/covidpune.com/bed_data.json")
       console.log(rowJson);
       xhr.open("POST", url, false);
       //Send the proper header information along with the request
-      //xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
       resp = xhr.send(JSON.stringify(rowJson));
       console.log(resp)
     }
