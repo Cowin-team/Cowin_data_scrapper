@@ -39,9 +39,21 @@ function parseHTML() {
     console.log(rowJson);
     outputJsonArray.push(rowJson);
 
-    xhr.open("POST", url, false);
-    resp = xhr.send(JSON.stringify(rowJson));
-    console.log(resp);
+    fetch(url, {
+      method: 'POST', // or 'PUT'
+      credentials: 'omit',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(rowJson),
+    })
+    .then(response => response.json())
+    .then(data => {
+      console.log('Success:', data);
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+    }); 
   }
 
   rows = htmlSource.querySelectorAll("#GovernmentMedical tbody");
@@ -60,10 +72,21 @@ function parseHTML() {
     rowJson["Sheet Name"] = "Bangalore Beds";
     outputJsonArray.push(rowJson);
 
-    xhr = new XMLHttpRequest();
-    xhr.open("POST", url, false);
-    resp = xhr.send(JSON.stringify(rowJson));
-    console.log(resp);
+    fetch(url, {
+      method: 'POST', // or 'PUT'
+      credentials: 'omit',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(rowJson),
+    })
+    .then(response => response.json())
+    .then(data => {
+      console.log('Success:', data);
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+    }); 
   }
 
   // get the data for Private hospitals
@@ -79,12 +102,23 @@ function parseHTML() {
     rowJson["Ventilator Beds"] = columnData[15].innerText;
     rowJson["LAST UPDATED"] = lastUpdated;
     rowJson["Sheet Name"] = "Bangalore Beds";
-    // outputJsonArray.push(rowJson);
+    outputJsonArray.push(rowJson);
 
-    xhr = new XMLHttpRequest();
-    xhr.open("POST", url, false);
-    resp = xhr.send(JSON.stringify(rowJson));
-    console.log(resp);
+    fetch(url, {
+      method: 'POST', // or 'PUT'
+      credentials: 'omit',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(rowJson),
+    })
+    .then(response => response.json())
+    .then(data => {
+      console.log('Success:', data);
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+    }); 
   }
 
   // get the data for Private medical colleges
@@ -97,11 +131,23 @@ function parseHTML() {
     rowJson["COVID Beds"] = columnData[3].innerText;
     rowJson["LAST UPDATED"] = lastUpdated;
     rowJson["Sheet Name"] = "Bangalore Beds";
-    // outputJsonArray.push(rowJson);
-    xhr = new XMLHttpRequest();
-    xhr.open("POST", url, false);
-    resp = xhr.send(JSON.stringify(rowJson));
-    console.log(resp);
+    outputJsonArray.push(rowJson);
+
+    fetch(url, {
+      method: 'POST', // or 'PUT'
+      credentials: 'omit',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(rowJson),
+    })
+    .then(response => response.json())
+    .then(data => {
+      console.log('Success:', data);
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+    }); 
   }
   // console.log(JSON.stringify(outputJsonArray));
 }
