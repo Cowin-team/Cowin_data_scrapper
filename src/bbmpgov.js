@@ -18,7 +18,6 @@ window.onload = function () {
 
 var url = "http://127.0.0.1:5000/update";
 var xhr = new XMLHttpRequest();
-xhr.withCredentials = "true";
 
 function parseHTML() {
   // console.log(htmlSource);
@@ -31,19 +30,18 @@ function parseHTML() {
     // console.log(rows[i]);
     var columnData = rows[i].querySelectorAll("td");
     rowJson["Name"] = columnData[1].innerText;
-    rowJson["COVID Beds"] = columnData[12].innerText + "/" + columnData[2].innerText;
-    rowJson["HDU Beds"] = columnData[13].innerText + "/" + columnData[3].innerText;
-    rowJson["ICU"] = columnData[14].innerText + "/" + columnData[4].innerText;
-    rowJson["Ventilator Beds"] = columnData[15].innerText + "/" + columnData[5].innerText;
+    rowJson["COVID Beds"] = columnData[12].innerText;
+    rowJson["HDU Beds"] = columnData[13].innerText;
+    rowJson["ICU"] = columnData[14].innerText;
+    rowJson["Ventilator Beds"] = columnData[15].innerText;
     rowJson["LAST UPDATED"] = lastUpdated;
     rowJson["Sheet Name"] = "Bangalore Beds";
     console.log(rowJson);
     outputJsonArray.push(rowJson);
 
-    xhr.open("POST", url, true);
-    //Send the proper header information along with the request
-    xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-    xhr.send(rowJson);
+    xhr.open("POST", url, false);
+    resp = xhr.send(JSON.stringify(rowJson));
+    console.log(resp);
   }
 
   rows = htmlSource.querySelectorAll("#GovernmentMedical tbody");
@@ -54,13 +52,18 @@ function parseHTML() {
     // console.log(medCollegeData[i]);
     var columnData = medCollegeData[i].querySelectorAll("td");
     rowJson["Name"] = columnData[1].innerText;
-    rowJson["COVID Beds"] = columnData[12].innerText + "/" + columnData[2].innerText;
-    rowJson["HDU Beds"] = columnData[13].innerText + "/" + columnData[3].innerText;
-    rowJson["ICU"] = columnData[14].innerText + "/" + columnData[4].innerText;
-    rowJson["Ventilator Beds"] = columnData[15].innerText + "/" + columnData[5].innerText;
+    rowJson["COVID Beds"] = columnData[12].innerText;
+    rowJson["HDU Beds"] = columnData[13].innerText;
+    rowJson["ICU"] = columnData[14].innerText;
+    rowJson["Ventilator Beds"] = columnData[15].innerText;
     rowJson["LAST UPDATED"] = lastUpdated;
     rowJson["Sheet Name"] = "Bangalore Beds";
     outputJsonArray.push(rowJson);
+
+    xhr = new XMLHttpRequest();
+    xhr.open("POST", url, false);
+    resp = xhr.send(JSON.stringify(rowJson));
+    console.log(resp);
   }
 
   // get the data for Private hospitals
@@ -70,13 +73,18 @@ function parseHTML() {
     // console.log(pvtHospData[i]);
     var columnData = pvtHospData[i].querySelectorAll("td");
     rowJson["Name"] = columnData[1].innerText;
-    rowJson["COVID Beds"] = columnData[12].innerText + "/" + columnData[2].innerText;
-    rowJson["HDU Beds"] = columnData[13].innerText + "/" + columnData[3].innerText;
-    rowJson["ICU"] = columnData[14].innerText + "/" + columnData[4].innerText;
-    rowJson["Ventilator Beds"] = columnData[15].innerText + "/" + columnData[5].innerText;
+    rowJson["COVID Beds"] = columnData[12].innerText;
+    rowJson["HDU Beds"] = columnData[13].innerText;
+    rowJson["ICU"] = columnData[14].innerText;
+    rowJson["Ventilator Beds"] = columnData[15].innerText;
     rowJson["LAST UPDATED"] = lastUpdated;
     rowJson["Sheet Name"] = "Bangalore Beds";
-    outputJsonArray.push(rowJson);
+    // outputJsonArray.push(rowJson);
+
+    xhr = new XMLHttpRequest();
+    xhr.open("POST", url, false);
+    resp = xhr.send(JSON.stringify(rowJson));
+    console.log(resp);
   }
 
   // get the data for Private medical colleges
@@ -86,11 +94,15 @@ function parseHTML() {
     // console.log(pvtMedCollegeData[i]);
     var columnData = pvtMedCollegeData[i].querySelectorAll("td");
     rowJson["Name"] = columnData[1].innerText;
-    rowJson["COVID_beds"] = columnData[3].innerText + "/" + columnData[2].innerText;
+    rowJson["COVID Beds"] = columnData[3].innerText;
     rowJson["LAST UPDATED"] = lastUpdated;
     rowJson["Sheet Name"] = "Bangalore Beds";
-    outputJsonArray.push(rowJson);
+    // outputJsonArray.push(rowJson);
+    xhr = new XMLHttpRequest();
+    xhr.open("POST", url, false);
+    resp = xhr.send(JSON.stringify(rowJson));
+    console.log(resp);
   }
-  console.log(JSON.stringify(outputJsonArray));
+  // console.log(JSON.stringify(outputJsonArray));
 }
 
