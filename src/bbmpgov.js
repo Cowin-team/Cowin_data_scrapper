@@ -54,11 +54,12 @@ function parseHTML() {
     // console.log(medCollegeData[i]);
     var columnData = medCollegeData[i].querySelectorAll("td");
     rowJson["Name"] = columnData[1].innerText;
-    rowJson["COVID_beds"] = columnData[12].innerText + "/" + columnData[2].innerText;
-    rowJson["HDU_beds"] = columnData[13].innerText + "/" + columnData[3].innerText;
+    rowJson["COVID Beds"] = columnData[12].innerText + "/" + columnData[2].innerText;
+    rowJson["HDU Beds"] = columnData[13].innerText + "/" + columnData[3].innerText;
     rowJson["ICU"] = columnData[14].innerText + "/" + columnData[4].innerText;
-    rowJson["Ventilator_Beds"] = columnData[15].innerText + "/" + columnData[5].innerText;
-    rowJson["Last_updated"] = lastUpdated;
+    rowJson["Ventilator Beds"] = columnData[15].innerText + "/" + columnData[5].innerText;
+    rowJson["LAST UPDATED"] = lastUpdated;
+    rowJson["Sheet Name"] = "Bangalore Beds";
     outputJsonArray.push(rowJson);
   }
 
@@ -69,11 +70,12 @@ function parseHTML() {
     // console.log(pvtHospData[i]);
     var columnData = pvtHospData[i].querySelectorAll("td");
     rowJson["Name"] = columnData[1].innerText;
-    rowJson["COVID_beds"] = columnData[12].innerText + "/" + columnData[2].innerText;
-    rowJson["HDU_beds"] = columnData[13].innerText + "/" + columnData[3].innerText;
+    rowJson["COVID Beds"] = columnData[12].innerText + "/" + columnData[2].innerText;
+    rowJson["HDU Beds"] = columnData[13].innerText + "/" + columnData[3].innerText;
     rowJson["ICU"] = columnData[14].innerText + "/" + columnData[4].innerText;
-    rowJson["Ventilator_Beds"] = columnData[15].innerText + "/" + columnData[5].innerText;
-    rowJson["Last_updated"] = lastUpdated;
+    rowJson["Ventilator Beds"] = columnData[15].innerText + "/" + columnData[5].innerText;
+    rowJson["LAST UPDATED"] = lastUpdated;
+    rowJson["Sheet Name"] = "Bangalore Beds";
     outputJsonArray.push(rowJson);
   }
 
@@ -85,7 +87,8 @@ function parseHTML() {
     var columnData = pvtMedCollegeData[i].querySelectorAll("td");
     rowJson["Name"] = columnData[1].innerText;
     rowJson["COVID_beds"] = columnData[3].innerText + "/" + columnData[2].innerText;
-    rowJson["Last_updated"] = lastUpdated;
+    rowJson["LAST UPDATED"] = lastUpdated;
+    rowJson["Sheet Name"] = "Bangalore Beds";
     outputJsonArray.push(rowJson);
   }
   console.log(JSON.stringify(outputJsonArray));
