@@ -20,7 +20,7 @@ fetch("https://covidpune.com/data/covidpune.com/bed_data.json")
       rowJson["Last_updated"] = new Date(rowdata["last_updated_on"]).toLocaleString(undefined, {timeZone: 'Asia/Kolkata'});
       outputJsonArray.push(rowJson);
     }
-    console.log("outputJsonArray == " + JSON.stringify(outputJsonArray));
+    console.log(JSON.stringify(outputJsonArray));
   })
   .catch(function (error) {
     console.log("Error: " + error);
