@@ -22,21 +22,21 @@ result = OrderedDict()
 for r in df:
     result['Name'] = r['District']['District'].tolist()
     result['Address'] = r['Institution']['Institution'].tolist()
-    result['Lat'] = ['N/A'] * len(df[0])
-    result['Long'] = ['N/A'] * len(df[0])
-    result['URL'] = ['https://stopcorona.tn.gov.in/beds.php'] * len(df[0])
+    result['Lat'] = [''] * len(df[0])
+    result['Long'] = [''] * len(df[0])
+    result['URL'] = [''] * len(df[0])
     result['COVID Beds'] = r['COVID BEDS']['Vacant'].tolist()
     result['Oxygen Beds'] = r['OXYGEN SUPPORTED BEDS']['Vacant'].tolist()
     result['ICU'] = r['ICU BEDS']['Vacant'].tolist()
     result['Ventilator'] = r['VENTILATOR']['Vacant'].tolist()
     result['Last Update'] = r['Last updated']['Last updated'].tolist()
-    result['Contact'] = r['Contact Number']['Contact Number']
+    result['Contact'] = r['Contact Number']['Contact Number'].tolist()
 
 # create dataframe from result dict, sort by Name:
 df = pd.DataFrame.from_dict(result).sort_values(['Name'])
 
 # write dataframe to JSON:
-df.to_json(os.path.join(f'{srcdir}{sep}output', 'output.json'), indent=2)
+df.to_json(os.path.join(f'{srcdir}{sep}output', 'output.json'), orient='records', indent=2)
 
 # write dataframe to CSV:
 df.to_csv(os.path.join(f'{srcdir}{sep}output', 'output.csv'), header=True, index=None, encoding='utf8', quoting=0)
