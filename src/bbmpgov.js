@@ -16,6 +16,8 @@ window.onload = function () {
   });
 };
 
+var url = "http://127.0.0.1:5000/update";
+var xhr = new XMLHttpRequest();
 function parseHTML() {
   // console.log(htmlSource);
   var lastUpdated = htmlSource.querySelector("h5").innerText.substring(7, 19);
@@ -27,12 +29,19 @@ function parseHTML() {
     // console.log(rows[i]);
     var columnData = rows[i].querySelectorAll("td");
     rowJson["Name"] = columnData[1].innerText;
-    rowJson["COVID_beds"] = columnData[12].innerText + "/" + columnData[2].innerText;
-    rowJson["HDU_beds"] = columnData[13].innerText + "/" + columnData[3].innerText;
+    rowJson["COVID Beds"] = columnData[12].innerText + "/" + columnData[2].innerText;
+    rowJson["HDU Beds"] = columnData[13].innerText + "/" + columnData[3].innerText;
     rowJson["ICU"] = columnData[14].innerText + "/" + columnData[4].innerText;
-    rowJson["Ventilator_Beds"] = columnData[15].innerText + "/" + columnData[5].innerText;
-    rowJson["Last_updated"] = lastUpdated;
+    rowJson["Ventilator Beds"] = columnData[15].innerText + "/" + columnData[5].innerText;
+    rowJson["LAST UPDATED"] = lastUpdated;
+    rowJson["Sheet Name"] = "Bangalore Beds";
+    console.log(rowJson);
     outputJsonArray.push(rowJson);
+
+    xhr.open("POST", url, true);
+    //Send the proper header information along with the request
+    xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+    xhr.send(rowJson);
   }
 
   rows = htmlSource.querySelectorAll("#GovernmentMedical tbody");
