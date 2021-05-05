@@ -18,6 +18,8 @@ window.onload = function () {
 
 var url = "http://127.0.0.1:5000/update";
 var xhr = new XMLHttpRequest();
+xhr.withCredentials = "true";
+
 function parseHTML() {
   // console.log(htmlSource);
   var lastUpdated = htmlSource.querySelector("h5").innerText.substring(7, 19);
