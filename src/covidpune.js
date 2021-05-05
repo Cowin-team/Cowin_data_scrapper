@@ -1,6 +1,6 @@
 // this script parses the data from covidpune.com
 var outputJsonArray = [];
-var url = "http://127.0.0.1:5000/update";
+var url = "https://true-source-312806.et.r.appspot.com/update";
 var xhr = new XMLHttpRequest();
 fetch("https://covidpune.com/data/covidpune.com/bed_data.json")
   .then(function (response) {
@@ -12,10 +12,10 @@ fetch("https://covidpune.com/data/covidpune.com/bed_data.json")
       var rowJson = {};
       var rowdata = bedJson[key];
       rowJson["Name"] = rowdata["hospital_name"];
-      rowJson["COVID Beds"] = rowdata["available_beds_without_oxygen"] + "/" + rowdata["total_beds_without_oxygen"];
-      rowJson["Oxygen Beds"] = rowdata["available_beds_with_oxygen"] + "/" + rowdata["total_beds_with_oxygen"];
-      rowJson["ICU"] = rowdata["available_icu_beds_without_ventilator"] + "/" + rowdata["total_icu_beds_without_ventilator"];
-      rowJson["Ventilator Beds"] = rowdata["available_icu_beds_with_ventilator"] + "/" + rowdata["total_icu_beds_with_ventilator"];
+      rowJson["COVID Beds"] = rowdata["available_beds_without_oxygen"];
+      rowJson["Oxygen Beds"] = rowdata["available_beds_with_oxygen"];
+      rowJson["ICU"] = rowdata["available_icu_beds_without_ventilator"];
+      rowJson["Ventilator Beds"] = rowdata["available_icu_beds_with_ventilator"];
       rowJson["Contact"] = rowdata["hospital_phone"];
       rowJson["Area"] = rowdata["area"];
       rowJson["Hospital Category"] = rowdata["hospital_category"];
@@ -28,12 +28,13 @@ fetch("https://covidpune.com/data/covidpune.com/bed_data.json")
       outputJsonArray.push(rowJson);
 
       console.log(rowJson);
-      xhr.open("POST", url, true);
+      xhr.open("POST", url, false);
       //Send the proper header information along with the request
-      xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-      xhr.send(rowJson);
+      //xhr.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+      resp = xhr.send(JSON.stringify(rowJson));
+      console.log(resp)
     }
-    console.log(JSON.stringify(outputJsonArray));
+    //console.log(JSON.stringify(outputJsonArray));
   })
   .catch(function (error) {
     console.log("Error: " + error);
