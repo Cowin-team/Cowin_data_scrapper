@@ -1,6 +1,6 @@
 import json
 from flask import Flask, request, jsonify
-from api import GoogleSheets
+from GSheets import GoogleSheets
 app = Flask(__name__)
 
 sheets = GoogleSheets()
