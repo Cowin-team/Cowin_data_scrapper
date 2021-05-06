@@ -18,25 +18,20 @@ df = pd.read_html('https://stopcorona.tn.gov.in/beds.php')
 # initialize ordered dict:
 result = OrderedDict()
 
-# populate the dict:
+
+url = 'https://true-source-312806.et.r.appspot.com/update'
 for r in df:
-    result['Name'] = r['District']['District'].tolist()
-    result['Address'] = r['Institution']['Institution'].tolist()
-    result['Lat'] = [''] * len(df[0])
-    result['Long'] = [''] * len(df[0])
-    result['URL'] = [''] * len(df[0])
-    result['COVID Beds'] = r['COVID BEDS']['Vacant'].tolist()
-    result['Oxygen Beds'] = r['OXYGEN SUPPORTED BEDS']['Vacant'].tolist()
-    result['ICU'] = r['ICU BEDS']['Vacant'].tolist()
-    result['Ventilator'] = r['VENTILATOR']['Vacant'].tolist()
-    result['Last Update'] = r['Last updated']['Last updated'].tolist()
-    result['Contact'] = r['Contact Number']['Contact Number'].tolist()
-
-# create dataframe from result dict, sort by Name:
-df = pd.DataFrame.from_dict(result).sort_values(['Name'])
-
-# write dataframe to JSON:
-df.to_json(os.path.join(f'{srcdir}{sep}output', 'output.json'), orient='records', indent=2)
-
-# write dataframe to CSV:
-df.to_csv(os.path.join(f'{srcdir}{sep}output', 'output.csv'), header=True, index=None, encoding='utf8', quoting=0)
+    city_index = np.where(np.array(r['District']['District'].tolist())=='Thanjavur')
+    for i in range(len(city_index[0])):
+        result = OrderedDict()
+        result['Name'] = r['Institution']['Institution'][city_index[0]].tolist()[i]
+        result['COVID Beds'] = r['COVID BEDS']['Vacant'][city_index[0]].tolist()[i]
+        result['Oxygen Beds'] = r['OXYGEN SUPPORTED BEDS']['Vacant'][city_index[0]].tolist()[i]
+        result['ICU'] = r['ICU BEDS']['Vacant'][city_index[0]].tolist()[i]
+        result['Ventilator Beds'] = r['VENTILATOR']['Vacant'][city_index[0]].tolist()[i]
+        result['LAST UPDATED'] = r['Last updated']['Last updated'][city_index[0]].tolist()[i]
+        result['Contact'] = r['Contact Number']['Contact Number'][city_index[0]].tolist()[i]
+        result['Sheet Name'] = "Thanjavur Beds"
+        result = json.dumps(result)
+        response=requests.post(url, json=json.loads(result), verify=False)
+        response.text
