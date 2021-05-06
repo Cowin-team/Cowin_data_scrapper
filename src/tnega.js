@@ -26,16 +26,15 @@ const sheetDistrictMap = {
   "Villupuram Beds": "5ea0abd2d43ec2250a483a45", "Virudhunagar Beds": "5ea0abd3d43ec2250a483a58"
 }
 
-for (sheetName in sheetDistrictMap) {
+for (let sheetName in sheetDistrictMap) {
   // console.log(sheetName+"=="+sheetDistrictMap[sheetName]);
-  axios
-    .post('https://tncovidbeds.tnega.org/api/hospitals', {
-      District: sheetDistrictMap[sheetName],
-      FacilityTypes: ["CHO", "CHC", "CCC"],
-      IsGovernmentHospital: true,
-      IsPrivateHospital: true,
-      pageLimit: 100
-    })
+  axios.post('https://tncovidbeds.tnega.org/api/hospitals', {
+    District: sheetDistrictMap[sheetName],
+    FacilityTypes: ["CHO", "CHC", "CCC"],
+    IsGovernmentHospital: true,
+    IsPrivateHospital: true,
+    pageLimit: 100
+  })
     .then(res => {
       var outputJsonArray = [];
       console.log("res.data.length == " + res.data.length);
