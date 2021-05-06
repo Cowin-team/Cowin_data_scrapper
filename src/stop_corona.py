@@ -56,7 +56,7 @@ if __name__ == '__main__':
 
         # write to JSON
         # This can be replaced with making a call to the API for automated updates:
-        with open(os.path.join(f'{srcdir}{sep}output', 'APIinput.json'), mode='w') as json_write:
+        with open(os.path.join(f'{srcdir}{sep}output', 'APIinput_stopcorona.json'), mode='w') as json_write:
             json.dump(result, json_write, indent=2, sort_keys=True)
     except Exception as err:
       print(err)
