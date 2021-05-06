@@ -27,13 +27,22 @@ fetch("https://covidpune.com/data/covidpune.com/bed_data.json")
       rowJson["Sheet Name"] = "Pune Beds";
       outputJsonArray.push(rowJson);
 
-      console.log(rowJson);
-      xhr.open("POST", url, false);
-      //Send the proper header information along with the request
-      resp = xhr.send(JSON.stringify(rowJson));
-      console.log(resp)
+      fetch(url, {
+        method: 'POST', // or 'PUT'
+        credentials: 'omit',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(rowJson),
+      })
+      .then(response => response.json())
+      .then(data => {
+        console.log('Success:', data);
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      }); 
     }
-    //console.log(JSON.stringify(outputJsonArray));
   })
   .catch(function (error) {
     console.log("Error: " + error);
