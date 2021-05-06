@@ -21,7 +21,7 @@ fetch("https://covidpune.com/data/covidpune.com/bed_data.json")
       rowJson["Hospital Category"] = rowdata["hospital_category"];
       var date = rowdata["last_updated_on"];
       if (date > 0)
-        rowJson["LAST UPDATED"] = new Date(rowdata["last_updated_on"]).toLocaleString(undefined, {timeZone: 'Asia/Kolkata'});
+        rowJson["LAST UPDATED"] = new Date(date).toLocaleString(undefined, {timeZone: 'Asia/Kolkata'});
       else
         rowJson["LAST UPDATED"] = "Not available"
       rowJson["Sheet Name"] = "Pune Beds";
@@ -35,13 +35,13 @@ fetch("https://covidpune.com/data/covidpune.com/bed_data.json")
         },
         body: JSON.stringify(rowJson),
       })
-      .then(response => response.json())
-      .then(data => {
-        console.log('Success:', data);
-      })
-      .catch((error) => {
-        console.error('Error:', error);
-      }); 
+        .then(response => response.json())
+        .then(data => {
+          console.log('Success:', data);
+        })
+        .catch((error) => {
+          console.error('Error:', error);
+        });
     }
   })
   .catch(function (error) {
