@@ -16,7 +16,7 @@ window.onload = function () {
   });
 };
 
-var url = "http://127.0.0.1:5000/update";
+var url = "http://127.0.0.1:5000/updateBulk";
 var xhr = new XMLHttpRequest();
 
 function parseHTML() {
@@ -36,24 +36,7 @@ function parseHTML() {
     rowJson["Ventilator Beds"] = columnData[15].innerText;
     rowJson["LAST UPDATED"] = lastUpdated;
     rowJson["Sheet Name"] = "Bangalore Beds";
-    console.log(rowJson);
     outputJsonArray.push(rowJson);
-
-    fetch(url, {
-      method: 'POST', // or 'PUT'
-      credentials: 'omit',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(rowJson),
-    })
-    .then(response => response.json())
-    .then(data => {
-      console.log('Success:', data);
-    })
-    .catch((error) => {
-      console.error('Error:', error);
-    }); 
   }
 
   rows = htmlSource.querySelectorAll("#GovernmentMedical tbody");
@@ -70,23 +53,8 @@ function parseHTML() {
     rowJson["Ventilator Beds"] = columnData[15].innerText;
     rowJson["LAST UPDATED"] = lastUpdated;
     rowJson["Sheet Name"] = "Bangalore Beds";
+    // console.log(rowJson);
     outputJsonArray.push(rowJson);
-
-    fetch(url, {
-      method: 'POST', // or 'PUT'
-      credentials: 'omit',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(rowJson),
-    })
-    .then(response => response.json())
-    .then(data => {
-      console.log('Success:', data);
-    })
-    .catch((error) => {
-      console.error('Error:', error);
-    }); 
   }
 
   // get the data for Private hospitals
@@ -102,23 +70,8 @@ function parseHTML() {
     rowJson["Ventilator Beds"] = columnData[15].innerText;
     rowJson["LAST UPDATED"] = lastUpdated;
     rowJson["Sheet Name"] = "Bangalore Beds";
+    // console.log(rowJson);
     outputJsonArray.push(rowJson);
-
-    fetch(url, {
-      method: 'POST', // or 'PUT'
-      credentials: 'omit',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(rowJson),
-    })
-    .then(response => response.json())
-    .then(data => {
-      console.log('Success:', data);
-    })
-    .catch((error) => {
-      console.error('Error:', error);
-    }); 
   }
 
   // get the data for Private medical colleges
@@ -131,24 +84,25 @@ function parseHTML() {
     rowJson["COVID Beds"] = columnData[3].innerText;
     rowJson["LAST UPDATED"] = lastUpdated;
     rowJson["Sheet Name"] = "Bangalore Beds";
+    // console.log(rowJson);
     outputJsonArray.push(rowJson);
-
-    fetch(url, {
-      method: 'POST', // or 'PUT'
-      credentials: 'omit',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(rowJson),
-    })
-    .then(response => response.json())
-    .then(data => {
-      console.log('Success:', data);
-    })
-    .catch((error) => {
-      console.error('Error:', error);
-    }); 
   }
-  // console.log(JSON.stringify(outputJsonArray));
+  
+  console.log(JSON.stringify(outputJsonArray));
+  fetch(url, {
+    method: 'POST', // or 'PUT'
+    credentials: 'omit',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(outputJsonArray),
+  })
+  .then(response => response.json())
+  .then(data => {
+    console.log('Success:', data);
+  })
+  .catch((error) => {
+    console.error('Error:', error);
+  }); 
 }
 
