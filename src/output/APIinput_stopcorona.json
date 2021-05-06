@@ -4500,9 +4500,9 @@
     "URL": ""
   },
   {
-    "COVID Beds": 3,
+    "COVID Beds": 1,
     "ICU": 0,
-    "Last Update": "2021-05-06 16:02:45",
+    "Last Update": "2021-05-07 05:01:22",
     "Name": "Sri AuroMa Hospital,Trichy",
     "Oxygen Beds": 1,
     "Sheet Name": "Thiruchirappalli Beds",
@@ -4689,11 +4689,11 @@
     "URL": ""
   },
   {
-    "COVID Beds": 14,
-    "ICU": 1,
-    "Last Update": "2021-05-06 16:12:30",
+    "COVID Beds": 16,
+    "ICU": 2,
+    "Last Update": "2021-05-07 05:15:10",
     "Name": "Shifa Hospital",
-    "Oxygen Beds": 10,
+    "Oxygen Beds": 11,
     "Sheet Name": "Tirunelveli Beds",
     "URL": ""
   },
@@ -4815,11 +4815,11 @@
     "URL": ""
   },
   {
-    "COVID Beds": 4,
+    "COVID Beds": 6,
     "ICU": 0,
-    "Last Update": "2021-05-06 07:40:31",
+    "Last Update": "2021-05-07 04:37:02",
     "Name": "OMS Hospital Tiruppur",
-    "Oxygen Beds": 0,
+    "Oxygen Beds": 2,
     "Sheet Name": "Tiruppur Beds",
     "URL": ""
   },
