@@ -29,6 +29,50 @@ request(apiFacilitiesURL, function (
 
 // parse the fetched data in the function below
 function parseJSON() {
-  console.log(covidFacilityData);
+  // console.log(covidFacilityData);
   // console.log(covidInfoData);
+  let bedData = covidInfoData["beds"];
+  let oxygenBedData = covidInfoData["oxygen_beds"];
+  let icuBedData = covidInfoData["covid_icu_beds"];
+  let ventilatorData = covidInfoData["ventilators"];
+  let icuWithouVentilator = covidInfoData["icu_beds_without_ventilator"]; // will add it to icubeddata
+
+  for (let facilityName in covidFacilityData) {
+    var rowJson = {};
+    // console.log(facilityName);
+    rowJson["Name"] = facilityName;
+    rowJson["Address"] = covidFacilityData[facilityName]["address"];
+    rowJson["Contact"] = covidFacilityData[facilityName]["contact_numbers"];
+    rowJson["URL"] = covidFacilityData[facilityName]["location"];
+
+    let date;
+    if (!!bedData[facilityName]) {
+      rowJson["COVID Beds"] = bedData[facilityName]["vacant"];
+      date = bedData[facilityName]["last_updated_at"];
+    }
+
+    if (!!oxygenBedData[facilityName]) {
+      rowJson["Oxygen Beds"] = oxygenBedData[facilityName]["vacant"];
+      date = oxygenBedData[facilityName]["last_updated_at"];
+    }
+
+    if (!!icuBedData[facilityName]) {
+      date = icuBedData[facilityName]["last_updated_at"];
+      if (!!icuWithouVentilator[facilityName])
+        rowJson["ICU"] = icuBedData[facilityName]["vacant"] + icuWithouVentilator[facilityName]["vacant"];
+      else
+        rowJson["ICU"] = icuBedData[facilityName]["vacant"];
+    }
+    if (!!ventilatorData[facilityName]) {
+      rowJson["Ventilator Beds"] = ventilatorData[facilityName]["vacant"];
+      date = ventilatorData[facilityName]["last_updated_at"];
+    }
+
+    if (!!date)
+      rowJson["LAST UPDATED"] = new Date(date).toISOString();
+    // console.log(rowJson);
+    // console.log("====================================");
+    outputJsonArray.push(rowJson);
+  }
+  console.log(outputJsonArray);
 }
