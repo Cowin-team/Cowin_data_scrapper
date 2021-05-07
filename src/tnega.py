@@ -28,9 +28,9 @@ for sheetName in sheet_district_map:
   for rec in res_json['result']:
     stack = {}
     stack['Sheet Name']=f"{sheetName}"
-    stack['Name']=rec.get('Name')
+    stack['Name']=rec.get('Name','N/A')
     stack['URL']=""
-    stack['COVID Beds']=rec['CovidBedDetails'].get('TotalVaccantBeds','N/A')
+    stack['COVID Beds']=rec['CovidBedDetails'].get('VaccantNonO2Beds','N/A')
     stack['Oxygen Beds']=rec['CovidBedDetails'].get('VaccantO2Beds','N/A')
     stack['ICU']=rec['CovidBedDetails'].get('VaccantICUBeds','N/A')
     stack['LAST UPDATED']=datetime.fromtimestamp(rec['CovidBedDetails'].get('UpdatedOn', 'N/A')).strftime('%Y-%m-%d %H:%M:%S')
