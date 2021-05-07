@@ -11,7 +11,7 @@ window.onload = function () {
   });
 };
 
-var url = "http://127.0.0.1:5000/update";
+var url = "http://127.0.0.1:5000/updateBulk";
 
 function parseHTML() {
   // console.log(htmlSource);
@@ -34,7 +34,7 @@ function parseHTML() {
     rowJson["Sheet Name"] = "Bangalore Beds";
     rowJson["Check LAST UPDATED"] = true;
     outputJsonArray.push(rowJson);
-    callAPI(rowJson);
+    // callAPI(rowJson);
   }
 
   rows = htmlSource.querySelectorAll("#GovernmentMedical tbody");
@@ -54,7 +54,7 @@ function parseHTML() {
     rowJson["Check LAST UPDATED"] = true;
     // console.log(rowJson);
     outputJsonArray.push(rowJson);
-    callAPI(rowJson);
+    // callAPI(rowJson);
   }
 
   // get the data for Private hospitals
@@ -73,7 +73,7 @@ function parseHTML() {
     rowJson["Check LAST UPDATED"] = true;
     // console.log(rowJson);
     outputJsonArray.push(rowJson);
-    callAPI(rowJson);
+    // callAPI(rowJson);
   }
 
   // get the data for Private medical colleges
@@ -89,22 +89,25 @@ function parseHTML() {
     rowJson["Check LAST UPDATED"] = true;
     // console.log(rowJson);
     outputJsonArray.push(rowJson);
-    callAPI(rowJson);
+    // callAPI(rowJson);
   }
+
+  callAPI(outputJsonArray);
   // console.log(JSON.stringify(outputJsonArray));
 }
-
-function callAPI(bedData) {
-  fetch(url, {
-    method: 'POST', // or 'PUT'
-    credentials: 'omit',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(bedData),
-  }).then(response => response.json()).then(data => {
-    console.log('Success:', data);
-  }).catch((error) => {
-    console.error('Error:', error);
-  });
+async function callAPI(bedData) {
+  response = await fetch(url, {
+                          method: 'POST', // or 'PUT'
+                          credentials: 'omit',
+                          headers: {
+                            'Content-Type': 'application/json',
+                          },
+                          body: JSON.stringify(bedData),})
+  const message = await response.json();
+  if (!response.ok) {
+    console.log(`HTTP error! status: ${response.status} message: ${response.json()}`);
+  }
+  else{
+    console.log(message)
+  }
 }
