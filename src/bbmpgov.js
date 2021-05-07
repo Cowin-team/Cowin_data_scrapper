@@ -16,8 +16,7 @@ window.onload = function () {
   });
 };
 
-var url = "http://127.0.0.1:5000/updateBulk";
-var xhr = new XMLHttpRequest();
+var url = "http://127.0.0.1:5000/update";
 
 function parseHTML() {
   // console.log(htmlSource);
@@ -36,7 +35,9 @@ function parseHTML() {
     rowJson["Ventilator Beds"] = columnData[15].innerText;
     rowJson["LAST UPDATED"] = lastUpdated;
     rowJson["Sheet Name"] = "Bangalore Beds";
+    rowJson["Check LAST UPDATED"] = false;
     outputJsonArray.push(rowJson);
+    callAPI(rowJson);
   }
 
   rows = htmlSource.querySelectorAll("#GovernmentMedical tbody");
@@ -53,8 +54,10 @@ function parseHTML() {
     rowJson["Ventilator Beds"] = columnData[15].innerText;
     rowJson["LAST UPDATED"] = lastUpdated;
     rowJson["Sheet Name"] = "Bangalore Beds";
+    rowJson["Check LAST UPDATED"] = false;
     // console.log(rowJson);
     outputJsonArray.push(rowJson);
+    callAPI(rowJson);
   }
 
   // get the data for Private hospitals
@@ -70,8 +73,10 @@ function parseHTML() {
     rowJson["Ventilator Beds"] = columnData[15].innerText;
     rowJson["LAST UPDATED"] = lastUpdated;
     rowJson["Sheet Name"] = "Bangalore Beds";
+    rowJson["Check LAST UPDATED"] = false;
     // console.log(rowJson);
     outputJsonArray.push(rowJson);
+    callAPI(rowJson);
   }
 
   // get the data for Private medical colleges
@@ -84,25 +89,25 @@ function parseHTML() {
     rowJson["COVID Beds"] = columnData[3].innerText;
     rowJson["LAST UPDATED"] = lastUpdated;
     rowJson["Sheet Name"] = "Bangalore Beds";
+    rowJson["Check LAST UPDATED"] = false;
     // console.log(rowJson);
     outputJsonArray.push(rowJson);
+    callAPI(rowJson);
   }
-  
-  console.log(JSON.stringify(outputJsonArray));
+  // console.log(JSON.stringify(outputJsonArray));
+}
+
+function callAPI(bedData) {
   fetch(url, {
     method: 'POST', // or 'PUT'
     credentials: 'omit',
     headers: {
       'Content-Type': 'application/json',
     },
-    body: JSON.stringify(outputJsonArray),
-  })
-  .then(response => response.json())
-  .then(data => {
+    body: JSON.stringify(bedData),
+  }).then(response => response.json()).then(data => {
     console.log('Success:', data);
-  })
-  .catch((error) => {
+  }).catch((error) => {
     console.error('Error:', error);
-  }); 
+  });
 }
-

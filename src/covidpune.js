@@ -20,11 +20,14 @@ fetch("https://covidpune.com/data/covidpune.com/bed_data.json")
       rowJson["Area"] = rowdata["area"];
       rowJson["Hospital Category"] = rowdata["hospital_category"];
       var date = rowdata["last_updated_on"];
-      if (date > 0)
-        rowJson["LAST UPDATED"] = new Date(date).toLocaleString(undefined, {timeZone: 'Asia/Kolkata'});
-      else
+      if (date > 0) {
+        date = new Date(date); // Or the date you'd like converted.
+        date = new Date(date.getTime() - (date.getTimezoneOffset() * 60000)).toISOString();
+        rowJson["LAST UPDATED"] = date;
+      } else
         rowJson["LAST UPDATED"] = "Not available"
       rowJson["Sheet Name"] = "Pune Beds";
+      rowJson["Check LAST UPDATED"] = false;
       outputJsonArray.push(rowJson);
 
       fetch(url, {
