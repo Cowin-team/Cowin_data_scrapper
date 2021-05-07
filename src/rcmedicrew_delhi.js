@@ -2,8 +2,12 @@
 // install nodejs then npm install axios
 const axios = require('axios');
 const cheerio = require('cheerio');
+const fetch = require("node-fetch");
+const converter = require('json-2-csv');
+
 const qs = require('qs')
 const apiURL = "http://covid.rcmedicrew.org/scripts/getSearch.php";
+var sheetsURL = "http://127.0.0.1:5000/update";
 const idPlaceMap = {
   "1": ["Tilak Nagar"],
   "2": [" "],
@@ -56,13 +60,30 @@ axios({
     rowJson["Sheet Name"] = "Delhi Beds";
     rowJson["Check LAST UPDATED"] = false;
     outputJsonArray.push(rowJson);
-    // for (let j = 0; j < columns.length; j++) {
-    //   console.log("column " + j + " == " + $(columns[j]).text());
-    //   console.log("++++++++++++++++");
-    // }
-    // console.log("============================================================")
+
+    // fetch(sheetsURL, {
+    //   method: 'POST', // or 'PUT'
+    //   credentials: 'omit',
+    //   headers: {
+    //     'Content-Type': 'application/json',
+    //   },
+    //   body: JSON.stringify(rowJson),
+    // }).then(response => response.json()).then(data => {
+    //   console.log('Success:', data);
+    // }).catch((error) => {
+    //   console.error('Error:', error);
+    // });
+
   }
   console.log(outputJsonArray);
+  converter.json2csv(outputJsonArray, (err, csv) => {
+    if (err) {
+      throw err;
+    }
+
+    // print CSV string
+    // console.log(csv);
+  });
 }).catch(error => {
   console.error(error)
 })
