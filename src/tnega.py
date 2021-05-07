@@ -18,19 +18,19 @@ if __name__ == '__main__':
     APIinput = []
 
     # iterate the district map:
-    for sheetName in sheet_district_map:
+    for sheetName, districtKey in sheet_district_map.items():
       fetch_data = {
-                    "District": f"{sheetName}",
+                    "District": f"{districtKey}",
                     "FacilityTypes": ["CHO", "CHC", "CCC"],
                     "IsGovernmentHospital": True,
                     "IsPrivateHospital": True,
-                    "pageLimit": 100
+                    "pageLimit": 500
                   }
       res = requests.post('https://tncovidbeds.tnega.org/api/hospitals', data = json.dumps(fetch_data), headers={'Content-Type': 'application/json', 'Accept': 'text/plain'})
       res_json = res.json()
       for rec in res_json['result']:
         stack = {}
-        stack['Sheet Name']=f"{sheetName}"
+        stack['Sheet Name']=' '.join([rec.get('District').get('Name'),'Beds'])
         stack['Name']=rec.get('Name','N/A')
         stack['URL']=""
         stack['COVID Beds']=rec['CovidBedDetails'].get('VaccantNonO2Beds','N/A')
