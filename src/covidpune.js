@@ -1,7 +1,6 @@
 // this script parses the data from covidpune.com
 var outputJsonArray = [];
-var url = "http://127.0.0.1:5000/update";
-var xhr = new XMLHttpRequest();
+var url = "http://127.0.0.1:5000/updateBulk";
 fetch("https://covidpune.com/data/covidpune.com/bed_data.json")
   .then(function (response) {
     return response.json();
@@ -20,30 +19,39 @@ fetch("https://covidpune.com/data/covidpune.com/bed_data.json")
       rowJson["Area"] = rowdata["area"];
       rowJson["Hospital Category"] = rowdata["hospital_category"];
       var date = rowdata["last_updated_on"];
-      if (date > 0)
-        rowJson["LAST UPDATED"] = new Date(date).toLocaleString(undefined, {timeZone: 'Asia/Kolkata'});
-      else
-        rowJson["LAST UPDATED"] = "Not available"
+      if (date > 0) {
+        date = new Date(date); // Or the date you'd like converted.
+        date = new Date(date).toLocaleString(undefined, {timeZone: 'Asia/Kolkata'});
+        date = new Date(date).toISOString();
+        rowJson["LAST UPDATED"] = date;
+        rowJson["Check LAST UPDATED"] = true;
+      } else{
+        rowJson["Check LAST UPDATED"] = false;
+      }
       rowJson["Sheet Name"] = "Pune Beds";
       outputJsonArray.push(rowJson);
-
-      fetch(url, {
-        method: 'POST', // or 'PUT'
-        credentials: 'omit',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify(rowJson),
-      })
-        .then(response => response.json())
-        .then(data => {
-          console.log('Success:', data);
-        })
-        .catch((error) => {
-          console.error('Error:', error);
-        });
     }
+      callAPI(outputJsonArray); 
   })
   .catch(function (error) {
     console.log("Error: " + error);
   });
+
+
+async function callAPI(bedData) {
+  response = await fetch(url, {
+                          method: 'POST', // or 'PUT'
+                          credentials: 'omit',
+                          headers: {
+                            'Content-Type': 'application/json',
+                          },
+                          body: JSON.stringify(bedData),})
+  const message = await response.json();
+  console.log(message)
+  if (!response.ok) {
+    console.log(`HTTP error! status: ${response.status} message: ${response.json()}`);
+  }
+  else{
+    console.log(message)
+  }
+}

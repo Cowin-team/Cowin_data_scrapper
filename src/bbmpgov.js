@@ -1,9 +1,4 @@
 // this script parses the data from bbmpgov.com for bangalore
-// load jquery since it is being used below
-var script = document.createElement('script');
-script.src = 'https://code.jquery.com/jquery-3.4.1.min.js';
-script.type = 'text/javascript';
-document.getElementsByTagName('head')[0].appendChild(script);
 
 var outputJsonArray = [];
 var htmlSource;
@@ -17,11 +12,12 @@ window.onload = function () {
 };
 
 var url = "http://127.0.0.1:5000/updateBulk";
-var xhr = new XMLHttpRequest();
 
 function parseHTML() {
   // console.log(htmlSource);
   var lastUpdated = htmlSource.querySelector("h5").innerText.substring(7, 19);
+  lastUpdated = new Date(lastUpdated);
+  lastUpdated = lastUpdated.toISOString();
   // get the data for Government Hospitals
   var rows = htmlSource.querySelectorAll("#GovernmentHospitalsDetail tbody tr");
 
@@ -36,7 +32,9 @@ function parseHTML() {
     rowJson["Ventilator Beds"] = columnData[15].innerText;
     rowJson["LAST UPDATED"] = lastUpdated;
     rowJson["Sheet Name"] = "Bangalore Beds";
+    rowJson["Check LAST UPDATED"] = true;
     outputJsonArray.push(rowJson);
+    // callAPI(rowJson);
   }
 
   rows = htmlSource.querySelectorAll("#GovernmentMedical tbody");
@@ -53,8 +51,10 @@ function parseHTML() {
     rowJson["Ventilator Beds"] = columnData[15].innerText;
     rowJson["LAST UPDATED"] = lastUpdated;
     rowJson["Sheet Name"] = "Bangalore Beds";
+    rowJson["Check LAST UPDATED"] = true;
     // console.log(rowJson);
     outputJsonArray.push(rowJson);
+    // callAPI(rowJson);
   }
 
   // get the data for Private hospitals
@@ -70,8 +70,10 @@ function parseHTML() {
     rowJson["Ventilator Beds"] = columnData[15].innerText;
     rowJson["LAST UPDATED"] = lastUpdated;
     rowJson["Sheet Name"] = "Bangalore Beds";
+    rowJson["Check LAST UPDATED"] = true;
     // console.log(rowJson);
     outputJsonArray.push(rowJson);
+    // callAPI(rowJson);
   }
 
   // get the data for Private medical colleges
@@ -84,25 +86,28 @@ function parseHTML() {
     rowJson["COVID Beds"] = columnData[3].innerText;
     rowJson["LAST UPDATED"] = lastUpdated;
     rowJson["Sheet Name"] = "Bangalore Beds";
+    rowJson["Check LAST UPDATED"] = true;
     // console.log(rowJson);
     outputJsonArray.push(rowJson);
+    // callAPI(rowJson);
   }
-  
-  console.log(JSON.stringify(outputJsonArray));
-  fetch(url, {
-    method: 'POST', // or 'PUT'
-    credentials: 'omit',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(outputJsonArray),
-  })
-  .then(response => response.json())
-  .then(data => {
-    console.log('Success:', data);
-  })
-  .catch((error) => {
-    console.error('Error:', error);
-  }); 
-}
 
+  callAPI(outputJsonArray);
+  // console.log(JSON.stringify(outputJsonArray));
+}
+async function callAPI(bedData) {
+  response = await fetch(url, {
+                          method: 'POST', // or 'PUT'
+                          credentials: 'omit',
+                          headers: {
+                            'Content-Type': 'application/json',
+                          },
+                          body: JSON.stringify(bedData),})
+  const message = await response.json();
+  if (!response.ok) {
+    console.log(`HTTP error! status: ${response.status} message: ${response.json()}`);
+  }
+  else{
+    console.log(message)
+  }
+}
