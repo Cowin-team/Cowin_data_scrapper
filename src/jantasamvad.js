@@ -75,4 +75,10 @@ function parseJSON() {
     outputJsonArray.push(rowJson);
   }
   console.log(outputJsonArray);
+
+  // one time save to excel
+  // const fs = require("fs")//npm install fs
+  // var json2xls = require('json2xls');
+  // var xls = json2xls(outputJsonArray);
+  // fs.writeFileSync('data.xlsx', xls, 'binary');
 }
