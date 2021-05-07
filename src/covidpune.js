@@ -28,7 +28,7 @@ fetch("https://covidpune.com/data/covidpune.com/bed_data.json")
       } else
         rowJson["LAST UPDATED"] = "Not available"
       rowJson["Sheet Name"] = "Pune Beds";
-      rowJson["Check LAST UPDATED"] = false;
+      rowJson["Check LAST UPDATED"] = true;
       outputJsonArray.push(rowJson);
 
       fetch(url, {

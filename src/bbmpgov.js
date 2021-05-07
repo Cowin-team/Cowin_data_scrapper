@@ -21,6 +21,8 @@ var url = "http://127.0.0.1:5000/update";
 function parseHTML() {
   // console.log(htmlSource);
   var lastUpdated = htmlSource.querySelector("h5").innerText.substring(7, 19);
+  lastUpdated = new Date(lastUpdated);
+  lastUpdated = lastUpdated.toISOString();
   // get the data for Government Hospitals
   var rows = htmlSource.querySelectorAll("#GovernmentHospitalsDetail tbody tr");
 
@@ -35,7 +37,7 @@ function parseHTML() {
     rowJson["Ventilator Beds"] = columnData[15].innerText;
     rowJson["LAST UPDATED"] = lastUpdated;
     rowJson["Sheet Name"] = "Bangalore Beds";
-    rowJson["Check LAST UPDATED"] = false;
+    rowJson["Check LAST UPDATED"] = true;
     outputJsonArray.push(rowJson);
     callAPI(rowJson);
   }
@@ -54,7 +56,7 @@ function parseHTML() {
     rowJson["Ventilator Beds"] = columnData[15].innerText;
     rowJson["LAST UPDATED"] = lastUpdated;
     rowJson["Sheet Name"] = "Bangalore Beds";
-    rowJson["Check LAST UPDATED"] = false;
+    rowJson["Check LAST UPDATED"] = true;
     // console.log(rowJson);
     outputJsonArray.push(rowJson);
     callAPI(rowJson);
@@ -73,7 +75,7 @@ function parseHTML() {
     rowJson["Ventilator Beds"] = columnData[15].innerText;
     rowJson["LAST UPDATED"] = lastUpdated;
     rowJson["Sheet Name"] = "Bangalore Beds";
-    rowJson["Check LAST UPDATED"] = false;
+    rowJson["Check LAST UPDATED"] = true;
     // console.log(rowJson);
     outputJsonArray.push(rowJson);
     callAPI(rowJson);
@@ -89,7 +91,7 @@ function parseHTML() {
     rowJson["COVID Beds"] = columnData[3].innerText;
     rowJson["LAST UPDATED"] = lastUpdated;
     rowJson["Sheet Name"] = "Bangalore Beds";
-    rowJson["Check LAST UPDATED"] = false;
+    rowJson["Check LAST UPDATED"] = true;
     // console.log(rowJson);
     outputJsonArray.push(rowJson);
     callAPI(rowJson);
