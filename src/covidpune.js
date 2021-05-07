@@ -22,7 +22,8 @@ fetch("https://covidpune.com/data/covidpune.com/bed_data.json")
       var date = rowdata["last_updated_on"];
       if (date > 0) {
         date = new Date(date); // Or the date you'd like converted.
-        date = new Date(date.getTime() - (date.getTimezoneOffset() * 60000)).toISOString();
+        date = new Date(date).toLocaleString(undefined, {timeZone: 'Asia/Kolkata'});
+        date = new Date(date).toISOString();
         rowJson["LAST UPDATED"] = date;
       } else
         rowJson["LAST UPDATED"] = "Not available"
