@@ -52,8 +52,9 @@ axios({
     rowJson["ICU"] = bedData[2].split("Ventilator")[0].trim();
     rowJson["Ventilator Beds"] = bedData[3].trim();
     rowJson["Contact"] = $(columns[1]).text().trim().split(":")[2].split("Direction")[0].trim();
-    rowJson["LAST UPDATED"] = $(columns[7]).text();
+    rowJson["LAST UPDATED"] = new Date($(columns[7]).text()).toISOString();
     rowJson["Sheet Name"] = "Delhi Beds";
+    rowJson["Check LAST UPDATED"] = false;
     outputJsonArray.push(rowJson);
     // for (let j = 0; j < columns.length; j++) {
     //   console.log("column " + j + " == " + $(columns[j]).text());
