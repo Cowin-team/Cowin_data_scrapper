@@ -3,11 +3,12 @@
 const axios = require('axios');
 const cheerio = require('cheerio');
 const fetch = require("node-fetch");
+var moment = require('moment');
 const converter = require('json-2-csv');
 
 const qs = require('qs')
 const apiURL = "http://covid.rcmedicrew.org/scripts/getSearch.php";
-var sheetsURL = "http://127.0.0.1:5000/update";
+var sheetsURL = "http://127.0.0.1:5000/updateBulk";
 const idPlaceMap = {
   "1": ["Tilak Nagar"],
   "2": [" "],
@@ -31,8 +32,8 @@ axios({
   data: qs.stringify({
     type: "getSearchResult",
     resourceid: 3,
-    stateid: "Delhi",
-    cityid: "New Delhi (DL)",
+    stateid: "Maharashtra",
+    cityid: "Mumbai (MH)",
     location: ""
   }),
   headers: {
@@ -56,34 +57,40 @@ axios({
     rowJson["ICU"] = bedData[2].split("Ventilator")[0].trim();
     rowJson["Ventilator Beds"] = bedData[3].trim();
     rowJson["Contact"] = $(columns[1]).text().trim().split(":")[2].split("Direction")[0].trim();
-    rowJson["LAST UPDATED"] = new Date($(columns[7]).text()).toISOString();
-    rowJson["Sheet Name"] = "Delhi Beds";
+    let date = new Date($(columns[7]).text());
+    date = moment(date).format('YYYY-MM-DD HH:mm:ss');
+    rowJson["LAST UPDATED"] = date;
+    rowJson["Sheet Name"] = "Mumbai Beds";
     rowJson["Check LAST UPDATED"] = false;
     outputJsonArray.push(rowJson);
-
-    // fetch(sheetsURL, {
-    //   method: 'POST', // or 'PUT'
-    //   credentials: 'omit',
-    //   headers: {
-    //     'Content-Type': 'application/json',
-    //   },
-    //   body: JSON.stringify(rowJson),
-    // }).then(response => response.json()).then(data => {
-    //   console.log('Success:', data);
-    // }).catch((error) => {
-    //   console.error('Error:', error);
-    // });
-
   }
   console.log(outputJsonArray);
-  converter.json2csv(outputJsonArray, (err, csv) => {
-    if (err) {
-      throw err;
-    }
+  callAPI(outputJsonArray);
+  // converter.json2csv(outputJsonArray, (err, csv) => {
+  //   if (err) {
+  //     throw err;
+  //   }
 
-    // print CSV string
-    // console.log(csv);
-  });
+  // print CSV string
+  // console.log(csv);
+  // });
 }).catch(error => {
   console.error(error)
 })
+
+async function callAPI(bedData) {
+  response = await fetch(sheetsURL, {
+    method: 'POST', // or 'PUT'
+    credentials: 'omit',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(bedData),
+  })
+  const message = await response.json();
+  if (!response.ok) {
+    console.log(`HTTP error! status: ${response.status} message: ${response.json()}`);
+  } else {
+    console.log(message)
+  }
+}
