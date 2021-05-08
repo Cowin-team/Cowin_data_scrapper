@@ -4,7 +4,7 @@ const axios = require('axios');
 const cheerio = require('cheerio');
 const fetch = require("node-fetch");
 var moment = require('moment');
-const converter = require('json-2-csv');
+// const converter = require('json-2-csv');
 
 const qs = require('qs')
 const apiURL = "http://covid.rcmedicrew.org/scripts/getSearch.php";
