@@ -69,7 +69,7 @@ function parseJSON() {
     }
 
     if (!!date)
-      rowJson["LAST UPDATED"] = new Date(date).toISOString();
+      rowJson["LAST UPDATED"] = date;
     // console.log(rowJson);
     // console.log("====================================");
     outputJsonArray.push(rowJson);

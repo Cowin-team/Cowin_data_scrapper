@@ -22,16 +22,16 @@ fetch("https://covidpune.com/data/covidpune.com/bed_data.json")
       if (date > 0) {
         date = new Date(date); // Or the date you'd like converted.
         date = new Date(date).toLocaleString(undefined, {timeZone: 'Asia/Kolkata'});
-        date = new Date(date).toISOString();
+        date = moment(date).format('YYYY-MM-DD HH:mm:ss');
         rowJson["LAST UPDATED"] = date;
         rowJson["Check LAST UPDATED"] = true;
-      } else{
+      } else {
         rowJson["Check LAST UPDATED"] = false;
       }
       rowJson["Sheet Name"] = "Pune Beds";
       outputJsonArray.push(rowJson);
     }
-      callAPI(outputJsonArray); 
+    callAPI(outputJsonArray);
   })
   .catch(function (error) {
     console.log("Error: " + error);
@@ -40,18 +40,18 @@ fetch("https://covidpune.com/data/covidpune.com/bed_data.json")
 
 async function callAPI(bedData) {
   response = await fetch(url, {
-                          method: 'POST', // or 'PUT'
-                          credentials: 'omit',
-                          headers: {
-                            'Content-Type': 'application/json',
-                          },
-                          body: JSON.stringify(bedData),})
+    method: 'POST', // or 'PUT'
+    credentials: 'omit',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(bedData)
+  })
   const message = await response.json();
   console.log(message)
   if (!response.ok) {
     console.log(`HTTP error! status: ${response.status} message: ${response.json()}`);
-  }
-  else{
+  } else {
     console.log(message)
   }
 }
