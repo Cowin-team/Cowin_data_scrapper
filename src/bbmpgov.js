@@ -1,5 +1,6 @@
 // this script parses the data from bbmpgov.com for bangalore
 
+var url = "http://127.0.0.1:5000/updateBulk";
 var outputJsonArray = [];
 var htmlSource;
 
@@ -10,8 +11,6 @@ window.onload = function () {
     parseHTML();
   });
 };
-
-var url = "http://127.0.0.1:5000/updateBulk";
 
 function parseHTML() {
   // console.log(htmlSource);
@@ -93,7 +92,6 @@ function parseHTML() {
   }
 
   callAPI(outputJsonArray);
-  // console.log(JSON.stringify(outputJsonArray));
 }
 
 async function callAPI(bedData) {

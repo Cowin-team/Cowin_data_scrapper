@@ -1,6 +1,8 @@
 // this script parses the data from covidpune.com
-var outputJsonArray = [];
+
+
 var url = "http://127.0.0.1:5000/updateBulk";
+var outputJsonArray = [];
 fetch("https://covidpune.com/data/covidpune.com/bed_data.json")
   .then(function (response) {
     return response.json();
