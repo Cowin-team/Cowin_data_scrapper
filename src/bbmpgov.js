@@ -17,7 +17,7 @@ function parseHTML() {
   // console.log(htmlSource);
   var lastUpdated = htmlSource.querySelector("h5").innerText.substring(7, 19);
   lastUpdated = new Date(lastUpdated);
-  lastUpdated = lastUpdated.toISOString();
+  lastUpdated = moment(lastUpdated).format('YYYY-MM-DD HH:mm:ss');
   // get the data for Government Hospitals
   var rows = htmlSource.querySelectorAll("#GovernmentHospitalsDetail tbody tr");
 
@@ -95,19 +95,20 @@ function parseHTML() {
   callAPI(outputJsonArray);
   // console.log(JSON.stringify(outputJsonArray));
 }
+
 async function callAPI(bedData) {
   response = await fetch(url, {
-                          method: 'POST', // or 'PUT'
-                          credentials: 'omit',
-                          headers: {
-                            'Content-Type': 'application/json',
-                          },
-                          body: JSON.stringify(bedData),})
+    method: 'POST', // or 'PUT'
+    credentials: 'omit',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(bedData),
+  })
   const message = await response.json();
   if (!response.ok) {
     console.log(`HTTP error! status: ${response.status} message: ${response.json()}`);
-  }
-  else{
+  } else {
     console.log(message)
   }
 }
