@@ -3,12 +3,13 @@
 const axios = require('axios');
 const cheerio = require('cheerio');
 const fetch = require("node-fetch");
-var moment = require('moment');
+const moment = require('moment');
+const qs = require('qs')
 // const converter = require('json-2-csv');
 
-const qs = require('qs')
+
 const apiURL = "http://covid.rcmedicrew.org/scripts/getSearch.php";
-var sheetsURL = "http://127.0.0.1:5000/updateBulk";
+const sheetsURL = "http://127.0.0.1:5000/updateBulk";
 const idPlaceMap = {
   "1": ["Tilak Nagar"],
   "2": [" "],
