@@ -14,5 +14,5 @@ Scraping the site itself can be easy to difficult depending on how it is impleme
 6. If you are unable to isolate the API calls, but the website is dynamic, then it is going to be the hardest of all. You will need to use the puppeteer module (`npm install puppeteer`). It works like selenium and uses its own headless browser to make requests. See [puppeteerSample.js](https://github.com/Cowin-team/Cowin_data_scrapper/blob/main/src/puppeteerSample.js) for an example.
 
 # Running the scrapers
-1. To run the plain javascript based scrapers such as covidpune.js and bbmpgov.js, simply put the script in the dummy.html file and run the html file in the browser.
-2. Tun run the node based scrapers, simply type `node filename` in console. For example, to run andhra.js file, type `node src/andhra.js` when located in the project root directory and then hit enter.
+1. To run the plain javascript based scrapers such as covidpune.js and bbmpgov.js, simply put the script (`<script src="bbmpgov.js"></script>`) in the dummy.html file and run the html file in the browser.
+2. To run the node based scrapers, simply type `node filename` in console. For example, to run andhra.js file, type `node src/andhra.js` when located in the project root directory and then hit enter.
