@@ -1,0 +1,26 @@
+{
+  "name": "cowin_data_scrapper",
+  "version": "1.0.0",
+  "description": "A node app to scrape covid related data from different source",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Cowin-team/Cowin_data_scrapper.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Cowin-team/Cowin_data_scrapper/issues"
+  },
+  "homepage": "https://github.com/Cowin-team/Cowin_data_scrapper#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cheerio": "^1.0.0-rc.9",
+    "express": "^4.17.1",
+    "moment": "^2.29.1",
+    "node-fetch": "^2.6.1"
+  }
+}
