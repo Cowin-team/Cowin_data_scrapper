@@ -1,8 +1,10 @@
 // this script parses the data from https://coronabeds.jantasamvad.org/covid-info.js
 const request = require('request')
+const moment = require('moment')
+const fetch = require("node-fetch");
 
 var outputJsonArray = [];
-var sheetsURL = "http://127.0.0.1:5000/update";
+var sheetsURL = "http://127.0.0.1:5000/updateBulk";
 var apiInfoURL = "https://coronabeds.jantasamvad.org/covid-info.js";
 var apiFacilitiesURL = "https://coronabeds.jantasamvad.org/covid-facilities.js";
 var covidFacilityData = {};
@@ -68,17 +70,41 @@ function parseJSON() {
       date = ventilatorData[facilityName]["last_updated_at"];
     }
 
-    if (!!date)
+    if (!!date) {
+      date = date.split(",");
+      date = new Date(date[1] + " 2021 " + date[0]);
+      date = moment(date).format('YYYY-MM-DD HH:mm:ss');
+      // console.log(date);
       rowJson["LAST UPDATED"] = date;
+      console.log(date);
+    }
+    rowJson["Check LAST UPDATED"] = false;
     // console.log(rowJson);
     // console.log("====================================");
     outputJsonArray.push(rowJson);
   }
+  // callAPI(outputJsonArray);
   console.log(outputJsonArray);
-
   // one time save to excel
   // const fs = require("fs")//npm install fs
   // var json2xls = require('json2xls');
   // var xls = json2xls(outputJsonArray);
   // fs.writeFileSync('data.xlsx', xls, 'binary');
+}
+
+async function callAPI(bedData) {
+  response = await fetch(sheetsURL, {
+    method: 'POST', // or 'PUT'
+    credentials: 'omit',
+    headers: {
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(bedData),
+  })
+  const message = await response.json();
+  if (!response.ok) {
+    console.log(`HTTP error! status: ${response.status} message: ${response.json()}`);
+  } else {
+    console.log(message)
+  }
 }
