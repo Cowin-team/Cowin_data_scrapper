@@ -74,13 +74,9 @@ function parseJSON() {
       date = date.split(",");
       date = new Date(date[1] + " 2021 " + date[0]);
       date = moment(date).format('YYYY-MM-DD HH:mm:ss');
-      // console.log(date);
       rowJson["LAST UPDATED"] = date;
-      console.log(date);
     }
     rowJson["Check LAST UPDATED"] = false;
-    // console.log(rowJson);
-    // console.log("====================================");
     outputJsonArray.push(rowJson);
   }
   // callAPI(outputJsonArray);
