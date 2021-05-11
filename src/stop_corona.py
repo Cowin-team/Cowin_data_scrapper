@@ -19,7 +19,7 @@ df = pd.read_html('https://stopcorona.tn.gov.in/beds.php')
 # initialize ordered dict:
 
 url = 'http://127.0.0.1:5000/update'#'https://true-source-312806.et.r.appspot.com/update'
-city = 'Thiruchirappalli'
+city = 'Kancheepuram'
 for r in df:
     city_index = np.where(np.array(r['District']['District'].tolist())==city)
     for i in range(len(city_index[0])):
