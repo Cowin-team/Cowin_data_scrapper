@@ -44,9 +44,9 @@ function parseJSON() {
     // console.log(facilityName);
     rowJson["Name"] = facilityName;
     rowJson["Address"] = covidFacilityData[facilityName]["address"];
-    rowJson["Contact"] = covidFacilityData[facilityName]["contact_numbers"];
+    //rowJson["Contact"] = covidFacilityData[facilityName]["contact_numbers"];
     rowJson["URL"] = covidFacilityData[facilityName]["location"];
-
+    rowJson["Sheet Name"] = "Delhi Beds"
     let date;
     if (!!bedData[facilityName]) {
       rowJson["COVID Beds"] = bedData[facilityName]["vacant"];
@@ -79,7 +79,7 @@ function parseJSON() {
     rowJson["Check LAST UPDATED"] = false;
     outputJsonArray.push(rowJson);
   }
-  // callAPI(outputJsonArray);
+   callAPI(outputJsonArray);
   console.log(outputJsonArray);
   // one time save to excel
   // const fs = require("fs")//npm install fs

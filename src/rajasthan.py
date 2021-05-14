@@ -3,7 +3,7 @@ import pandas as pd
 import json
 from collections import OrderedDict
 import requests
-
+import numpy as np
 
 class APICallFailure(Exception):
   pass
@@ -35,27 +35,29 @@ if __name__ == '__main__':
             'Last Updation By Hospital').tolist()
         result['Contact'] = row.get('Hospital Helpline No.').get(
             'Hospital Helpline No.').tolist()
-        result['Check LAST UPDATED'] = ['True']*len(row)
+        result['Check LAST UPDATED'] = ['False']*len(row)
         result['Sheet Name'] = [f'{x} Beds' for x in row.get(
             'District').get('District').tolist()]
-
+        
     # convert dict to dataframe for conversion of datetime format:
     df1 = pd.DataFrame.from_dict(result)
 
     # skipping row 0:
     df1 = df1[1:]
-
+     
+    
     # convert LAST UPDATE to %Y-%m-%d %H:%M:%S format:
     df1['LAST UPDATED'] = df1['LAST UPDATED'].apply(
-        lambda x: pd.to_datetime(x))
-
+        lambda x: str(pd.to_datetime(x)))
+    
+    
     # APIInput:
     APIInput = df1.to_json(orient='records', indent=2)
 
     # send df as json to update through API call:
     api_response = requests.post(
         api_url, json=json.loads(APIInput), verify=False)
-
+    print(api_response.text)
     if api_response.status_code != 200:
       raise APICallFailure(f"bulkupdate failed: {api_response.text}")
       

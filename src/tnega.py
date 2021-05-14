@@ -30,20 +30,21 @@ if __name__ == '__main__':
                     "FacilityTypes": ["CHO", "CHC", "CCC"],
                     "IsGovernmentHospital": True,
                     "IsPrivateHospital": True,
-                    "pageLimit": 500
+                    "pageLimit": 50000
                   }
     res = requests.post('https://tncovidbeds.tnega.org/api/hospitals', data = json.dumps(fetch_data), headers={'Content-Type': 'application/json', 'Accept': 'text/plain'})
     res_json = res.json()
     for rec in res_json['result']:
-        if rec.get('District','N/A').get('Name','N/A') == 'Thiruchirappalli':
+        if rec.get('District','N/A').get('Name','N/A') == 'Villupuram':#Thiruchirappalli
            stack = {}
-           stack['Sheet Name']=' '.join([rec.get('District','N/A').get('Name','N/A'),'Beds']) #Nagercoil Beds'#
+           stack['Sheet Name']=' '.join([rec.get('District','N/A').get('Name','N/A'),'Beds']) #'Nagercoil Beds'#
            stack['Name']=rec.get('Name','N/A')
            stack['COVID Beds']=rec.get('CovidBedDetails', 'N/A').get('VaccantNonO2Beds','N/A')
            stack['Oxygen Beds']=rec.get('CovidBedDetails','N/A').get('VaccantO2Beds','N/A')
            stack['ICU']=rec['CovidBedDetails'].get('VaccantICUBeds','N/A')
            stack['LAST UPDATED']=datetime.fromtimestamp(rec.get('CovidBedDetails','N/A').get('UpdatedOn', 'N/A')).strftime('%Y-%m-%d %H:%M:%S')
            stack['Check LAST UPDATED'] = True
+           stack['Contact'] = rec.get('MobileNumber','N/A')
            APIinput.append(stack)
     result = json.dumps(APIinput)
     api_response = requests.post(api_url, json=json.loads(result), verify=False)
