@@ -58,8 +58,7 @@ axios({
     rowJson["ICU"] = bedData[2].split("Ventilator")[0].trim();
     rowJson["Ventilator Beds"] = bedData[3].trim();
     rowJson["Contact"] = $(columns[1]).text().trim().split(":")[2].split("Direction")[0].trim();
-    let date = new Date($(columns[7]).text());
-    date = moment(date).format('YYYY-MM-DD HH:mm:ss');
+    let date = moment($(columns[7]).text(), "DD-MM-YYYY hh:mm:ssa").format('YYYY-MM-DD HH:mm:ss')
     rowJson["LAST UPDATED"] = date;
     rowJson["Sheet Name"] = "Mumbai Beds";
     rowJson["Check LAST UPDATED"] = false;
