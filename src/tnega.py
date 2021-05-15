@@ -18,24 +18,30 @@ if __name__ == '__main__':
     srcdir = os.path.dirname(os.path.abspath(__file__))
 
     # initialize output list:
-    APIinput = []
+    
+    districtkey =[ "5ea0abd3d43ec2250a483a4f",  "5ea0abd4d43ec2250a483a61", "5ea0abd2d43ec2250a483a40",  "5ea0abd3d43ec2250a483a4a","5ea0abd3d43ec2250a483a50","5ea0abd2d43ec2250a483a43",   "5ea0abd3d43ec2250a483a4b", "5ea0abd2d43ec2250a483a48", "5ea0abd4d43ec2250a483a5f", "5ea0abd2d43ec2250a483a41", "5ea0abd3d43ec2250a483a5c", "5ea0abd3d43ec2250a483a4c", "5ea0abd3d43ec2250a483a5d", "5ea0abd3d43ec2250a483a56", "60901c5f2481a4362891d572",  "5ea0abd3d43ec2250a483a51", "5ea0abd2d43ec2250a483a47", "5ea0abd3d43ec2250a483a49", "5ea0abd3d43ec2250a483a4e", "5ea0abd3d43ec2250a483a54",
+"5ea0abd3d43ec2250a483a59",  "5ea0abd4d43ec2250a483a63","5ea0abd2d43ec2250a483a46", "5ea0abd3d43ec2250a483a55", "5ea0abd4d43ec2250a483a60", "5ea0abd3d43ec2250a483a53","5ea0abd3d43ec2250a483a57", "5ea0abd3d43ec2250a483a57", "5ea0abd4d43ec2250a483a62",  "5ea0abd3d43ec2250a483a52","5ea0abd3d43ec2250a483a5a", "5ea0abd3d43ec2250a483a5b","5ea0abd4d43ec2250a483a5e", "5ea0abd1d43ec2250a483a3f",
+ "5ea0abd2d43ec2250a483a44", "5ea0abd2d43ec2250a483a42", "5ea0abd2d43ec2250a483a45", "5ea0abd3d43ec2250a483a58"]
 
     # API url:
     api_url = 'http://127.0.0.1:5000/updateBulk'
 
     # iterate the district map:
-    for sheetName, districtKey in sheet_district_map.items():
+    for district_key in districtkey:
+      print(district_key)
+      #district_key = districtkey[2]
       fetch_data = {
-                    "District": f"{districtKey}",
+                    "Districts": [f"{district_key}"],
                     "FacilityTypes": ["CHO", "CHC", "CCC"],
                     "IsGovernmentHospital": True,
                     "IsPrivateHospital": True,
                     "pageLimit": 50000
                   }
-    res = requests.post('https://tncovidbeds.tnega.org/api/hospitals', data = json.dumps(fetch_data), headers={'Content-Type': 'application/json', 'Accept': 'text/plain'})
-    res_json = res.json()
-    for rec in res_json['result']:
-        if rec.get('District','N/A').get('Name','N/A') == 'Villupuram':#Thiruchirappalli
+      res = requests.post('https://tncovidbeds.tnega.org/api/hospitals', data = json.dumps(fetch_data), headers={'Content-Type': 'application/json', 'Accept': 'text/plain'})
+      res_json = res.json()
+      APIinput = []
+      for rec in res_json['result']:
+           
            stack = {}
            stack['Sheet Name']=' '.join([rec.get('District','N/A').get('Name','N/A'),'Beds']) #'Nagercoil Beds'#
            stack['Name']=rec.get('Name','N/A')
@@ -46,9 +52,9 @@ if __name__ == '__main__':
            stack['Check LAST UPDATED'] = True
            stack['Contact'] = rec.get('MobileNumber','N/A')
            APIinput.append(stack)
-    result = json.dumps(APIinput)
-    api_response = requests.post(api_url, json=json.loads(result), verify=False)
-    print(api_response.text)
+      result = json.dumps(APIinput)
+      api_response = requests.post(api_url, json=json.loads(result), verify=False)
+      print(api_response.text)
     # write output to JSON file:
     #json.dump(APIinput, open(f'{srcdir}{sep}output{sep}APIinput_tnega.json', mode='w'), indent=2)
     # invoke the api to update sheet:

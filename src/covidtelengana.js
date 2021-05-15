@@ -10,7 +10,7 @@ fetch("https://covidtelangana.com/data/covidtelangana.com/bed_data.json")
     for (var key in bedJson) {
       var rowJson = {};
       var rowdata = bedJson[key];
-      if (rowdata["area"] == 'Siddipet') {
+      if (rowdata["area"] == 'Karimnagar') {
       rowJson["Name"] = rowdata["hospital_name"];
       rowJson["COVID Beds"] = rowdata["available_beds_without_oxygen"];
       rowJson["Oxygen Beds"] = rowdata["available_beds_with_oxygen"];
@@ -30,7 +30,7 @@ fetch("https://covidtelangana.com/data/covidtelangana.com/bed_data.json")
       } else {
         rowJson["Check LAST UPDATED"] = false;
       }
-      rowJson["Sheet Name"] = "Siddipet Beds";
+      rowJson["Sheet Name"] = "Karimnagar Beds";
       outputJsonArray.push(rowJson);
     }
     }
