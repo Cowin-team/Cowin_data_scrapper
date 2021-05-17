@@ -45,7 +45,7 @@ function parseJSON() {
     rowJson["Name"] = facilityName;
     rowJson["Address"] = covidFacilityData[facilityName]["address"];
     //rowJson["Contact"] = covidFacilityData[facilityName]["contact_numbers"];
-    rowJson["URL"] = covidFacilityData[facilityName]["location"];
+    //rowJson["URL"] = covidFacilityData[facilityName]["location"];
     rowJson["Sheet Name"] = "Delhi Beds"
     let date;
     if (!!bedData[facilityName]) {
@@ -75,8 +75,10 @@ function parseJSON() {
       date = new Date(date[1] + " 2021 " + date[0]);
       date = moment(date).format('YYYY-MM-DD HH:mm:ss');
       rowJson["LAST UPDATED"] = date;
+      rowJson["Check LAST UPDATED"] = true;
     }
-    rowJson["Check LAST UPDATED"] = false;
+    else
+      rowJson["Check LAST UPDATED"] = false;
     outputJsonArray.push(rowJson);
   }
    callAPI(outputJsonArray);

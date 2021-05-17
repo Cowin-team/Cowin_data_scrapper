@@ -61,7 +61,7 @@ axios({
     let date = moment($(columns[7]).text(), "DD-MM-YYYY hh:mm:ssa").format('YYYY-MM-DD HH:mm:ss')
     rowJson["LAST UPDATED"] = date;
     rowJson["Sheet Name"] = "Mumbai Beds";
-    rowJson["Check LAST UPDATED"] = false;
+    rowJson["Check LAST UPDATED"] = true;
     outputJsonArray.push(rowJson);
   }
   console.log(outputJsonArray);

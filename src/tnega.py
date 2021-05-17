@@ -28,8 +28,8 @@ if __name__ == '__main__':
 
     # iterate the district map:
     for district_key in districtkey:
-      print(district_key)
-      #district_key = districtkey[2]
+      if district_key not in ["5ea0abd2d43ec2250a483a40",  "5ea0abd3d43ec2250a483a4a"]:
+         continue
       fetch_data = {
                     "Districts": [f"{district_key}"],
                     "FacilityTypes": ["CHO", "CHC", "CCC"],
@@ -43,7 +43,10 @@ if __name__ == '__main__':
       for rec in res_json['result']:
            
            stack = {}
-           stack['Sheet Name']=' '.join([rec.get('District','N/A').get('Name','N/A'),'Beds']) #'Nagercoil Beds'#
+           if rec.get('District','N/A').get('Name','N/A') == 'Kanniyakumari':
+              stack['Sheet Name']='Nagercoil Beds'
+           else:
+              stack['Sheet Name']=' '.join([rec.get('District','N/A').get('Name','N/A'),'Beds']) ##
            stack['Name']=rec.get('Name','N/A')
            stack['COVID Beds']=rec.get('CovidBedDetails', 'N/A').get('VaccantNonO2Beds','N/A')
            stack['Oxygen Beds']=rec.get('CovidBedDetails','N/A').get('VaccantO2Beds','N/A')

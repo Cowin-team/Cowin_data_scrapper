@@ -26,7 +26,7 @@ url = 'http://127.0.0.1:5000/updateBulk'#'https://true-source-312806.et.r.appspo
 result = OrderedDict()
 for r in df:
     city_index = np.where(np.array(r['District']['District'].tolist())=='Kanyakumari')[0]
-    
+    city_index2 = np.where(np.array(r['District']['District'].tolist())=='TheNilgiris')[0]
     result['Name'] = (r['Institution']['Institution'].tolist())
     result['COVID Beds'] = (r['COVID BEDS']['Vacant'].tolist())
     result['Oxygen Beds'] = (r['OXYGEN SUPPORTED BEDS']['Vacant'].tolist())
@@ -38,6 +38,7 @@ for r in df:
     result['Sheet Name'] = np.array([x + ' Beds' for x in r['District']['District'].tolist()])
     
     result['Sheet Name'][city_index] = 'Nagercoil Beds'
+    result['Sheet Name'][city_index2] = 'Nilgiris Beds'
         #APIlist.append((result))
     
     df1 = pd.DataFrame.from_dict(result)        

@@ -1,4 +1,4 @@
-// this script parses the data from covidpune.com
+// this script parses the data from covidtelangana.com
 var outputJsonArray = [];
 var url = "http://127.0.0.1:5000/updateBulk";
 fetch("https://covidtelangana.com/data/covidtelangana.com/bed_data.json")
@@ -8,13 +8,13 @@ fetch("https://covidtelangana.com/data/covidtelangana.com/bed_data.json")
   .then(function (bedJson) {
 
     for (var key in bedJson) {
+      if (key in
       var rowJson = {};
       var rowdata = bedJson[key];
-      if (rowdata["area"] == 'Karimnagar') {
       rowJson["Name"] = rowdata["hospital_name"];
       rowJson["COVID Beds"] = rowdata["available_beds_without_oxygen"];
       rowJson["Oxygen Beds"] = rowdata["available_beds_with_oxygen"];
-      rowJson["ICU"] = rowdata["available_icu_beds_without_ventilator"];
+      rowJson["ICU"] = "N/A";//rowdata["available_icu_beds_without_ventilator"];
       rowJson["Ventilator Beds"] = rowdata["available_icu_beds_with_ventilator"];
       rowJson["Contact"] = rowdata["hospital_phone"];
       rowJson["Area"] = rowdata["area"];
@@ -30,9 +30,9 @@ fetch("https://covidtelangana.com/data/covidtelangana.com/bed_data.json")
       } else {
         rowJson["Check LAST UPDATED"] = false;
       }
-      rowJson["Sheet Name"] = "Karimnagar Beds";
+      rowJson["Sheet Name"] = rowdata["area"]+" Beds";
       outputJsonArray.push(rowJson);
-    }
+    
     }
     callAPI(outputJsonArray);
   })
