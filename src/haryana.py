@@ -23,6 +23,7 @@ if __name__ == '__main__':
             all_divs = main_div.find_all('div', {"class": "psahuDiv community-post wow fadeInUp"})
 
             for div in all_divs:
+                
                 data = OrderedDict()
                 main_content = div.find('div', {"class": "entry-content"})
                 meta_data = div.find('ul', {"class": "post-meta-info"})
@@ -31,14 +32,16 @@ if __name__ == '__main__':
                 p = main_content.find('p')
                 a = p.find_all('a') if p is not None else None
                 data['COVID Beds'] = p.find('b').text if p.find('b') is not None else "0"
-                data['Oxygen beds'] = a[0].text
+                data['Oxygen Beds'] = a[0].text
                 data['ICU'] = a[2].text
-                data['Ventilators'] = a[3].text
-                data['Phone Number'] = divs[-1].find('span').find('a').text
+                data['Ventilator Beds'] = a[3].text
+                data['Contact'] = divs[-1].find('span').find('a').text
                 last_updated = meta_data.find('li').text.split("Updated On:")[1]
                 formatted_date = pd.to_datetime(last_updated)
-                data['Last Updated'] = formatted_date.strftime("%Y-%m-%d %H:%M:%S")
+                data['LAST UPDATED'] = formatted_date.strftime("%Y-%m-%d %H:%M:%S")
                 data['Sheet Name'] = district + " Beds"
+                data['Check LAST UPDATED']=False
+                data['Address'] = data['Name'] +', ' +district
                 api_input.append(data)
 
         data = json.dumps(api_input)

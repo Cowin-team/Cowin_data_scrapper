@@ -4,6 +4,8 @@ import json
 from collections import OrderedDict
 import requests
 import numpy as np
+import datetime
+import math
 
 class APICallFailure(Exception):
   pass
@@ -35,10 +37,13 @@ if __name__ == '__main__':
             'Last Updation By Hospital').tolist()
         result['Contact'] = row.get('Hospital Helpline No.').get(
             'Hospital Helpline No.').tolist()
-        result['Check LAST UPDATED'] = ['False']*len(row)
+        result['Check LAST UPDATED'] = ['True']*len(row)
         result['Sheet Name'] = [f'{x} Beds' for x in row.get(
             'District').get('District').tolist()]
-        
+         
+    
+    result['LAST UPDATED']=[(datetime.datetime.now()) if pd.isna(x) else x for x in result['LAST UPDATED']]
+    
     # convert dict to dataframe for conversion of datetime format:
     df1 = pd.DataFrame.from_dict(result)
 
@@ -48,12 +53,12 @@ if __name__ == '__main__':
     
     # convert LAST UPDATE to %Y-%m-%d %H:%M:%S format:
     df1['LAST UPDATED'] = df1['LAST UPDATED'].apply(
-        lambda x: str(pd.to_datetime(x)))
-    
-    
+        lambda x: str(pd.to_datetime(x).replace(microsecond=0)))
+     
+    #print('Name: ' + (df1['LAST UPDATED']))
     # APIInput:
     APIInput = df1.to_json(orient='records', indent=2)
-
+    #print(APIInput)
     # send df as json to update through API call:
     api_response = requests.post(
         api_url, json=json.loads(APIInput), verify=False)

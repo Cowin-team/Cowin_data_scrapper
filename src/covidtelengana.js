@@ -6,9 +6,9 @@ fetch("https://covidtelangana.com/data/covidtelangana.com/bed_data.json")
     return response.json();
   })
   .then(function (bedJson) {
-
+    let list = ['Karimnagar', 'Hyderabad', 'Warangal Urban', 'Siddipet', 'Jangaon', 'Adilabad', 'Badradri', 'Jagtial'];
     for (var key in bedJson) {
-      if (key in
+      if (list.includes(bedJson[key]["area"])){
       var rowJson = {};
       var rowdata = bedJson[key];
       rowJson["Name"] = rowdata["hospital_name"];
@@ -19,6 +19,7 @@ fetch("https://covidtelangana.com/data/covidtelangana.com/bed_data.json")
       rowJson["Contact"] = rowdata["hospital_phone"];
       rowJson["Area"] = rowdata["area"];
       rowJson["Hospital Category"] = rowdata["hospital_category"];
+      rowJson["Address"] = rowdata["hospital_name"] +', '+ rowdata["area"]+", Telengana"
       var date = rowdata["last_updated_on"];
       console.log(date)
       if (date > 0) {
@@ -32,7 +33,7 @@ fetch("https://covidtelangana.com/data/covidtelangana.com/bed_data.json")
       }
       rowJson["Sheet Name"] = rowdata["area"]+" Beds";
       outputJsonArray.push(rowJson);
-    
+    }
     }
     callAPI(outputJsonArray);
   })

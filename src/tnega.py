@@ -28,8 +28,6 @@ if __name__ == '__main__':
 
     # iterate the district map:
     for district_key in districtkey:
-      if district_key not in ["5ea0abd2d43ec2250a483a40",  "5ea0abd3d43ec2250a483a4a"]:
-         continue
       fetch_data = {
                     "Districts": [f"{district_key}"],
                     "FacilityTypes": ["CHO", "CHC", "CCC"],
