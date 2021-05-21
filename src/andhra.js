@@ -12,6 +12,8 @@ const districtIdMap = {
   "Kurnool Beds": 511, "Prakasam Beds": 517, "Spsr nellore Beds": 515, "Srikakulam Beds": 519,
   "Visakhapatanam Beds": 520, "Vizianagaram Beds": 521, "West godavari Beds": 523, "Ysr Beds": 504
 }
+var i = 0;
+var outputJsonArray = [];
 
 for (let sheetName in districtIdMap) {
   let districtId = districtIdMap[sheetName];
@@ -27,10 +29,9 @@ for (let sheetName in districtIdMap) {
     }
   }).then(res => {
     // console.log(res.data);
-    let outputJsonArray = [];
     const $ = cheerio.load(res.data);
     let dataRows = $("tbody tr");
-    console.log("Num entires == " + dataRows.length);
+    // console.log("Num entries == " + dataRows.length);
     for (let i = 0; i < dataRows.length; i++) {
       let row = dataRows[i];
       let columns = $(row).find("td");
@@ -49,9 +50,14 @@ for (let sheetName in districtIdMap) {
       outputJsonArray.push(rowJson);
     }
     // console.log(sheetName);
-    // console.log(outputJsonArray);
     // console.log("==========================================");
-    callAPI(outputJsonArray);
+    i++;
+    if (i == Object.keys(districtIdMap).length) {
+      // console.log(outputJsonArray);
+      callAPI(outputJsonArray);
+      // console.log(i)
+      // console.log(Object.keys(districtIdMap).length);
+    }
     // converter.json2csv(outputJsonArray, (err, csv) => {
     //   if (err) {
     //     throw err;
