@@ -8,7 +8,7 @@ fetch("https://covidtelangana.com/data/covidtelangana.com/bed_data.json")
   .then(function (bedJson) {
     let list = ['Karimnagar', 'Hyderabad', 'Warangal Urban', 'Siddipet', 'Jangaon', 'Adilabad', 'Badradri', 'Jagtial'];
     for (var key in bedJson) {
-      if (list.includes(bedJson[key]["area"])){
+      if (!list.includes(bedJson[key]["area"])){
       var rowJson = {};
       var rowdata = bedJson[key];
       rowJson["Name"] = rowdata["hospital_name"];
@@ -27,7 +27,7 @@ fetch("https://covidtelangana.com/data/covidtelangana.com/bed_data.json")
         date = new Date(date).toLocaleString(undefined, {timeZone: 'Asia/Kolkata'});
         date = moment(date).format('YYYY-MM-DD HH:mm:ss');
         rowJson["LAST UPDATED"] = date;
-        rowJson["Check LAST UPDATED"] = true;
+        rowJson["Check LAST UPDATED"] = false;
       } else {
         rowJson["Check LAST UPDATED"] = false;
       }
