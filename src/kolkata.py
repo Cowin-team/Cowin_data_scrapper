@@ -18,9 +18,13 @@ def getPaginatedPages(web_driver, html, html_text):
             if tds[i].find('a'):
                 page = web_driver.find_element_by_xpath(f'//*[@id="ctl00_ContentPlaceHolder1_GridView2"]/tbody/tr[1]/td/table/tbody/tr/td[{i}]/a')
                 page.click()
-                sleep(5)
+                sleep(15)
                 html_p = web_driver.execute_script("return document.getElementsByTagName('html')[0].innerHTML")
                 html_text.append(html_p)
+
+        page = web_driver.find_element_by_xpath(f'//*[@id="ctl00_ContentPlaceHolder1_GridView2"]/tbody/tr[1]/td/table/tbody/tr/td[{1}]/a')
+        page.click()
+        sleep(15)
 
 
 if __name__ == '__main__':
