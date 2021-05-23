@@ -32,8 +32,8 @@ if __name__ == '__main__':
     # skipping 2 header and 2 footer rows
     # these rows are not within our interest:
     for i, row in enumerate(_get_rows[2:-2], 1):
-      _hosp_contacts.append(_CONTACT_CLEAN_PATTERN.sub('', [r.split(':')[1] if len(r.split(':')) > 1 else r for r in row.split('\n\n')][12].strip()))
-      _addresses.append(_ADDRESS_CLEAN_PATTERN.sub('', [r.split(':')[1] if len(r.split(':')) > 1 else r for r in row.split('\n\n')][10].strip()))
+      _hosp_contacts.append(_CONTACT_CLEAN_PATTERN.sub('', [r.split(':')[1] if len(r.split(':')) > 1 else r for r in row.split('\n\n')][12]).strip())
+      _addresses.append(_ADDRESS_CLEAN_PATTERN.sub('', [r.split(':')[1] if len(r.split(':')) > 1 else r for r in row.split('\n\n')][10]).strip())
 
     # initialize result dict:
     result = OrderedDict()
