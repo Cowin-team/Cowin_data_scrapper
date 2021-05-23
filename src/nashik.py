@@ -8,7 +8,8 @@ from bs4 import BeautifulSoup as bs
 import re
 
 # regex compile:
-_CLEAN_PATTERN = re.compile(r"(\s|\n|\-)")
+_CONTACT_CLEAN_PATTERN = re.compile(r"(\s|\n|\-)")
+_ADDRESS_CLEAN_PATTERN = re.compile(r"(\n|\-)")
 
 # %%
 if __name__ == '__main__':
@@ -18,17 +19,21 @@ if __name__ == '__main__':
     # read site html table using pandas:
     df = pd.read_html(site_url)
 
-    # get contacts from the URL response
+    # get contacts & addresses from the URL response
     # this piece can be optimized to get all the information
-    # from single URL post but due to lack of time adding
+    # from single URL call but due to lack of time adding
     # separate calls to get clean Hospital contact number
     res = requests.post(site_url, data={"bed_aval": "all", "hosptype": "all", "search": "Search"})
     soup = bs(res.content, 'html.parser')
     _get_rows = [s.text for s in soup.find_all('tr', recursive=True)]
     _hosp_contacts = []
-    # skipping header and footer of the tr tags:
+    _addresses = []
+
+    # skipping 2 header and 2 footer rows
+    # these rows are not within our interest:
     for i, row in enumerate(_get_rows[2:-2], 1):
-      _hosp_contacts.append(_CLEAN_PATTERN.sub('', [r.split(':')[1] if len(r.split(':')) > 1 else r for r in row.split('\n\n')][12]))
+      _hosp_contacts.append(_CONTACT_CLEAN_PATTERN.sub('', [r.split(':')[1] if len(r.split(':')) > 1 else r for r in row.split('\n\n')][12].strip()))
+      _addresses.append(_ADDRESS_CLEAN_PATTERN.sub('', [r.split(':')[1] if len(r.split(':')) > 1 else r for r in row.split('\n\n')][10].strip()))
 
     # initialize result dict:
     result = OrderedDict()
@@ -38,7 +43,7 @@ if __name__ == '__main__':
 
     # iterate rows from output list
     # skipping last two rows as it contains cumulative total:
-    for row, _contact in zip(df, [_hosp_contacts]):
+    for row, _contacts, _addresses in zip(df, [_hosp_contacts], [_addresses]):
         result['Name'] = row.get('Hospital Name').get(
             'Hospital Name').tolist()[:-2]
         result['COVID Beds'] = row.get(
@@ -49,8 +54,9 @@ if __name__ == '__main__':
         result['Ventilator'] = row.get(
             'Ventilator Beds').get('Vacant').tolist()[:-2]
         result['LAST UPDATED'] = ['N/A']*int(len(row) - 2)
-        result['Contact'] = _contact
+        result['Contact'] = _contacts
         result['Check LAST UPDATED'] = ['False']*int(len(row) - 2)
+        result['Address'] = _addresses
         result['Sheet Name'] = ['Nashik Beds']*int(len(row) - 2)
 
     # create normalized dataframe from result dict:
