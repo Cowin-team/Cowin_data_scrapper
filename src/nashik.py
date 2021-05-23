@@ -42,7 +42,8 @@ if __name__ == '__main__':
     update_api_url = 'http://127.0.0.1:5000/updateBulk'
 
     # iterate rows from output list
-    # skipping last two rows as it contains cumulative total:
+    # skipping last two rows in df
+    # as it contains total counts:
     for row, _contacts, _addresses in zip(df, [_hosp_contacts], [_addresses]):
         result['Name'] = row.get('Hospital Name').get(
             'Hospital Name').tolist()[:-2]
