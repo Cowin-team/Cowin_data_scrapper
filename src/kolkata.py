@@ -97,7 +97,7 @@ if __name__ == '__main__':
                 raw_date = last_updated.find('small').text.split('Last Updated On :')[-1]
                 formatted_date = pd.to_datetime(raw_date)
                 data['LAST UPDATED'] = formatted_date.strftime("%Y-%m-%d %H:%M:%S")
-                data['Check LAST UPDATED']=True
+                data['Check LAST UPDATED']=False
                 api_input.append(data)
 
     data = json.dumps(api_input)

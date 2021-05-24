@@ -6,6 +6,7 @@ from collections import OrderedDict
 import requests
 from bs4 import BeautifulSoup as bs
 import re
+from datetime import datetime
 
 # regex compile:
 _CONTACT_CLEAN_PATTERN = re.compile(r"(\s|\n|\-)")
@@ -40,7 +41,7 @@ if __name__ == '__main__':
 
     # define the update url:
     update_api_url = 'http://127.0.0.1:5000/updateBulk'
-
+    now = datetime.now()
     # iterate rows from output list
     # skipping last two rows in df
     # as it contains total counts:
@@ -52,9 +53,9 @@ if __name__ == '__main__':
         result['Oxygen Beds'] = row.get(
             'Oxygen Beds').get('Vacant').tolist()[:-2]
         result['ICU'] = row.get('ICU Beds').get('Vacant').tolist()[:-2]
-        result['Ventilator'] = row.get(
+        result['Ventilator Beds'] = row.get(
             'Ventilator Beds').get('Vacant').tolist()[:-2]
-        result['LAST UPDATED'] = ['N/A']*int(len(row) - 2)
+        result['LAST UPDATED'] = [now.strftime("%Y-%m-%d %H:%M:%S")]*int(len(row) - 2)
         result['Contact'] = _contacts
         result['Check LAST UPDATED'] = ['False']*int(len(row) - 2)
         result['Address'] = _addresses

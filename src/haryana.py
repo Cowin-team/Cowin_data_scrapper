@@ -40,7 +40,7 @@ if __name__ == '__main__':
                 formatted_date = pd.to_datetime(last_updated)
                 data['LAST UPDATED'] = formatted_date.strftime("%Y-%m-%d %H:%M:%S")
                 data['Sheet Name'] = district + " Beds"
-                data['Check LAST UPDATED']=False
+                data['Check LAST UPDATED']=True
                 data['Address'] = data['Name'] +', ' +district
                 api_input.append(data)
 
