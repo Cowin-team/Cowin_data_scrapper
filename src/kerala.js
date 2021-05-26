@@ -1,7 +1,7 @@
 // this script parses the data from https://covid19jagratha.kerala.nic.in/home/addHospitalDashBoard
 
 const puppeteer = require('puppeteer');
-
+const fetch = require("node-fetch");
 const siteURL = "https://covid19jagratha.kerala.nic.in/home/addHospitalDashBoard";
 const sheetsURL = "http://127.0.0.1:5000/updateBulk";
 var outputJsonArray = [];
@@ -71,7 +71,7 @@ async function scrapeKerala() {
       await page.waitForSelector('#hosTable_length select');
       await page.select('#hosTable_length select', '-1');
 
-      let output = await page.evaluate((dist) => {
+      let output = await page.evaluate((dist, siteURL) => {
         let dataRows = document.querySelectorAll('#hosTable tbody tr');
         // console.log(dist);
         let outputArray = [];
@@ -91,12 +91,12 @@ async function scrapeKerala() {
           rowJson["LAST UPDATED"] = date;
           rowJson["Sheet Name"] = dist + " Beds";
           rowJson["Check LAST UPDATED"] = false;
-          rowJson["Source URL"] = "https://covid19jagratha.kerala.nic.in/home/addHospitalDashBoard";
+          rowJson["Source URL"] = siteURL;
           outputArray.push(rowJson);
         }
         // console.log(outputArray)
         return outputArray;
-      }, dist)
+      }, dist, siteURL)
 
       await getVisibleHandle('#hospitalModal i.fa.fa-close', page);
       await page.waitFor(500);
