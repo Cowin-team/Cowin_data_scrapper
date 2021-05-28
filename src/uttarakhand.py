@@ -30,11 +30,12 @@ if __name__ == '__main__':
 			data['COVID Beds'] = tds[3].text.split("/", 1)[0].replace("\n", "")
 			data['Oxygen beds'] = tds[4].text.split("/", 1)[0].replace("\n", "")
 			data['ICU'] = tds[5].text.split("/", 1)[0].replace("\n", "")
-			data['Ventilators'] = tds[6].text.split("/", 1)[0].replace("\n", "")
-			data['Phone Number'] = (re.findall(r'\d+', tds[2].text))[0].strip()
-			data['Last Updated'] = tds[7].text.replace("/", "-").replace("\n", "")
+			data['Ventilator Beds'] = tds[6].text.split("/", 1)[0].replace("\n", "")
+			data['Contact'] = (re.findall(r'\d+', tds[2].text))[0].strip()
+			data['LAST UPDATED'] = tds[7].text.replace("/", "-").replace("\n", "")
 			data['Sheet Name'] = tds[0].text.replace("\n", "") + " Beds"
-			data['Check LAST UPDATED']=True
+			data['Check LAST UPDATED']=False
+			data['Address'] =tds[1].text.partition("Dedicated")[0].replace("\n", "") + ', '+ tds[0].text.replace("\n", "") + ', Uttarakhand'
 			api_input.append(data)
 
 		api_url = 'http://127.0.0.1:5000/updateBulk'

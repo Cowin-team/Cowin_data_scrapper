@@ -73,12 +73,12 @@ df[0]['Ventilator'] = df[0]['ref ICU w/ Venti available'].add(df[0]['pvt ICU w/ 
 df[0]['Address'] = df[0]['hospital'] + ',' + df[0]['zone/ward'].apply(lambda x: x.split('/')[1] if x and len(x.split('/')) > 1 else x) + ', Ahmedabad'
 df[0]['Contact'] = 'N/A'
 df[0]['LAST UPDATED'] = str(datetime.strptime(last_updated_dttm, '%d-%m-%Y %I.%M %p'))
-df[0]['LAST UPDATED checked'] = 'True'
+df[0]['Check LAST UPDATED'] = False
 df[0]['Sheet Name'] = 'Ahmedabad Beds'
-
+df[0]['Name'] =  df[0]['hospital']
 # %%
 # create new df with req columns:
-df1 = df[0][['hospital', 'Address', 'COVID Beds', 'ICU', 'HDU', 'Ventilator', 'Contact', 'LAST UPDATED', 'LAST UPDATED checked', 'Sheet Name']]
+df1 = df[0][['Name', 'Address', 'COVID Beds', 'ICU', 'HDU', 'Ventilator', 'Contact', 'LAST UPDATED', 'Check LAST UPDATED', 'Sheet Name']]
 # %%
 # convert the new dataframe to JSON
 # call the API & pass JSON to update sheet:
