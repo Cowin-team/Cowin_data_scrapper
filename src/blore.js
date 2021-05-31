@@ -27,8 +27,8 @@ axios({
 async function translatePowerBiTable(apiUrl) {
   const browser = await puppeteer.launch({headless: false});
   const page = await browser.newPage();
-  await page.setViewport({ width : 1200,height : 800})
-  await page.goto(apiUrl, {waitUntil: 'networkidle0'});
+  await page.setViewport({ width : 1200, height : 800 })
+  await page.goto(apiUrl, { waitUntil : 'networkidle0' });
 
 
   /*
@@ -66,13 +66,17 @@ async function translatePowerBiTable(apiUrl) {
         let icuAvail = document.querySelectorAll(".innerContainer")[1].children[3].children[0].children[1].children[5].children[j].innerText;
         // populate ICU Vent available ; 7th column on the right side
         let icuVentAvail = document.querySelectorAll(".innerContainer")[1].children[3].children[0].children[1].children[6].children[j].innerText;
+        // populate late updated
+        let lastUpdated = document.querySelectorAll("svg[class=card]")[0].getAttribute('aria-label')
+              .substring(15,document.querySelectorAll("svg[class=card]")[0].getAttribute('aria-label').length);
 
         localResult.push({
           "Name":hospitalName,
           "COVID Beds":genAvail,
           "HDU Beds":hduAvail,
           "ICU":icuAvail,
-          "Ventilator Beds":icuVentAvail
+          "Ventilator Beds":icuVentAvail,
+          "LAST UPDATED" : lastUpdated
         });
       }
       return localResult;
