@@ -68,7 +68,7 @@ async function translatePowerBiTable(apiUrl) {
         let icuVentAvail = document.querySelectorAll(".innerContainer")[1].children[3].children[0].children[1].children[6].children[j].innerText;
         // populate late updated
         let lastUpdated = document.querySelectorAll("svg[class=card]")[0].getAttribute('aria-label')
-              .substring(15,document.querySelectorAll("svg[class=card]")[0].getAttribute('aria-label').length);
+              .substring(15,document.querySelectorAll("svg[class=card]")[0].getAttribute('aria-label').length - 1);
 
         localResult.push({
           "Name":hospitalName,
@@ -98,8 +98,8 @@ async function update(hospitalData) {
     }
   }
   // Uncomment to validate the hospital data sent to sheets api
-  // console.log(uniqueHospitals);
-  // console.log("Number of unique hospitals", +uniqueHospitals.length);
+  console.log(uniqueHospitals);
+  console.log("Number of unique hospitals", +uniqueHospitals.length);
 
   // make a call to sheets api
   // todo : we can move this code to a common module to avoid boiler plate code in multiple files
