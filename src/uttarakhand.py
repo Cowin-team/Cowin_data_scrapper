@@ -4,6 +4,7 @@ import requests
 from bs4 import BeautifulSoup
 from collections import OrderedDict
 import re
+import datetime
 
 if __name__ == '__main__':
 
@@ -32,9 +33,10 @@ if __name__ == '__main__':
 			data['ICU'] = tds[5].text.split("/", 1)[0].replace("\n", "")
 			data['Ventilator Beds'] = tds[6].text.split("/", 1)[0].replace("\n", "")
 			data['Contact'] = (re.findall(r'\d+', tds[2].text))[0].strip()
-			data['LAST UPDATED'] = tds[7].text.replace("/", "-").replace("\n", "")
+			lastupdated = tds[7].text.replace("/", "-").replace("\n", "")
+			data['LAST UPDATED'] = datetime.datetime.strptime(lastupdated, '%d-%m-%Y %H:%M:%S').strftime("%Y-%m-%d %H:%M:%S")
 			data['Sheet Name'] = tds[0].text.replace("\n", "") + " Beds"
-			data['Check LAST UPDATED']=False
+			data['Check LAST UPDATED']=True
 			data['Address'] =tds[1].text.partition("Dedicated")[0].replace("\n", "") + ', '+ tds[0].text.replace("\n", "") + ', Uttarakhand'
 			api_input.append(data)
 

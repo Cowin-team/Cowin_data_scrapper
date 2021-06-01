@@ -71,12 +71,14 @@ async function translatePowerBiTable(apiUrl) {
               .substring(15,document.querySelectorAll("svg[class=card]")[0].getAttribute('aria-label').length - 1);
 
         localResult.push({
+          "Sheet Name": 'Bangalore Beds',
           "Name":hospitalName,
           "COVID Beds":genAvail,
           "HDU Beds":hduAvail,
           "ICU":icuAvail,
           "Ventilator Beds":icuVentAvail,
-          "LAST UPDATED" : lastUpdated
+          "LAST UPDATED" : lastUpdated,
+          "Check LAST UPDATED": false
         });
       }
       return localResult;
