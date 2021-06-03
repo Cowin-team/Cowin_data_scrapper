@@ -2,6 +2,7 @@
 
 const puppeteer = require('puppeteer');
 const fetch = require("node-fetch");
+const converter = require('json-2-csv');
 const siteURL = "https://covid19jagratha.kerala.nic.in/home/addHospitalDashBoard";
 const sheetsURL = "http://127.0.0.1:5000/updateBulk";
 var outputJsonArray = [];
@@ -139,7 +140,7 @@ async function scrapeKerala() {
           }
         }
         if (!hospExists) {
-          output.push(oxygen[i]);
+          // output.push(oxygen[i]);
         }
       }
       outputJsonArray.push.apply(outputJsonArray, output);
@@ -155,6 +156,15 @@ async function scrapeKerala() {
 scrapeKerala();
 
 async function callAPI(bedData) {
+
+  converter.json2csv(bedData, (err, csv) => {
+      if (err) {
+        throw err;
+      }
+    // print CSV string
+    // console.log(csv);
+    });
+
   response = await fetch(sheetsURL, {
     method: 'POST', // or 'PUT'
     credentials: 'omit',
