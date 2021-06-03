@@ -92,6 +92,7 @@ async function scrapeKerala() {
           rowJson["LAST UPDATED"] = date;
           rowJson["Sheet Name"] = dist + " Beds";
           rowJson["Check LAST UPDATED"] = false;
+          rowJson["Address"] = rowJson["Name"] + ", " + dist + ", Kerala";
           rowJson["Source URL"] = siteURL;
           outputArray.push(rowJson);
         }
@@ -109,7 +110,7 @@ async function scrapeKerala() {
 
       await page.waitForSelector('#hospitalModal select');
       await page.select('#hospitalModal select', '-1');
-      let oxygen = await page.evaluate(() => {
+      let oxygen = await page.evaluate((dist, siteURL) => {
         let dataRows = document.querySelectorAll('#hospitalModal tbody tr');
         let oxygenArray = [];
         for (let i = 0; i < dataRows.length; i++) {
@@ -118,12 +119,16 @@ async function scrapeKerala() {
           var rowJson = {};
           rowJson["Name"] = $(columns[0]).text().trim();
           rowJson["Oxygen Beds"] = $(columns[2]).text().trim();
+          rowJson["Sheet Name"] = dist + " Beds";
+          rowJson["Source URL"] = siteURL;
+          rowJson["Check LAST UPDATED"] = false;
+          rowJson["Address"] = rowJson["Name"] + ", " + dist + ", Kerala";
           oxygenArray.push(rowJson);
         }
         console.log(oxygenArray);
         // debugger;
         return oxygenArray;
-      })
+      }, dist, siteURL)
       // merge the oxygen data into the overall data
       await getVisibleHandle('#hospitalModal i.fa.fa-close', page);
       await page.waitFor(300);
@@ -139,8 +144,11 @@ async function scrapeKerala() {
             break;
           }
         }
+        // if (dist == "KASARAGOD" && hospExists) {
+        //   console.log("break me");
+        // }
         if (!hospExists) {
-          // output.push(oxygen[i]);
+          output.push(oxygen[i]);
         }
       }
       outputJsonArray.push.apply(outputJsonArray, output);
@@ -149,6 +157,12 @@ async function scrapeKerala() {
     await browser.close();
     // final json array below
     console.log(outputJsonArray);
+
+    const fs = require("fs") //npm install fs
+    const json2xls = require('json2xls');
+    const xls = json2xls(outputJsonArray);
+    fs.writeFileSync('data.xlsx', xls, 'binary');
+
     callAPI(outputJsonArray);
   }
 };
@@ -156,15 +170,6 @@ async function scrapeKerala() {
 scrapeKerala();
 
 async function callAPI(bedData) {
-
-  converter.json2csv(bedData, (err, csv) => {
-      if (err) {
-        throw err;
-      }
-    // print CSV string
-    // console.log(csv);
-    });
-
   response = await fetch(sheetsURL, {
     method: 'POST', // or 'PUT'
     credentials: 'omit',
