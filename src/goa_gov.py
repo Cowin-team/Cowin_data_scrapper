@@ -27,12 +27,12 @@ if __name__ == '__main__':
 
 			data['Name'] = tds[1].text.partition(",")[0]
 			data['COVID Beds'] = tds[3].text
-			data['Oxygen beds'] = 'N/A'
+			data['Oxygen Beds'] = 'N/A'
 			data['ICU'] = tds[5].text
-			data['Ventilators'] = 'N/A'
+			data['Ventilator Beds'] = 'N/A'
 			data['Phone Number'] = 'N/A'
-			data['Last Updated'] = pd.to_datetime(tds[6].text).strftime("%Y-%m-%d %H:%M:%S")
-			data['Sheet Name'] = tds[1].text.partition(",")[2] + " Beds"
+			data['LAST UPDATED'] = pd.to_datetime(tds[6].text).strftime("%Y-%m-%d %H:%M:%S")
+			data['Sheet Name'] =  "Goa Beds"
 			data['Check LAST UPDATED']=True
 			data['Address'] = tds[1].text +', ' +'Goa'
 			api_input.append(data)
