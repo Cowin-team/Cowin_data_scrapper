@@ -36,7 +36,7 @@ for r in df:
     result['Contact'] =  r['Contact Number']['Contact Number'].tolist()
     result['Check LAST UPDATED']=True 
     result['Sheet Name'] = np.array([x + ' Beds' for x in r['District']['District'].tolist()])
-    
+    result['Address'] = result['Name']+', '+result['Sheet Name'].split(' ')[0]+', Tamil Nadu, India'
     result['Sheet Name'][city_index] = 'Nagercoil Beds'
     result['Sheet Name'][city_index2] = 'Nilgiris Beds'
         #APIlist.append((result))

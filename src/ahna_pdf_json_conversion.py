@@ -73,7 +73,7 @@ df[0]['Ventilator Beds'] = df[0]['ref ICU w/ Venti available'].add(df[0]['pvt IC
 df[0]['Address'] = df[0]['hospital'] + ',' + df[0]['zone/ward'].apply(lambda x: str(x.split('/')[1])+', Ahmedabad' if isinstance(x, str) and len(x.split('/')) > 1 else ' Ahmedabad')
 df[0]['Contact'] = 'N/A'
 df[0]['LAST UPDATED'] = str(datetime.strptime(last_updated_dttm, '%d-%m-%Y %I.%M %p'))
-df[0]['Check LAST UPDATED'] = False
+df[0]['Check LAST UPDATED'] = True
 df[0]['Sheet Name'] = 'Ahmedabad Beds'
 df[0]['Name'] =  df[0]['hospital']
 # %%

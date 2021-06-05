@@ -151,13 +151,7 @@ async function scrapeKerala() {
       distId++;
     }
     await browser.close();
-    // final json array below
     console.log(outputJsonArray);
-
-    // const fs = require("fs") //npm install fs
-    // const json2xls = require('json2xls');
-    // const xls = json2xls(outputJsonArray);
-    // fs.writeFileSync('data.xlsx', xls, 'binary');
 
     callAPI(outputJsonArray);
   }

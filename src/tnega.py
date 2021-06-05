@@ -52,6 +52,7 @@ if __name__ == '__main__':
            stack['LAST UPDATED']=datetime.fromtimestamp(rec.get('CovidBedDetails','N/A').get('UpdatedOn', 'N/A')).strftime('%Y-%m-%d %H:%M:%S')
            stack['Check LAST UPDATED'] = True
            stack['Contact'] = rec.get('MobileNumber','N/A')
+           stack['Address'] = stack['Name']+', '+stack['Sheet Name'].split(' ')[0]+', Tamil Nadu, India'
            APIinput.append(stack)
       result = json.dumps(APIinput)
       api_response = requests.post(api_url, json=json.loads(result), verify=False)

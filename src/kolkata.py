@@ -34,7 +34,9 @@ if __name__ == '__main__':
     district = 'KOLKATA METROPOLITAN AREA'
 
     # initialize the selenium web driver
-    driver = webdriver.Chrome("/home/nmahesh/Documents/covid-19_India/Cowin_data_scrapper/src/chromedriver_folder/chromedriver")
+    options = webdriver.ChromeOptions()
+    options.add_argument("--headless")
+    driver = webdriver.Chrome("/home/nmahesh/Documents/covid-19_India/Cowin_data_scrapper/src/chromedriver_folder/chromedriver", chrome_options=options)
     driver.get("https://excise.wb.gov.in/CHMS/Public/Page/CHMS_Public_Hospital_Bed_Availability.aspx")
 
     select = Select(driver.find_element_by_xpath('//*[@id="ctl00_ContentPlaceHolder1_ddl_District"]'))

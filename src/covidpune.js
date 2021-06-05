@@ -28,6 +28,7 @@ fetch("https://covidpune.com/data/covidpune.com/bed_data.json")
       } else {
         rowJson["Check LAST UPDATED"] = false;
       }
+      rowJson["Address"] = rowJson["Name"]+', '+ rowJson["Area"]+', Pune, Maharashtra, India' 
       rowJson["Sheet Name"] = "Pune Beds";
       outputJsonArray.push(rowJson);
     }
