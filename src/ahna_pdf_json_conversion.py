@@ -70,7 +70,7 @@ df[0]['COVID Beds'] = df[0]['ref isolation available'].add(df[0]['pvt isolation 
 df[0]['ICU'] = df[0]['ref ICU w/o Venti available'].add(df[0]['pvt ICU w/o Venti available'], fill_value=0)
 df[0]['HDU Beds'] = df[0]['ref HDU available'].add(df[0]['pvt HDU available'], fill_value=0)
 df[0]['Ventilator Beds'] = df[0]['ref ICU w/ Venti available'].add(df[0]['pvt ICU w/ Venti available'], fill_value=0)
-df[0]['Address'] = df[0]['hospital'] + ',' + df[0]['zone/ward'].apply(lambda x: x.split('/')[1] if x and len(x.split('/')) > 1 else x) + ', Ahmedabad'
+df[0]['Address'] = df[0]['hospital'] + ',' + df[0]['zone/ward'].apply(lambda x: str(x.split('/')[1])+', Ahmedabad' if isinstance(x, str) and len(x.split('/')) > 1 else ' Ahmedabad')
 df[0]['Contact'] = 'N/A'
 df[0]['LAST UPDATED'] = str(datetime.strptime(last_updated_dttm, '%d-%m-%Y %I.%M %p'))
 df[0]['Check LAST UPDATED'] = False

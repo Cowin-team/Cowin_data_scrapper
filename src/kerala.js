@@ -2,7 +2,6 @@
 
 const puppeteer = require('puppeteer');
 const fetch = require("node-fetch");
-const converter = require('json-2-csv');
 const siteURL = "https://covid19jagratha.kerala.nic.in/home/addHospitalDashBoard";
 const sheetsURL = "http://127.0.0.1:5000/updateBulk";
 var outputJsonArray = [];
@@ -90,7 +89,7 @@ async function scrapeKerala() {
           // rowJson["Contact"] = $(columns[1]).text().trim().split(":")[2].split("Direction")[0].trim();
           let date = moment($(columns[6]).text().trim(), "DD-MM-YYYY hh:mm:ssa").format('YYYY-MM-DD HH:mm:ss')
           rowJson["LAST UPDATED"] = date;
-          rowJson["Sheet Name"] = dist + " Beds";
+          rowJson["Sheet Name"] = dist.toLowerCase() + " beds";
           rowJson["Check LAST UPDATED"] = false;
           rowJson["Address"] = rowJson["Name"] + ", " + dist + ", Kerala";
           rowJson["Source URL"] = siteURL;
@@ -119,7 +118,7 @@ async function scrapeKerala() {
           var rowJson = {};
           rowJson["Name"] = $(columns[0]).text().trim();
           rowJson["Oxygen Beds"] = $(columns[2]).text().trim();
-          rowJson["Sheet Name"] = dist + " Beds";
+          rowJson["Sheet Name"] = dist.toLowerCase() + " beds";
           rowJson["Source URL"] = siteURL;
           rowJson["Check LAST UPDATED"] = false;
           rowJson["Address"] = rowJson["Name"] + ", " + dist + ", Kerala";
@@ -144,9 +143,6 @@ async function scrapeKerala() {
             break;
           }
         }
-        // if (dist == "KASARAGOD" && hospExists) {
-        //   console.log("break me");
-        // }
         if (!hospExists) {
           output.push(oxygen[i]);
         }
@@ -158,10 +154,10 @@ async function scrapeKerala() {
     // final json array below
     console.log(outputJsonArray);
 
-    const fs = require("fs") //npm install fs
-    const json2xls = require('json2xls');
-    const xls = json2xls(outputJsonArray);
-    fs.writeFileSync('data.xlsx', xls, 'binary');
+    // const fs = require("fs") //npm install fs
+    // const json2xls = require('json2xls');
+    // const xls = json2xls(outputJsonArray);
+    // fs.writeFileSync('data.xlsx', xls, 'binary');
 
     callAPI(outputJsonArray);
   }
