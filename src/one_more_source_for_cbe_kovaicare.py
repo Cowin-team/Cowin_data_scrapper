@@ -173,9 +173,9 @@ kovaicare=pd.DataFrame({"Hospital Name":HospitalName,
                         "link":MoreDetailsLink,
                         "Last Updated":last_updated,
                         # "ContactInformation":contactInfo,
-                        "Sheet Name":Sheetname,
                         "Address": address,
-                        "Check LAST UPDATED":False})
+                        "Check LAST UPDATED":False,
+                        "Sheet Name":'One more source for Cbe'})
 
 kovaicare
 
