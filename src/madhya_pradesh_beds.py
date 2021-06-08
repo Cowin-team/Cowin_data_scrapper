@@ -98,7 +98,7 @@ for key,value in district_list.items():
     contactInfo.append(contact1)
 
   # print(len(HospitalName), len(Map), len(BedStatus),len(IsolationBeds),len(OxygenSupported),len(ICUavailable),len(last_updated),len(contactInfo))
-  mp_bedlist=pd.DataFrame({"Name":HospitalName,"Map Link":Map,"Bed Status":BedStatus,"COVID Beds":IsolationBeds,"Oxygen Beds":OxygenSupported,"ICU":ICUavailable,"LAST UPDATED":last_updated,"Sheet Name":sheetname,"Address": address,"ContactInformation":contactInfo,"Check LAST UPDATED":False})
+  mp_bedlist=pd.DataFrame({"Name":HospitalName,"Map Link":Map,"Bed Status":BedStatus,"COVID Beds":IsolationBeds,"Oxygen Beds":OxygenSupported,"ICU":ICUavailable,"LAST UPDATED":last_updated,"Sheet Name":sheetname,"Address": address,"ContactInformation":contactInfo,"Check LAST UPDATED":True})
 ## "Last Updated":last_updated
 # print(len(HospitalName), len(Map), len(BedStatus),len(IsolationBeds),len(OxygenSupported),len(ICUavailable),len(last_updated),len(contactInfo))
 
