@@ -168,14 +168,14 @@ print(len(HospitalName),
 kovaicare=pd.DataFrame({"Hospital Name":HospitalName,
                         "No. of Vacant Beds":VacantBeds,
                         "No. of Vacant General Beds":G_Xbed,
-                        "Vacant Oxygen Beds":O_Xbed,
-                        "Vacant Ventilator Beds":V_Xbed,
-                        "link":MoreDetailsLink,
+                        "No. of Vacant Oxygen Beds":O_Xbed,
+                        "No. of Vacant Ventilator Beds":V_Xbed,
+                        "Link For Details":MoreDetailsLink,
                         "Last Updated":last_updated,
                         # "ContactInformation":contactInfo,
                         "Address": address,
                         "Check LAST UPDATED":False,
-                        "Sheet Name":'One more source for Cbe'})
+                        "Sheet Name":"One More Source For Cbe",})
 
 kovaicare
 
