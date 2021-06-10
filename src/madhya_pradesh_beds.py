@@ -41,7 +41,7 @@ for key,value in district_list.items():
   hospitalname=soup.find_all('div',{'class':"hospitalname"})
   for hospital in hospitalname:
     HospitalName.append(hospital.text.split('/')[0])
-    sheetname.append(key)
+    sheetname.append(key+' beds')
     address.append(hospital.text.split('/')[0]+", "+key+", Madhya Pradesh, India")
     # print(sheetname)
 
@@ -81,9 +81,9 @@ for key,value in district_list.items():
     last=soup.find("div",class_="last-updated")
     last_up=last.find("span")
     last_update=last_up.text.split(" ")
-    # print(last_update[21]+" "+last_update[22])
+    #print(last_update[21],last_update[22])
     # print(last_update[22])
-    last_updated.append(last_update[21]+" "+last_update[22])
+    last_updated.append(last_update[21].split(',')[0]+" "+last_update[22].split(',')[0])
 
     cont=soup.find("div",{"class":"card card-body contact-body"})
     contact=cont.find_all("span",{"class":"contact"})
@@ -98,7 +98,7 @@ for key,value in district_list.items():
     contactInfo.append(contact1)
 
   # print(len(HospitalName), len(Map), len(BedStatus),len(IsolationBeds),len(OxygenSupported),len(ICUavailable),len(last_updated),len(contactInfo))
-  mp_bedlist=pd.DataFrame({"Name":HospitalName,"Map Link":Map,"Bed Status":BedStatus,"COVID Beds":IsolationBeds,"Oxygen Beds":OxygenSupported,"ICU":ICUavailable,"LAST UPDATED":last_updated,"Sheet Name":sheetname,"Address": address,"ContactInformation":contactInfo,"Check LAST UPDATED":True})
+  mp_bedlist=pd.DataFrame({"Name":HospitalName,"Map Link":Map,"Bed Status":BedStatus,"COVID Beds":IsolationBeds,"Oxygen Beds":OxygenSupported,"ICU":ICUavailable,"LAST UPDATED":last_updated,"Sheet Name":sheetname,"Address": address,"ContactInformation":contactInfo,"Check LAST UPDATED":False})
 ## "Last Updated":last_updated
 # print(len(HospitalName), len(Map), len(BedStatus),len(IsolationBeds),len(OxygenSupported),len(ICUavailable),len(last_updated),len(contactInfo))
 

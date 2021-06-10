@@ -91,7 +91,7 @@ async function scrapeKerala() {
           rowJson["LAST UPDATED"] = date;
           rowJson["Sheet Name"] = dist.toLowerCase() + " beds";
           rowJson["Check LAST UPDATED"] = false;
-          rowJson["Address"] = rowJson["Name"] + ", " + dist + ", Kerala";
+          rowJson["Address"] = rowJson["Name"] + ", " + dist + ", Kerala, India";
           rowJson["Source URL"] = siteURL;
           outputArray.push(rowJson);
         }
@@ -121,7 +121,7 @@ async function scrapeKerala() {
           rowJson["Sheet Name"] = dist.toLowerCase() + " beds";
           rowJson["Source URL"] = siteURL;
           rowJson["Check LAST UPDATED"] = false;
-          rowJson["Address"] = rowJson["Name"] + ", " + dist + ", Kerala";
+          rowJson["Address"] = rowJson["Name"] + ", " + dist + ", Kerala, India";
           oxygenArray.push(rowJson);
         }
         console.log(oxygenArray);
