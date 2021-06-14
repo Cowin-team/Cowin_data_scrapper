@@ -59,6 +59,7 @@ if __name__ == '__main__':
                         data['Phone Number'] = browser.find_element_by_xpath("/html/body/div/div/div/div[4]/div[2]/button[{}]/div/div[3]/p".format(id+1)).text
                         data['Type'] = browser.find_element_by_xpath("/html/body/div/div/div/div[4]/div[2]/button[{}]/div/div[2]/p".format(id+1)).text
                         data['Free'] = "N/A"
+                        #ToDo: Needs some cleanup to extract the below properties
                         # delivery = browser.find_element_by_xpath("/html/body/div/div/div/div[4]/div[2]/button[{}]/div/div[4]/p".format(id+1)).text
                         # timings = browser.find_element_by_xpath("/html/body/div/div/div/div[4]/div[2]/button[{}]/div/div[5]/p[1]".format(id+1)).text
                         data['Comments'] = "N/A"
@@ -68,6 +69,10 @@ if __name__ == '__main__':
         browser.close()
         data = json.dumps(api_input)
         # print(data)
+        api_response = requests.post(api_url, json=json.loads(data), verify=False)
+
+		if api_response.status_code != 200:
+			raise Exception(f"bulk update failed: {api_response.text}")
         
     except Exception as ex:
         print(ex)
