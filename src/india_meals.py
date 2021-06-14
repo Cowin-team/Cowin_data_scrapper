@@ -71,8 +71,8 @@ if __name__ == '__main__':
         # print(data)
         api_response = requests.post(api_url, json=json.loads(data), verify=False)
 
-		if api_response.status_code != 200:
-			raise Exception(f"bulk update failed: {api_response.text}")
+	if api_response.status_code != 200:
+	    raise Exception(f"bulk update failed: {api_response.text}")
         
     except Exception as ex:
         print(ex)
