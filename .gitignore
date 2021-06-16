@@ -12,3 +12,7 @@ _dist
 # python ignore
 __pycache__
 *.pyc
+
+src/storage.json
+node_modules
+env

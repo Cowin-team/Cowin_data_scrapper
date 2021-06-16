@@ -35,7 +35,10 @@ if __name__ == '__main__':
     districts = set()
 
     # initialize the selenium web driver
-    driver = webdriver.Chrome("/home/nmahesh/Documents/covid-19_India/Cowin_data_scrapper/src/chromedriver_folder/chromedriver")
+    options = webdriver.ChromeOptions()
+    options.add_argument("--headless")
+
+    driver = webdriver.Chrome("/home/svc/chromedriver",chrome_options=options)
     driver.get("https://excise.wb.gov.in/CHMS/Public/Page/CHMS_Public_Hospital_Bed_Availability.aspx")
 
     # get the district names
@@ -119,3 +122,5 @@ if __name__ == '__main__':
             raise Exception(f"bulk update failed: {api_response.text}")
     except Exception as ex:
         print(ex)
+    
+    driver.close()

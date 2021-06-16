@@ -46,7 +46,7 @@ for (let sheetName in districtIdMap) {
       date = moment(date).format('YYYY-MM-DD HH:mm:ss');
       rowJson["LAST UPDATED"] = date;
       rowJson["Sheet Name"] = sheetName;
-      rowJson["Check LAST UPDATED"] = false;
+      rowJson["Check LAST UPDATED"] = true;
       rowJson["Address"] = rowJson["Name"]+', '+ sheetName.split(' ')[0]+', '+'Andhra Pradesh'
       outputJsonArray.push(rowJson);
     }

@@ -41,8 +41,8 @@ async function getVisibleHandle(selector, page) {
 }
 
 async function scrapeKerala() {
-  // const browser = await puppeteer.launch({headless: false, args: ['--auto-open-devtools-for-tabs']});
-  const browser = await puppeteer.launch({headless: false});
+  //const browser = await puppeteer.launch({headless: false, args: ['--auto-open-devtools-for-tabs']});
+  const browser = await puppeteer.launch({headless: true});
   const page = await browser.newPage();
   page.setDefaultNavigationTimeout(0);
   await page.goto(siteURL, {waitUntil: 'networkidle0', timeout: 0});

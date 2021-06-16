@@ -27,7 +27,7 @@ fetch("https://covidtelangana.com/data/covidtelangana.com/bed_data.json")
         date = new Date(date).toLocaleString(undefined, {timeZone: 'Asia/Kolkata'});
         date = moment(date).format('YYYY-MM-DD HH:mm:ss');
         rowJson["LAST UPDATED"] = date;
-        rowJson["Check LAST UPDATED"] = false;
+        rowJson["Check LAST UPDATED"] = true;
       } else {
         rowJson["Check LAST UPDATED"] = false;
       }

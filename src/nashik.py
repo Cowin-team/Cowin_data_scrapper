@@ -57,7 +57,7 @@ if __name__ == '__main__':
             'Ventilator Beds').get('Vacant').tolist()[:-2]
         result['LAST UPDATED'] = [now.strftime("%Y-%m-%d %H:%M:%S")]*int(len(row) - 2)
         result['Contact'] = _contacts
-        result['Check LAST UPDATED'] = ['False']*int(len(row) - 2)
+        result['Check LAST UPDATED'] = ['True']*int(len(row) - 2)
         result['Address'] = _addresses
         result['Sheet Name'] = ['Nashik Beds']*int(len(row) - 2)
 

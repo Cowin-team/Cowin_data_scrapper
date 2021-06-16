@@ -36,12 +36,13 @@ if __name__ == '__main__':
     # initialize the selenium web driver
     options = webdriver.ChromeOptions()
     options.add_argument("--headless")
-    driver = webdriver.Chrome("/home/nmahesh/Documents/covid-19_India/Cowin_data_scrapper/src/chromedriver_folder/chromedriver", chrome_options=options)
+
+    driver = webdriver.Chrome("/home/svc/chromedriver", chrome_options=options)
     driver.get("https://excise.wb.gov.in/CHMS/Public/Page/CHMS_Public_Hospital_Bed_Availability.aspx")
 
     select = Select(driver.find_element_by_xpath('//*[@id="ctl00_ContentPlaceHolder1_ddl_District"]'))
     select.select_by_visible_text(district)
-    sleep(10)  # allowing a sleep time of 10 sec to fully load the page
+    sleep(15)  # allowing a sleep time of 10 sec to fully load the page
 
     # get govt requisitioned private hospital data
     select_govt_pvt = driver.find_element_by_xpath('//*[@id="ctl00_ContentPlaceHolder1_rdo_Govt_Flag"]/label[2]')
@@ -99,7 +100,7 @@ if __name__ == '__main__':
                 raw_date = last_updated.find('small').text.split('Last Updated On :')[-1]
                 formatted_date = pd.to_datetime(raw_date)
                 data['LAST UPDATED'] = formatted_date.strftime("%Y-%m-%d %H:%M:%S")
-                data['Check LAST UPDATED']=False
+                data['Check LAST UPDATED']=True
                 api_input.append(data)
 
     data = json.dumps(api_input)
@@ -109,3 +110,5 @@ if __name__ == '__main__':
             raise Exception(f"bulk update failed: {api_response.text}")
     except Exception as ex:
         print(ex)
+
+    driver.close()
