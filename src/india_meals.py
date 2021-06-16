@@ -55,9 +55,7 @@ if __name__ == '__main__':
                 
                 try:    
                     WebDriverWait(browser,10).until(EC.element_to_be_clickable((By.XPATH, "/html/body/div/div/div/div[2]/div/button/span[1]/button/span[1]"))).click()
-                    # html = browser.find_element_by_tag_name('html')
-                    # html.send_keys(Keys.END)
-                    time.sleep(10)
+                    time.sleep(5)
                 except ElementClickInterceptedException:
                     print("Err 2 ", litag.text)
                     time.sleep(10)
@@ -67,7 +65,7 @@ if __name__ == '__main__':
                     # Scroll down to bottom
                     browser.execute_script("window.scrollTo(0, document.body.scrollHeight);")
                     # Wait to load page
-                    time.sleep(2)
+                    time.sleep(1)
                     # Calculate new scroll height and compare with last scroll height
                     new_height = browser.execute_script("return document.body.scrollHeight")
                     if new_height == last_height:
