@@ -61,7 +61,8 @@ def get_hospital_info():
 	response = requests.post(
 		url="https://searchmybed.com/patientTracking/fetch_hospitals_list",
 		# this is just base64 encoded string of {"userID":null,"userName":null,"userType":null,"userRole":null,"type":""}
-		data= "eyJ1c2VySUQiOm51bGwsInVzZXJOYW1lIjpudWxsLCJ1c2VyVHlwZSI6bnVsbCwidXNlclJvbGUiOm51bGwsInR5cGUiOiIifQ=="
+		data="eyJ1c2VySUQiOm51bGwsInVzZXJOYW1lIjpudWxsLCJ1c2VyVHlwZSI6bnVsbCwidXNlclJvbGUiOm51bGwsInR5cGUiOiIifQ==",
+		verify=False
 	)
 	base64_encoded_response = response.text
 	json_response = json.loads(base64.b64decode(base64_encoded_response))

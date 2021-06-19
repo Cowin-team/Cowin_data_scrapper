@@ -96,7 +96,7 @@ def update_hospital_info(hospital_info):
 	response = requests.post("http://127.0.0.1:5000/updateBulk", json=hospital_info)
 
 	if response.status_code != 200:
-		raise Exception(f"covid.py failed: {response.text}")
+		raise Exception(f"covid19jagratha.py failed: {response.text}")
 
 if __name__ == "__main__":
 	init_session()
