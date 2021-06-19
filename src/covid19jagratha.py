@@ -10,7 +10,7 @@ SESSION = requests.Session()
 def init_session():
 	global CSRF_TOKEN, DISTRICTS
 	
-	response = SESSION.get("https://covid19jagratha.kerala.nic.in/home/addHospitalDashBoard")
+	response = SESSION.get("https://covid19jagratha.kerala.nic.in/home/addHospitalDashBoard", verify=False)
 	html_page = BeautifulSoup(response.text, "lxml")
 	CSRF_TOKEN = html_page.find("input", attrs={"name": "_csrf", "id": "csrf"})["value"]
 	DISTRICTS = list(map(lambda o: {"id": o["value"], "name": o.text}, html_page.find(id="distId").find_all("option")))[1:]
@@ -19,16 +19,16 @@ def get_district_hospital_info(district):
 
 	raw_hospital_info_dict = {}
 
-	SESSION.post("https://covid19jagratha.kerala.nic.in/home/addHospitalDashBoard", data={"distId": district["id"], "_csrf": CSRF_TOKEN})
+	SESSION.post("https://covid19jagratha.kerala.nic.in/home/addHospitalDashBoard", data={"distId": district["id"], "_csrf": CSRF_TOKEN}, verify=False)
 
-	raw_hospitals_info = SESSION.get("https://covid19jagratha.kerala.nic.in/home/getDistHospitalCount").json()
+	raw_hospitals_info = SESSION.get("https://covid19jagratha.kerala.nic.in/home/getDistHospitalCount", verify=False).json()
 	for raw_hospital_info in raw_hospitals_info:
 		hospital_name = raw_hospital_info[0].strip()
 		raw_hospital_info_dict[hospital_name] = {
 			"normal": raw_hospital_info
 		}
 
-	raw_hospitals_info = SESSION.get("https://covid19jagratha.kerala.nic.in/home/getOxygenBedCount").json()
+	raw_hospitals_info = SESSION.get("https://covid19jagratha.kerala.nic.in/home/getOxygenBedCount", verify=False).json()
 	for raw_hospital_info in raw_hospitals_info:
 		hospital_name = raw_hospital_info[0].strip()
 		if hospital_name in raw_hospital_info_dict:
@@ -38,7 +38,7 @@ def get_district_hospital_info(district):
 				"oxygen": raw_hospital_info
 			}
 
-	raw_hospitals_map_info = SESSION.post("https://covid19jagratha.kerala.nic.in/home/listHospitalLocation", data={"distId": district["id"], "_csrf": CSRF_TOKEN}).json()
+	raw_hospitals_map_info = SESSION.post("https://covid19jagratha.kerala.nic.in/home/listHospitalLocation", data={"distId": district["id"], "_csrf": CSRF_TOKEN}, verify=False).json()
 	for raw_hospital_map_info in raw_hospitals_map_info:
 		hospital_name = raw_hospital_map_info[1].strip()
 		if hospital_name in raw_hospital_info_dict:
@@ -96,7 +96,7 @@ def update_hospital_info(hospital_info):
 	response = requests.post("http://127.0.0.1:5000/updateBulk", json=hospital_info)
 
 	if response.status_code != 200:
-		raise Exception(f"searchmybed.py failed: {response.text}")
+		raise Exception(f"covid.py failed: {response.text}")
 
 if __name__ == "__main__":
 	init_session()
