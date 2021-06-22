@@ -79,5 +79,4 @@ def update_hospital_info(hospital_info):
 	
 if __name__ == "__main__":
 	hospital_info = get_hospital_info()
-	print(hospital_info)
 	update_hospital_info(hospital_info)
