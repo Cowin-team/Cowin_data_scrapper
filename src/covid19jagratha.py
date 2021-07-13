@@ -88,7 +88,7 @@ def get_hospital_info():
 	init_session()
 	usable_hospitals_info = []
 	for district in DISTRICTS:
-		usable_hospitals_info.append(get_district_hospital_info(district))
+		usable_hospitals_info.extend(get_district_hospital_info(district))
 	return usable_hospitals_info
 
 def update_hospital_info(hospital_info):
