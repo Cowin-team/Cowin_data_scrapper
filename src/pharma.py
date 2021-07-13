@@ -86,7 +86,7 @@ if __name__ == '__main__':
             # Click resource type dropdown
             WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "#operations-default-get_covisearchapi > div.no-margin > div > div:nth-child(2) > div.parameters-container > div > table > tbody > tr:nth-child(2) > td.parameters-col_description > select"))).click()
             # Select appropriate resource - 8 for testing, 9 for pharma
-            WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "#operations-default-get_covisearchapi > div.no-margin > div > div:nth-child(2) > div.parameters-container > div > table > tbody > tr:nth-child(2) > td.parameters-col_description > select > option:nth-child(8)"))).click()
+            WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "#operations-default-get_covisearchapi > div.no-margin > div > div:nth-child(2) > div.parameters-container > div > table > tbody > tr:nth-child(2) > td.parameters-col_description > select > option:nth-child(9)"))).click()
             # Select page number and set it to 0 for pagination
             pagination(1)
             try:
@@ -174,7 +174,6 @@ if __name__ == '__main__':
                     
             #Clear previous results if any
             clear()
-            break
             print("City complete: ", city, totalResults, count)
 
         df = pd.DataFrame(pharma_results_for_api_input, columns=pharma_results_for_api_input[0].keys())
