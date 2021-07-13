@@ -57,10 +57,11 @@ if __name__ == '__main__':
         ssl._create_default_https_context = ssl._create_unverified_context
         df = pd.read_json(cowinApi)
         df.index = pd.Index(['COUNTRY', 'LAT', 'LONG', 'RESOURCES', 'STATE'], name='CITY')
-        cities = list(df.T.index)
-        cityList = [sub.replace(" ", "") for sub in cities]
+        df_t = df.T
+        cityList = list(df_t.index)
+        cities_coord_mapping = df_t.iloc[:,1:3]
         
-        testing_results_for_api_input = []
+        pharma_results_for_api_input = []
         pharma_results_for_api_input = []
         GEOLOCATOR = Nominatim(user_agent='cowinmap')
         
@@ -75,6 +76,8 @@ if __name__ == '__main__':
             time.sleep(5)
         
         for city in cityList:
+            if(city == 'agar mala'): # Wrong city
+                continue
             count = 0
             # Clear the text field
             WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "#operations-default-get_covisearchapi > div.no-margin > div > div:nth-child(2) > div.parameters-container > div > table > tbody > tr:nth-child(1) > td.parameters-col_description > input[type=text]"))).clear()
@@ -82,7 +85,7 @@ if __name__ == '__main__':
             WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "#operations-default-get_covisearchapi > div.no-margin > div > div:nth-child(2) > div.parameters-container > div > table > tbody > tr:nth-child(1) > td.parameters-col_description > input[type=text]"))).send_keys(city)
             # Click resource type dropdown
             WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "#operations-default-get_covisearchapi > div.no-margin > div > div:nth-child(2) > div.parameters-container > div > table > tbody > tr:nth-child(2) > td.parameters-col_description > select"))).click()
-            # Select testing center
+            # Select appropriate resource - 8 for testing, 9 for pharma
             WebDriverWait(driver, 20).until(EC.element_to_be_clickable((By.CSS_SELECTOR, "#operations-default-get_covisearchapi > div.no-margin > div > div:nth-child(2) > div.parameters-container > div > table > tbody > tr:nth-child(2) > td.parameters-col_description > select > option:nth-child(8)"))).click()
             # Select page number and set it to 0 for pagination
             pagination(1)
@@ -97,7 +100,7 @@ if __name__ == '__main__':
                 clear()
                 continue  
             
-            # Extract test results
+            # Extract pharma results
             try:
                 resultText = driver.find_element_by_css_selector("#operations-default-get_covisearchapi > div.no-margin > div > div.responses-wrapper > div.responses-inner > div > div > table > tbody > tr > td.response-col_description > div:nth-child(1) > div > pre")
             except Exception as ex:
@@ -114,8 +117,8 @@ if __name__ == '__main__':
                 entriesPerPage = 12
                 pages = math.ceil(totalResults/entriesPerPage)
             except ValueError as ex:    
-                print("JSON error: ", ex, " result text: ", resultText.text)
-                time.sleep(60)
+                print("JSON error: ", ex, " result text: ", resultText.text) # Nasty error :(
+                time.sleep(120)
                 clear()
                 continue 
             
@@ -130,44 +133,41 @@ if __name__ == '__main__':
                     resultList = json.loads(resultText.text)['resource_info_data']
                     # Parse test results
                     for result in resultList:
-                        test_data = OrderedDict()
+                        data = OrderedDict()
                         try:
-                            test_data['Name'] = result['name']
+                            data['Name'] = result['contact_name']
                         except:
-                            test_data['Name'] = "N/A"    
+                            data['Name'] = "N/A"    
                         try:
                             address = result['address']  
-                            test_data['Address'] = address
+                            data['Address'] = address
                         except:
-                            test_data['Address'] = "N/A" 
+                            data['Address'] = "N/A" 
                         # Get lat/long coordinates from address    
                         try:
-                            lastString = address.rsplit(',', 1)[1].strip()
-                            if lastString.isnumeric():
-                                coordinates = GEOLOCATOR.geocode(lastString) #geocode from pincode
-                            else:
-                                coordinates = GEOLOCATOR.geocode(city + ', India')
-                    
+                            coordinates = GEOLOCATOR.geocode(address)
                             # print("Coordinates: ", coordinates, coordinates.latitude, coordinates.longitude)
-                            test_data['Latitude'] = coordinates.latitude
-                            test_data['Longitude'] = coordinates.longitude
+                            data['Latitude'] = coordinates.latitude
+                            data['Longitude'] = coordinates.longitude
                         except:
-                            test_data['Latitude'] = "N/A"
-                            test_data['Longitude'] = "N/A"
+                            lat = cities_coord_mapping.loc[[city],["LAT"]].values[0]
+                            lon = cities_coord_mapping.loc[[city],["LONG"]].values[0]
+                            data['Latitude'] = lat[0]
+                            data['Longitude'] = lon[0]
                         try:
-                            test_data['Phone Number'] = result['phones']
+                            data['Phone Number'] = result['phones']
                         except:
-                            test_data['Phone Number'] = "N/A"   
+                            data['Phone Number'] = "N/A"   
                         try:
-                            test_data['Last verified'] = result['last_verified_utc']
+                            data['Last verified'] = result['last_verified_utc']
                         except:
-                            test_data['Last verified'] = "N/A"    
+                            data['Last verified'] = "N/A"    
                         try:
-                            test_data['Testing center details'] = result['details']
+                            data['Details'] = result['details']
                         except:
-                            test_data['Last verified'] = "N/A" 
+                            data['Details'] = "N/A" 
                         count += 1    
-                        testing_results_for_api_input.append(test_data)                    
+                        pharma_results_for_api_input.append(data)                    
             except: 
                 clear()
                 continue
@@ -176,7 +176,7 @@ if __name__ == '__main__':
             clear()
             print("City complete: ", city, totalResults, count)
 
-        df = pd.DataFrame(testing_results_for_api_input, columns=testing_results_for_api_input[0].keys())
+        df = pd.DataFrame(pharma_results_for_api_input, columns=pharma_results_for_api_input[0].keys())
         df.to_csv('testing_centers.csv')
         # print(data)
         driver.close()
